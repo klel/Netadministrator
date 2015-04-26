@@ -1,0 +1,86 @@
+:Base localsql.hlp>main
+:Title Local SQL Help
+:Index Local SQL Help=localsql.hlp
+:Link bde32.hlp
+:Link bdeadmin.hlp
+:Link datapump.hlp
+:Link sqllnk32.hlp
+;
+1 Local SQL
+3 Overview
+4 What is local SQL?=Overview
+4 Conventions
+5 Legend = Legend
+5 Conventions = Conventions
+5 Table names = TableNames
+5 Column names = ColumnNames
+5 Date formats = DateFormats
+5 Time formats = TimeFormats
+5 Boolean literals = BooleanLiterals
+5 Table correlation names = TableCorrelationNames
+5 Column correlation names = ColumnCorrelationNames
+5 Embedded comments = EmbeddedComments
+4 Reserved words = ReservedWords
+4 Unsupported language = UnsupportedLanguage
+2 Data Manipulation Language
+3 Overview = DataManipulationOverview
+3 Statements
+4 Statement list = StatementList
+4 SELECT statement = SelectStatement
+4 DELETE statement = DeleteStatement
+4 INSERT statement = InsertStatement
+4 UPDATE statement = UpdateStatement
+3 Clauses
+4 Clause list = ClauseList
+4 FROM clause = FromClause
+4 WHERE clause = WhereClause
+4 ORDER BY clause = OrderByClause
+4 GROUP BY clause = GroupByClause
+4 HAVING clause = HavingClause
+3 Functions
+4 Function list = FunctionList
+4 Concatenation function = ConcatenationFunction
+4 LOWER function = LowerFunction
+4 UPPER function = UpperFunction
+4 SUBSTRING function = SubstringFunction
+4 TRIM function = TrimFunction
+4 AVG function = AvgFunction
+4 COUNT function = CountFunction
+4 MAX function = MaxFunction
+4 MIN function = MinFunction
+4 SUM function = SumFunction
+4 CAST function = CastFunction
+4 EXTRACT function = ExtractFunction
+3 Operators
+4 Operators list = OperatorsList
+4 Arithmetic operators = ArithmeticOperators
+4 Logical operators = LogicalOperators
+3 Predicates
+4 Predicate list = PredicateList
+4 Comparison predicates = ComparisonPredicates
+4 BETWEEN predicate = BetweenPredicate
+4 EXISTS predicate = ExistsPredicate
+4 IN predicate = InPredicate
+4 LIKE predicate = LikePredicate
+4 IS NULL predicate = IsNullPredicate
+4 SOME/ANY/ALL predicates = SomeAnyAllPredicates
+3 Relational operators
+4 Relational operators list = RelationalOperatorsList
+4 Equi-join = Equi-Join
+4 INNER join = InnerJoin
+4 OUTER join = OuterJoin
+4 Cartesian join = CartesianJoin
+4 UNION join = UnionJoin
+4 Heterogeneous join = HeterogeneousJoins
+3 Updatable queries
+4 Updatable queries = UpdatableQueries
+3 Parameter substitutions
+4 Parameter substitutions in DML statements = ParameterSubstitutionsInDMLStatements
+2 Data Definition Language
+3 DDL statement overview = DataDefinitionOverview
+3 CREATE TABLE statement = CreateTableStatement
+3 ALTER TABLE statement = AlterTableStatement
+3 DROP TABLE statement = DropTableStatement
+3 CREATE INDEX statement = CreateIndexStatement
+3 DROP INDEX = DropIndexStatement
+

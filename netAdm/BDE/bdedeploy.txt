@@ -1,0 +1,316 @@
+***********************************************************
+           Borland Database Engine and SQL Links
+                  Deployment README File
+***********************************************************
+
+This file provides information on deploying the Borland
+Database Engine (BDE) and/or SQL Links. We recommend you
+read the entire contents of this file prior to deploying
+the BDE or SQL Links.
+
+Availability of SQL Links is dependent on the specific
+Borland development product used. For instance, SQL Links
+is included with the Enterprise editions Borland
+programming tools, but not the Professional editions.
+Consult the documentation of the particular Borland product
+used to see whether SQL Links is included.
+
+TABLE OF CONTENTS
+===========================================================
+  1. INSTALLATION REQUIREMENTS
+     1.1 General Requirements
+     1.2 Royalties
+     1.3 Limitations on Redistribution
+  2. BORLAND-CERTIFIED INSTALLATION PROGRAMS
+  3. BDE DEPLOYMENT
+     3.1 Deploying the BDE
+     3.2 BDE Redistributable Files
+     3.3 Partial BDE Installs
+  4. SQL LINKS DEPLOYMENT
+     4.1 Deploying SQL Links
+     4.2 SQL Links Redistributable Files
+     4.3 Database Server Client Software
+  5. BDE ADMINISTRATOR
+
+
+1. INSTALLATION REQUIREMENTS
+===========================================================
+1.1 General Requirements
+------------------------
+Database applications that use the Borland Database Engine
+(BDE) to effect database access require that the BDE be
+deployed with the application. The BDE may be deployed in
+whole or in part (see "3.3 Partial BDE Installs").
+Installing only part of the BDE allows you to reduce the
+disk space footprint of the BDE by providing only those
+parts the application actually needs.
+
+A database application that uses SQL Links to effect
+connection with SQL databases requires that both the BDE
+and SQL Links be distributed with the application. See
+"4.1 Deploying SQL Links" for more information on dis-
+tributing SQL Links.
+
+When deploying the BDE or SQL Links with an application,
+you must use InstallShield Express or another Borland-
+certified installation program to install the BDE or SQL
+Links. See "2. Certified Installation Programs" for more
+information. In addition to satisfying this legal
+requirement, using a certified installation program also:
+
+  * Ensures that all Windows Registry entries required for
+    proper functioning of the BDE are made.
+
+  * Provides version checking so that a newer version of
+    the BDE is not overwritten with an earlier one.
+    
+  * Prevents botched installs from interfering with other
+    BDE-using applications, including Borland products.
+
+1.2 Royalties
+-------------
+No royalties or other per-installation fees are required
+for the redistribution of the BDE or SQL Links with
+applications. Further, you are not limited in the number of
+times the BDE and SQL Links may be redistributed.
+
+1.3 Limitations on Redistribution
+---------------------------------
+The BDE and SQL Links may only be redistributed with
+applications created using Borland programming tools, and
+then only for the purpose of use with these applications.
+See the file LICENSE.TXT file for the BDE-using Borland
+programming tool used for more information.
+
+
+2. BORLAND-CERTIFIED INSTALLATION PROGRAMS
+===========================================================
+Borland products which include redistribution rights
+include an Borland-certified install program, such as
+InstallShield Express, to ensure proper installation and
+uninstallation of your applications so that they co-exist
+well with other applications which use the Borland Database
+Engine (BDE) including those created with Visual dBASE,
+Paradox, Delphi, and C++Builder.
+
+Borland has also provided BDE and SQL Links installation
+information to other install vendors such as Sax Software,
+WISE Software, Great Lakes Business Systems (GLBS) makers
+of the WISE install tool and Eschalon Development so that
+their products can also be ensured to be fully compatible
+with the BDE.
+
+From time to time, Borland Software Corporation may, 
+at its discretion, certify additional installation programs 
+for use as the Borland Certified Install Program for this 
+product.
+  
+Also check the Borland-sponsored announcement newsgroups:
+
+  news:borland.public.announce
+  news:borland.public.bde
+
+
+3. BDE DEPLOYMENT (ALL DATABASE APPLICATIONS)
+===========================================================
+3.1 Deploying the BDE
+---------------------
+A Borland-certified installation program provides all
+needed functionality and steps for redistributing the
+Borland Database Engine (BDE), including:
+
+  * Selecting files to redistribute
+  * Determining final directory locations
+  * Comparing versions of BDE files
+  * Creation of BDE aliases
+  
+Follow the instructions of the particular installation
+program used for specific steps to create an installation
+program that includes the BDE.
+
+3.2 BDE Redistributable Files
+-----------------------------
+When creating the installation program for a BDE-using
+application, Borland-certified installation programs allow
+selection of only those BDE files that can be
+redistributed. So the ability to select a given file is
+indication that the particular file can legally be
+redistributed.
+
+BDE files that may be redistributed with an application
+include those listed below. Not all files are included in
+the BDE for all Borland programming tools. Not all files
+are required for any given installation (see "3.3 Partial
+BDE Installs").
+
+  Core BDE Files
+  --------------
+  IDASCI32.DLL   For accessing ASCII files
+  IDBAT32.DLL    For batch movement of data
+  IDDA3532.DLL   For accessing Microsoft Access databases
+  IDDAO32.DLL    For accessing Microsoft Access databases
+  IDDBAS32.DLL   For accessing dBASE databases
+  IDDR32.DLL     For Data Repository (Paradox only)
+  IDODBC32.DLL   For BDE access to ODBC drivers
+  IDPDX32.DLL    For accessing Paradox databases
+  IDQBE32.DLL    QBE query engine
+  IDR20009.DLL   BDE resources
+  IDAPI32.DLL    Main BDE system DLL
+  IDSQL32.DLL    SQL query engine (including local SQL)
+
+  Language Driver Files
+  ---------------------
+  BANTAM.DLL     Internationalization engine
+  *.CVB          Character set conversion files
+  *.BTL          Locales
+  BLW32.DLL      Expression engine
+
+  Files for Microsoft Transaction Server (MTS)
+  --------------------------------------------
+  DISP.DLL       MTS dispensor DLL
+  DISP.PAK
+
+  Auxiliary Tools/Utilities
+  -------------------------
+  BDEADMIN.*     BDE Administrator utility
+  DATAPUMP.*     Data Pump data migration tool
+
+NOTE: For SQL Links redistributable files, see section "4.2
+SQL Links Redistributable Files" below.
+
+3.3 Partial BDE Installs
+------------------------
+You may optionally install only a subset of the Borland
+Database Engine (BDE) with applications. This reduces the
+overall size of the BDE installation as you only
+redistribute the parts of the BDE an application actually
+needs. For example, if the application only uses dBASE
+tables, you can limit the parts of the BDE distributed to
+just the BDE files that are absolutely needed for accessing
+dBASE files.
+
+A subset installation of the BDE is controlled by Install-
+Shield Express (or other Borland-certified installation
+program). Options during the install script design phase
+guide you through a partial BDE redistribution (just as
+with a full BDE install). See the on-line Help of the
+particular installation program used for specific details
+on defining a partial BDE redistribution using that
+installation program.
+
+You may also refer to the Borland Web site at the URL below
+for further information:
+
+  http://www.borland.com/bde
+
+Note that since we allow deployment of BDE files and
+subsets using an Borland-certified installation program, we
+do not otherwise allow deployment of individual BDE files.
+
+
+4. SQL LINKS DEPLOYMENT (CLIENT/SERVER APPLICATIONS)
+===========================================================
+4.1 Deploying SQL Links
+-----------------------
+A Borland-certified installation program provides all
+needed functionality and steps for redistributing SQL
+Links, including:
+
+  * Selecting files to redistribute
+  * Determining final directory locations
+  * Comparing versions of SQL Links files
+  
+Follow the instructions of the particular installation
+program used for specific steps to create an installation
+program the includes SQL Links.
+
+4.2 SQL Links Redistributable Files
+-----------------------------------
+You may redistribute the following files in accordance with
+the license agreement for this product:
+
+  Interbase
+  -------------------------------------------------------
+  SQLINT32.DLL    InterBase SQL Links driver
+  SQL_INT.CNF     Default BDE configuration file for INT 
+                  SQL Links
+
+  For other files associated with InterBase deployment,
+  consult the InterBase documentation.
+
+  Oracle
+  -------------------------------------------------------
+  SQLORA32.DLL    Oracle 7 SQL Links driver
+  SQL_ORA.CNF     Default BDE configuration file for ORA
+                  SQL Links (Oracle 7)
+  SQLORA8.DLL     Oracle 8 SQL Links driver
+  SQL_ORA8.CNF    Default BDE configuration file for ORA8
+                  SQL Links (Oracle 8)
+
+  Sybase Db-Lib
+  -------------------------------------------------------
+  SQLSYB32.DLL    Sybase Db-Lib SQL Links driver
+  SQL_SYB.CNF     Default BDE configuration file for SYB
+                  Db-Lib SQL Links
+
+  Sybase Ct-Lib
+  -------------------------------------------------------
+  SQLSSC32.DLL    Sybase Ct-Lib SQL Links driver
+  SQL_SSC.CNF     Default BDE configuration file for SYB
+                  Ct-Lib SQL Links
+
+  Microsoft SQL Server
+  -------------------------------------------------------
+  SQLMSS32.DLL    Microsoft SQL Server SQL Links driver
+  SQL_MSS.CNF     Default BDE configuration file for MSS
+                  SQL Links
+
+  Informix
+  -------------------------------------------------------
+  SQLINF32.DLL    Informix 7 SQL Links driver
+  SQL_INF.CNF     Default BDE configuration file for INF
+                  SQL Links (Informix 7)
+  SQLINF9.DLL     Informix 9 SQL Links driver
+  SQL_INF9.CNF    Default BDE configuration file for INF
+                  SQL Links (Informix 9)
+
+  DB/2
+  -------------------------------------------------------
+  SQLDB232.DLL    DB/2 version 2.x SQL Links driver
+  SQL_DB2.CNF     Default BDE configuration file for DB/2
+                  version 2.x SQL Links
+  SQLDB2V5.DLL    DB/2 V5 (UDB) SQL Links driver
+  SQL_DBV5.CNF    Default BDE configuration file for DB/2
+                  V5 (UDB) SQL Links
+
+NOTE: For BDE redistributable files, see section "3.2 BDE
+Redistributable Files" above.
+
+4.3 Database Server Client Software
+-----------------------------------
+In addition to SQL Links files, client/server applications
+require client files for interface to communication proto-
+cols (such as TCP/IP). These client software files are part
+of the database server system, are NOT part of nor bundled
+with SQL Links, and are supplied by the SQL database system
+vendor. Client software comes with SQL database server
+software, so if you have the database server software you
+will most likely also have the client software. Refer to
+your database administrator (DBA) or server documentation
+for specific information on installing client software.
+
+
+5. BDE ADMINISTRATOR
+===========================================================
+When the Borland Database Engine (BDE) is installed with a
+deployed BDE-using application, the configuration utility
+BDE Administrator is also installed. Its use with deployed
+applications is authorized.
+
+
+===========================================================
+Unless otherwise noted, all materials provided in this
+release are Copyright 1983 - 2002 by 
+Borland Software Corporation.
+========================= END =============================
+

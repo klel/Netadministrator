@@ -1,0 +1,1202 @@
+Content-Type: multipart/related; start=<op.mhtml.1243594442343.50756646605b299c@192.168.0.2>; boundary=----------AhcVV1EHuW9gBI84EDsGAM
+Content-Location: http://www.delphimaster.ru/articles/icmp.html
+Subject: =?utf-8?Q?=D0=9C=D0=B0=D1=81=D1=82=D0=B5=D1=80=D0=B0=20DELPHI=20|=20=D0=A0=D0=B5=D0=B0=D0=BB=D0=B8=D0=B7=D0=B0=D1=86=D0=B8=D1=8F=20ping=20=D1=81=20=D0=BF=D0=BE=D0=BC=D0=BE=D1=89=D1=8C=D1=8E=20ICMP=20API=20(=D0=B4=D0=BE=D0=BA=D1=83=D0=BC=D0=B5=D0=BD=D1=82=D0=B0=D1=86=D0=B8=D1=8F,=20=D0=B8=D1=81=D1=85=D0=BE=D0=B4=D0=BD=D0=B8=D0=BA=D0=B8,=20=D1=81=D0=BA=D0=B0=D1=87=D0=B0=D1=82=D1=8C)?=
+MIME-Version: 1.0
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=icmp.html
+Content-Type: text/html; charset=windows-1251; name=icmp.html
+Content-Id: <op.mhtml.1243594442343.50756646605b299c@192.168.0.2>
+Content-Location: http://www.delphimaster.ru/articles/icmp.html
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<TITLE>Мастера DELPHI | Реализация ping с помощью ICMP API (документация, исходники, скачать)</TITLE>
+<META HTTP-EQUIV="Keywords" NAME="Keywords" CONTENT="delphi, russian, исходники, документация, delphigfx, советы, помощь, компоненты, components, free, Borland, литература, pascal, Borland, microsoft windows, интернет, информационные технологии, Internet-technologies, tutorial, delphi programming, программирование, FAQ, Service, faqs, help, server">
+<META HTTP-EQUIV="Description" NAME="Description" CONTENT="Мастера DELPHI">
+<meta NAME="robots" CONTENT="INDEX,FOLLOW">
+<meta NAME="revisit-after" CONTENT="5 days">
+<meta NAME="RESOURCE-TYPE" CONTENT="delphi pop sources server code base tools open source free software shareware download free tutorial news opengl directx">			
+<LINK REL="SHORTCUT ICON" href="http://www.delphimaster.ru/favicon.ico">
+<meta http-equiv="content-style-type" content="text/css">
+<meta content="text/html; charset=windows-1251" http-equiv=Content-type>
+<link rel=stylesheet type="text/css" href="/i/main.css">
+<SCRIPT LANGUAGE="JavaScript" SRC="http://www.delphimaster.ru/i/overlib.js"></SCRIPT>
+</HEAD>
+
+<body leftmargin=0 topmargin=0 marginwidth=0 marginheight=0 bgcolor=#f2f0f0 onload="init()">
+<a name="PageTop"></a>
+<TABLE border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#112863">
+<TR><TD background="/i/bg1.gif"><a href="/"><IMG SRC="/i/logo.gif" WIDTH="296" HEIGHT="81" BORDER=0 ALT="Мастера DELPHI, Delphi programming community"></A></TD>
+<TD valign=top background="/i/bg1.gif" align=right>
+
+<!--Rambler Top100-->
+<img src="http://counter.rambler.ru/top100.cnt?202366" width=1 height=1 border=0>
+<!--TopList COUNTER--><script language="JavaScript"><!--
+d=document;a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3"><!--
+js=13//--></script><script language="JavaScript"><!--
+d.write('<img src="http://top.list.ru/counter'+
+'?id=53505;js='+js+a+';rand='+Math.random()+
+'" alt="" height=1 width=1>')
+if(js>11)d.write('<'+'!-- ')//--></script><noscript><img
+src="http://top.list.ru/counter?js=na;id=53505"
+height=1 width=1 alt=""></noscript><script language="JavaScript"><!--
+if(js>11)d.write('--'+'>')//--></script><!--TopList COUNTER-->
+ 
+<a href="http://www.delphimaster.ru/" target=_top><IMG SRC="/i/home.gif" WIDTH="30" HEIGHT="18" BORDER=0 ALT="Титульная страница"></A>&nbsp;<a href="/search.html"><IMG SRC="/i/srch.gif" WIDTH="30" HEIGHT="18" BORDER=0 ALT="Поиск, карта сайта"></A>&nbsp;<script language="JavaScript">document.write('<A HREF="mailt'+'o:a'+'dm@delphima'+'ster.ru">');</script><IMG SRC="/i/mail.gif" WIDTH="30" HEIGHT="18" BORDER=0 ALT="Написать письмо"></A>&nbsp;<BR>
+<!--//TOP BANNER--><A HREF="http://www.delphimaster.ru/reklama.html" target="_blank"><IMG SRC="/i/bnr/rekl1.gif" ALT="место для вашей рекламы" BORDER=0></A><!--TOP BANNER//--></TD></TR>
+<TR><TD colspan=2 align=center background="/i/bg6.gif" bgcolor="#DEDBDE">
+<!--// MENU--><FONT class="smallmenu">|
+<A href="/#new" name="l1">Новости</A> |
+<div class="hdiv" name="hint1" id="hint1">Новости сайта</div>
+
+<A href="/search.html" name="l2">Поиск</A> |
+<div class="hdiv" name="hint2" id="hint2">Универсальный поиск по всему сайту! Карта сайта.</div>
+
+<A  href="/faq.shtml"  name="l3">FAQ</A> |
+<div class="hdiv" name="hint3" id="hint3">Огромная база часто задаваемых вопросов и, конечно же, ответы к ним ;)</div>
+
+<A href="/articles.html"  name="l4">Статьи</A> |
+<div class="hdiv" name="hint4" id="hint4">Подборка статей на самые разные темы. Все о DELPHI</div>
+
+<A href="/books/" name="l5">Книги</A> |
+<div class="hdiv" name="hint5" id="hint5">Новинки книжного рынка</div>
+
+<A  href="/news/"  name="l6">Новости VCL</A>
+<div class="hdiv" name="hint6" id="hint6">Обзор свежих компонент со всего мира, по-русски!</div>
+
+|<BR>|
+
+<A  href="/forums.shtml" name="l7">Форумы</A>
+<div class="hdiv" name="hint7" id="hint7">Здесь вы можете задать свой вопрос и наверняка получите ответ</div> |
+
+<A href="/chat/" name="l8">ЧАТ</A> |
+
+<div class="hdiv" name="hint8" id="hint8">Место для общения :)</div>
+
+<A href="/nuts/" name="l9">Орешник</A> |
+<div class="hdiv" name="hint9" id="hint9">Коллекция курьезных вопросов из форумов</div>
+
+<A href="http://kolmck.net/" name="l14">KOL и MCK</A> |
+<div class="hdiv" name="hint14" id="hint14">KOL и MCK - Компактные программы на Delphi</div>
+<!--MENU //-->
+
+</TD></TR>
+<tr><TD colspan=2 bgcolor=#333333><IMG SRC="/i/1x1.gif" WIDTH=1 HEIGHT=1 BORDER=0 ALT=""></TD></TR>
+</TABLE>
+<div id="hint" class="ahint"></div>
+
+<!--// Новости-->
+<TABLE align=right border=0 width=150 cellspacing=0 cellpadding=0>
+<tr><td></TD></TR>
+<tr><td><TABLE bgcolor="#364875" border=0 width=100% cellspacing=0 cellpadding=1><TR><TD><TABLE width=100% bgcolor="#FCFCFC" cellspacing=0 cellpadding=2><TR><TD class=news align="center">
+<BR>&nbsp;<BR>&nbsp;<A HREF="/reklama.html" target="_blank"> . . . </A><BR>&nbsp;<BR>&nbsp;
+<hr></TD></TR></TABLE></TD></TR><TR><TD align=center><A HREF="/reklama.html"><FONT COLOR="#FFFFE8">Реклама на сайте...</FONT></A></TD></TR></TABLE></TD></TR>
+<tr><td></TD></TR>
+<tr><td></TD></TR></TABLE>
+<!--Новости //-->
+
+<blockquote>
+<H3>Реализация ping с помощью ICMP API</H3>
+<!--// BODY -->
+
+<p align="justify">При работе в сети Интернет в некоторых случаях необходимо знать 
+текущее состояние как локального, так и удаленных хостов (имеет ли локальный хост в 
+данный момент возможность выхода в сеть Интеренет, доступен ли некий удаленный хост и т.д.)
+<p align="justify">Общеизвестно, что для указанных целей используется утилита ping. 
+В данной статье описана реализация на Delphi возможностей этой программы с помощью ICMP API.
+<p align="justify">Принцип работы ping-а основан на использовании протокола ICMP - Internet Control Message Protocol (протокол управляющих, или контрольных, сообщений).<br>
+С помощью ICMP хосты в сети обмениваются различной служебной информацией (информацией 
+о смене маршрута, уменьшении скорости передачи, недоступности какого-либо адреса и т.д.)
+В основе протокола ICMP лежит понятие сообщений. Сообщения ICMP протокола, как правило, 
+оповещают об ошибках, возникающих при обработке датаграмм. ICMP использует основные 
+свойства протокола IP, как если бы он являлся протоколом более высокого уровня. 
+На самом же деле ICMP является составной частью IP.
+<p align="justify">Одним из типов сообщений протокола является т.н. "эхо-запрос". Получив "эхо-запрос" хост обязан 
+ответить пославшему "эхо-ответом". По сути, "эхо-запрос" и "эхо-ответ" отличаются лишь 
+адресами отправителя и получателя и кодом типа сообщения (тип 8 - "эхо-запрос", 
+тип 0 - "эхо-ответ").<br>
+Более подробно протокол ICMP описан в RFC792.
+<p align="justify">Реализации утилиты ping на различных платформах существенно отличаются. Так, в ОС UNIX используются RAW sockets (необработанные, "сырые" сокеты), а в ОС Windows всех версий - т.н. ICMP API. Использование ICMP API оправдано только в ОС Windows NT и 2000, т.к. для использования RAW sockets в этих ОС необходимы права Администратора.   
+<p align="justify">Из документации Microsoft:<br>
+<i>"Icmp.dll предоставляет возможность разрабатывать приложения, использующие ICMP (ping, traceroute) без использования Winsock. Если разработчик пишет под платформу, поддерживающую Winsock, предпочтительнее использовать механизм Winsock RAW sockets. <br>
+Однако, при написании программ под Windows NT и Windows 2000 следует учитывать, что механизм RAW sockets доступен для использования только членам группы Administrators.Все функции в icmp.dll не рассматриваются как часть Win 32 API и не будут поддерживаться в следующих реализациях".</i>
+<p align="justify">На практике, во всех 32-разрядных версиях Windows есть и используется библиотека icmp.dll. Так что, на данный момент, можно безбоязненно ее использовать.
+<p><b>ICMP API</b>
+<p align="justify">Определения типов и прототипы функций для Microsoft <b>icmp.dll</b>:
+<p>
+<pre>
+<b>type</b>
+    ip_option_information = packed record  <i>// Информация заголовка IP (Наполнение 
+				    // этой структуры и формат полей описан в RFC791.</i>
+        Ttl : byte;			<i>// Время жизни (используется traceroute-ом)</i>	
+        Tos : byte;			<i>// Тип обслуживания, обычно 0</i>
+        Flags : byte;		<i>// Флаги заголовка IP, обычно 0</i>
+        OptionsSize : byte;		<i>// Размер данных в заголовке, обычно 0, максимум 40</i>
+        OptionsData : Pointer;	<i>// Указатель на данные</i> 
+    end;
+
+   icmp_echo_reply = packed record
+        Address : u_long; 	    	 <i>// Адрес отвечающего</i>
+        Status : u_long;	    	 <i>// IP_STATUS (см. ниже)</i>
+        RTTime : u_long;	    	 <i>// Время между эхо-запросом и эхо-ответом 
+				         // в миллисекундах</i>
+        DataSize : u_short; 	    	 <i>// Размер возвращенных данных</i>
+        Reserved : u_short; 	    	 <i>// Зарезервировано</i>
+        Data : Pointer; 		 <i>// Указатель на возвращенные данные</i>
+        Options : ip_option_information; <i>// Информация из заголовка IP</i>
+    end;
+
+    PIPINFO = ^ip_option_information;
+    PVOID = Pointer;
+
+        <b>function</b> IcmpCreateFile() : THandle; stdcall; external 'ICMP.DLL' name 'IcmpCreateFile';
+        <b>function</b> IcmpCloseHandle(IcmpHandle : THandle) : BOOL; stdcall; external 'ICMP.DLL'  name 'IcmpCloseHandle';
+        <b>function</b> IcmpSendEcho(
+                          IcmpHandle : THandle;    <i>// handle, возвращенный IcmpCreateFile()</i>
+                          DestAddress : u_long;    <i>// Адрес получателя (в сетевом порядке)</i>
+                          RequestData : PVOID;     <i>// Указатель на посылаемые данные</i>
+                          RequestSize : Word;      <i>// Размер посылаемых данных</i>
+                          RequestOptns : PIPINFO;  <i>// Указатель на посылаемую структуру 
+                       		                   // ip_option_information (может быть nil)</i>
+                          ReplyBuffer : PVOID;     <i>// Указатель на буфер, содержащий ответы.</i>
+                          ReplySize : DWORD;       <i>// Размер буфера ответов </i>
+                          Timeout : DWORD          <i>// Время ожидания ответа в миллисекундах</i>
+                         ) : DWORD; stdcall; external 'ICMP.DLL' name 'IcmpSendEcho'; 
+
+</pre>
+<p align="justify">Функция IcmpSendEcho() посылает ICMP эхо-запрос по заданному IP адресу и помещает все ответы, полученные за время заданного таймаута, в буфер ответов (ReplyBuffer). Перед использованием функций Icmp.dll необходимо вызвать функцию WSAStartup() из Winsock.<br>
+Если этого не сделать, то первый же вызов функции IcmpSendEcho() приведет к ошибке 10091 
+(WSASYSNOTREADY).
+<p align="justify">Следует заметить, что ответы, помещенные в буфер, необязательно будут сообщениями "эхо-ответ". 
+Возможно, что в ответ на "эхо-запрос" придут сообщения ICMP о возникших ошибках. 
+Естественно, эти сообщения так же будут помещены в ReplyBuffer.<br> 
+Размер буфера ответов должен быть достаточным для приема хотя бы одного ответа, будь то 
+"эхо-ответ" или сообщение об ошибке. Отсюда, указанный размер складывается из размера самой сруктуры icmp_echo_reply плюс Max(RequestSize, 8), т.к. сообщение ICMP об ошибке составляет 8 байт.<br>
+Функция IcmpSendEcho() возвращает количество ответов (или структур icmp_echo_reply) в массиве ReplyBuffer. Если функция возвратила 0, то для более детальной диагностики возникшей ошибки используется функция GetLastError().
+<p align="justify">Возможные значения поля Status структуры icmp_echo_reply (IP_STATUS):
+<p align="justify">IP_STATUS_BASE 11000<br>
+IP_SUCCESS 0<br>
+IP_BUF_TOO_SMALL 11001<br>
+IP_DEST_NET_UNREACHABLE 11002<br>
+IP_DEST_HOST_UNREACHABLE 11003<br>
+IP_DEST_PROT_UNREACHABLE 11004<br>
+IP_DEST_PORT_UNREACHABLE 11005<br>
+IP_NO_RESOURCES 11006<br>
+IP_BAD_OPTION 11007<br>
+IP_HW_ERROR 11008<br>
+IP_PACKET_TOO_BIG 11009<br>
+IP_REQ_TIMED_OUT 11010<br>
+IP_BAD_REQ 11011<br>
+IP_BAD_ROUTE 11012<br>
+IP_TTL_EXPIRED_TRANSIT 11013<br>
+IP_TTL_EXPIRED_REASSEM 11014<br>
+IP_PARAM_PROBLEM 11015<br>
+IP_SOURCE_QUENCH 11016<br>
+IP_OPTION_TOO_BIG 11017<br>
+IP_BAD_DESTINATION 11018<br>
+IP_ADDR_DELETED 11019<br>
+IP_SPEC_MTU_CHANGE 11020<br>
+IP_MTU_CHANGE 11021<br>
+IP_UNLOAD 11022<br>
+IP_GENERAL_FAILURE 11050<br>
+MAX_IP_STATUS IP_GENERAL_FAILURE<br>
+IP_PENDING 11255<br> 
+<p align="justify">Ниже приведен базовый фрагмент кода, необходимый для однократного посыла эхо-запроса:
+<p>
+<pre>
+<b>procedure</b> TForm1.Button1Click(Sender: TObject);
+<b>var</b>
+    hIP : THandle;
+    pingBuffer : array [0..31] of Char;
+    pIpe : ^icmp_echo_reply;
+    pHostEn : PHostEnt;
+    wVersionRequested : WORD;
+    lwsaData : WSAData;
+    error : DWORD;
+    destAddress : In_Addr;
+<b>begin</b>
+    
+    <i>// Создаем handle</i>
+    hIP := IcmpCreateFile(); 
+    
+    GetMem( pIpe,
+            sizeof(icmp_echo_reply) + sizeof(pingBuffer));
+    pIpe.Data := @pingBuffer;
+    pIpe.DataSize := sizeof(pingBuffer);
+
+    wVersionRequested := MakeWord(1,1);
+    error := WSAStartup(wVersionRequested,lwsaData);
+    <b>if</b> (error &lt;&gt; 0) <b>then</b>
+    <b>begin</b>
+         Memo1.SetTextBuf('Error in call to '+
+                          'WSAStartup().');
+         Memo1.Lines.Add('Error code: '+IntToStr(error));
+         Exit;
+    <b>end;</b>
+    
+    pHostEn := gethostbyname('delphi.mastak.com');
+    error := GetLastError();
+    <b>if</b> (error &lt;&gt; 0) <b>then</b>
+    <b>begin</b>
+         Memo1.SetTextBuf('Error in call to'+
+                          'gethostbyname().');
+         Memo1.Lines.Add('Error code: '+IntToStr(error));
+         Exit;
+    <b>end;</b>
+     
+     destAddress := PInAddr(pHostEn^.h_addr_list^)^;
+
+     <i> // Посылаем ping-пакет</i>
+    Memo1.Lines.Add('Pinging ' +
+                    pHostEn^.h_name+' ['+
+                    inet_ntoa(destAddress)+'] '+
+                    ' with '+
+                    IntToStr(sizeof(pingBuffer)) +
+                    ' bytes of data:');
+
+    IcmpSendEcho(hIP,
+                 destAddress.S_addr,
+                 @pingBuffer,
+                 sizeof(pingBuffer),
+                 Nil,
+                 pIpe,
+                 sizeof(icmp_echo_reply) + sizeof(pingBuffer),
+                 5000);
+
+    error := GetLastError();
+    <b>if</b> (error &lt;&gt; 0) <b>then</b>
+    <b>begin</b>
+         Memo1.SetTextBuf('Error in call to '+
+                          'IcmpSendEcho()');
+         Memo1.Lines.Add('Error code: '+IntToStr(error));
+         Exit;
+    <b>end;</b>
+
+     <i>// Смотрим некоторые из вернувшихся данных</i>
+    Memo1.Lines.Add('Reply from '+
+                IntToStr(LoByte(LoWord(pIpe^.Address)))+'.'+
+                IntToStr(HiByte(LoWord(pIpe^.Address)))+'.'+
+                IntToStr(LoByte(HiWord(pIpe^.Address)))+'.'+
+                IntToStr(HiByte(HiWord(pIpe^.Address))));
+    Memo1.Lines.Add('Reply time: '+IntToStr(pIpe.RTTime)+' ms');
+
+    IcmpCloseHandle(hIP);
+    WSACleanup();
+    FreeMem(pIpe);
+<b>end;</b>
+</pre>
+<p align="justify">Разумеется, это только "скелет". Многие возможные ошибки не обрабатываются.Для работы этого фрагмента надо:<br>
+<ul type="disc">
+<li>создать форму TForm1;
+<li>включить в раздел <b>Uses</b> юнит <i>WinSock</i>;
+<li>поместить на форму  компонент Memo1:TMemo и кнопку Button1:TButton;
+<li>в разделе Implementation поместить описания типов и функций <b>Icmp.dll</b> (см. выше);
+<li>сопоставить событию OnClick кнопки приведенную функцию.
+</ul>
+<!-- BODY //-->
+</blockquote>
+<TABLE border="0" cellspacing=2 cellpadding=2 bgcolor="#F8F1F1" width=100%><TR><TD>&nbsp;&nbsp;</TD><TD>
+<font color=red><b>Внимание!</b></font> Запрещается перепечатка данной
+статьи или ее части без согласования с автором. Если вы хотите разместить эту
+статью на своем сайте или издать в печатном виде, свяжитесь с автором.<br>
+<b>Автор статьи:</b>&nbsp; <a href="mailto:vladar@chat.ru">Владимир Артемов</a>
+</TD><TD>&nbsp;&nbsp;</TD></TR></TABLE>
+<IMG SRC="/i/punktir.gif" WIDTH="100%" HEIGHT="1" BORDER=0 ALT="">
+<BR>
+<TABLE border="0" width="90%" cellspacing="0" cellpadding="0" align=center>
+<TR><TD><A HREF="/articles.html"><IMG SRC="/i/left.gif" WIDTH=11 HEIGHT=10 BORDER=0> Другие статьи</A></TD>
+<TD align=right><A HREF="#PageTop">Наверх <IMG SRC="/i/top.gif" WIDTH=11 HEIGHT=9 BORDER=0></A></TD></TR></TABLE>
+<P><BR>
+
+
+<!-- Счетчики -->
+<TABLE border="0" width="100%" cellspacing="0" cellpadding="0" style="background: URL('/i/bg3.gif') repeat-x bottom">
+<TR><TD align="LEFT" valign="BOTTOM">
+&nbsp;<!--Rating@Mail.ru LOGO--><a target=_top href="http://top.mail.ru/jump?from=53505"><img SRC="http://d1.cd.b0.a0.top.list.ru/counter?id=53505;t=243;l=1" border=0 height=31 width=88 alt="Рейтинг@Mail.ru"/></a><!--/LOGO-->
+&nbsp;&nbsp;&nbsp;</TD>
+<TD align=center valign=bottom>
+<!--//BOTTOM BANNER--><A HREF="/reklama.html" target="_top"><IMG SRC="/i/rekl.gif" BORDER=0 ALT="Реклама на сайте"></A>
+&nbsp;
+<!--BOTTOM BANNER//--></TD>
+<TD align=right valign=bottom><a href="/" target=_top><IMG SRC="/i/home.gif" WIDTH="30" HEIGHT="18" BORDER=0 ALT="Титульная страница"></A>&nbsp;<a href="/search.html"><IMG SRC="/i/srch.gif" WIDTH="30" HEIGHT="18" BORDER=0 ALT="Поиск, карта сайта"></A>&nbsp;<SCRIPT type="text/javascript">document.write('<A HREF="mailt'+'o:a'+'dm@delphima'+'ster.ru">');</SCRIPT><IMG SRC="/i/mail.gif" WIDTH="30" HEIGHT="18" BORDER=0 ALT="Написать письмо"><SCRIPT type="text/javascript">document.write('</A>');</SCRIPT>&nbsp;</TD></TR>
+</TABLE>
+</BODY>
+</HTML>
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=favicon.ico
+Content-Type: image/x-icon; name=favicon.ico
+Content-Location: http://www.delphimaster.ru/favicon.ico
+Content-Transfer-Encoding: Base64
+
+AAABAAIAICAAAAEAIACoEAAAJgAAABAQAAABACAAaAQAAM4QAAAoAAAAIAAAAEAA
+AAABACAAAAAAAIAQAAAAAAAAAAAAAAAAAAAAAAAA////f////3/+/f1/+/n3f/n1
+83/28e5/8+zof/Do4n/t491/69/Xf+jb0n/o2tF/59nQf+fYz3/n2M5/5tfNf+XW
+zH/l1st/5NXKf+LTyX/h0sh/4NPJf+PXz3/m3NV/6eHcf+3n4n/x7Op/9fPxf/n4
+93/9/f1/////f////38AAAAAAAAAAAAAAAAAAAAAAAAAAP///1XOs6T/waeX/8Oo
+l/+8pJf/xKiW/8CklP+3nJL/tZqO/7eZjP+0mI3/t5mM/7KYjf+0mo7/r5eM/6+a
+kP+smpH/q5yV/6iZkv+hn53/1c3I/////1UAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAA////cr+VfP/Em33/yp5//7GRff/Nl3T/v4xs/7qH
+av++iWj/uYxw/7uLbv+zgGX/rX9f/658Wv+vfVv/r3dU/6pyUf+MY0r/nG1P/42D
+eP/SxLr/////OQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAD///9V2se2/+bWxv/s39D/w7at/+3WvP/r07r/5My1/+TLs//dx7T/4ses/+jH
+qP/iwKH/6MOi/9+/o//nxqX/4LmX/7Kaiv/fso7/18Oz/+7i2f8AAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///x3Px7/Hxr+1/8+/
+sv/d1c7/6djI/+jazf/n2cz/6NvO/+nayv/p2sv/5NfM/+vbyv/p3M7/5NPC/+PN
+t//ey7r/0byv/9C+sf/q4Naq6d7YjgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOno5OPkuJP/xrOk/8q7
+sP/Rxbv/0ce8/9C/sP/KvbP/y7+2/8y5qv/Rw7f/58Wk/////1UAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAD///9Vy8O8/5NcN/+IWTn/g1Q6/4FUO/9+Uzn/hFc6/4RW
+Ov+GVzr/fVM7/3tUO/+LWT7/////VQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+/1XHt6r/lGRE/45jSv+JXUX/g11J/4hdR/+GXkn/iV9J/4pmTv94Y1P/dWNU/6t7
+Xf////9VAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAA////Hf///1X///+q////qv///6r///+q////qvzq1//xz6v/+c6f//PH
+nP/3y53/+c6g//rRpf/5z6L/9sic//nLmv/zzab/tp+N/////8f///+q////qv//
+/3L///9V////Vf///1X///85AAAAAAAAAAAAAAAAAAAAAAAAAADn29L/zrai/6Ru
+Rf+ockf/n2hA/6FrQv+ockf/p3NL/6ZxRv+eaUH/nmpJ/6VuRf+lcEb/pXBG/6Rt
+Qv+gaD//p29E/614Uf+yfFr/pXBM/6VuQv+kbEX/sXhU/7R8Vv+tdE7/nXVg/+HV
+z/////85AAAAAAAAAAAAAAAAAAAAAPfu5OP31bD/9dGr//jQo//20qv/+M+i//jP
+ov/4z6L/+M+h//jLm//50aP/+dCj//nQo//3zJ3/98iY//bFk//3y5z/+M+i//fN
+n//1x5f/9MaY//TGmP/3y5v/88aX//bImP/zw5H/99m+/////1UAAAAAAAAAAAAA
+AAD///8d8+XW//bOov/3zqD/98+j//PMpP/zzaX/8suj//LLo//kw53/1rWU/9iy
+jf/ZtI3/2reQ/+C6jv/iwJH/4sCR/+G+kv/jv5b/37yS/9y5kP/fvJP/3byV/9u7
+lf/xxZb/98+i//TDkP/42rz/////VQAAAAAAAAAAAAAAAP///1Xv2cL/982f//jL
+mf+Kblf/JB4b/yYfHP8lHhr/JB0a/0I7IP89OBP/KSEN/zg1E/9GQCf/U0o2/05E
+MP9NQy//S0Eq/09ELf8zKiP/ZmBY/0pDPP8kIh//JSQj/7Wcgf/3y5z/8LN5//jZ
+u/////9VAAAAAAAAAAAAAAAA////VfDawv/3zp//+L2F/1dALf8AAAD/AAAA/wAA
+AP8JBgL/Qj4N/15ZIP9sZUX/JB8G/z87Df9PSxH/VVEW/1NPFP9DPxD/NjMO/x0U
+Bv9mWk3/1M3G/+zr6P/AurH/vaKI//fJmf/ws3j/+Nm7/////1UAAAAAAAAAAAAA
+AAD///9V8NnB//fOn//5wYr/TTgn/wAAAP8AAAD/AwIA/w4LA/9HQw3/S0cU/0lG
+Fv8gGAb/NDAK/0dDDf9LRw3/UEsS/1lUGf9SThb/OTQO/y0jE/9+dmn/087I/722
+r//LpoP/9cyf//a7hP/52b3/////jgAAAAAAAAAAAAAAAP///1Xy1bX/98+h//G1
+fP80IhT/AAAA/wMCAf8EAwL/EAwE/0lEDv8yLgr/ODUL/ygiCP82MRH/XVgh/1tX
+Hf9lYCf/aGMs/3FsNP99eT//c24//3NtRP9eWC3/Rz8Z/1A/If9TQSP/UkEk/1BD
+Jv+zr6b/////cgAAAAAAAAAA////VfTSrf/2zJ7/6K12/xkRCv8IBQP/My0o/z0z
+K/88Miv/SEMQ/zIuCv8zMQr/LCcJ/1dPOv91bUX/eHQ//4WBU/+clXb/mZJ+/6Wg
+kv9zbV7/Yl1D/397YP92cVf/UUkr/z82HP9jXDP/jIpb/5OLcv////+qAAAAAAAA
+AAD///9V9NKu//TGlf/iqnT/CgkF/wAAAP8iGhX/qX9s/2pYTf81MQn/RUEN/1RQ
+GP8wKwz/Qzkl/05IGf9XUhj/dnA6/4Z+ZP93cF//Xlkz/3RuVv+Tj3r/hoJs/4mD
+cv9fVEH/f3Bj/4NyXv+MfF//w7ej/////3IAAAAAAAAAAP///1X10Kj/9ciZ/9ue
+Zv8QCQP/CQUC/yUfHP9jWEz/NzAr/yQbCf9cWB7/dHA9/zEuCf8yLwr/YFwn/2Ne
+JP99d0v/fHVl/356Yv+HgXX/XFI//01HLP9aVTD/kIlt/3NqT/91cFj/hn5t/391
+W//Kw7v/////VQAAAAAAAAAA+vj2qvTRqf/zvon/uoVc/xIJA/8WDAb/OjAo/1M0
+J/89LSb/IBAH/11ZJP9raC//MjAJ/yomCP9MSRf/aGQs/4F6XP9RSDL/b2dX/3Bm
+Uf+jmYb/paCA/2NfKv97dU7/oZh+/6agiv/a1cz/ramd/9HOyv////85AAAAAAAA
+AAD47eGq98yd//K6gv+jc07/FAoE/xEJA/9hPzD/1oha/0QwJf8nDQf/YVgr/2ll
+LP89Ogv/HxkG/xMNBP8pIwf/OTQQ/1tULv95c0j/kohn/8G3qf/Et6z/sKSP/5OM
+bP+poIn/nYpm/5N3U/+impD/////jgAAAAAAAAAAAAAAAPju48f3zJ3/8rd+/5Ji
+QP8fFhD/JRsU/zYpIf9KPjb/OC8q/zktJv8+KBr/bWY2/2RfJf9qZDX/VVAu/2df
+Q/9ybEP/gHpO/4h/Vv+bk27/rqSJ/5iOav+DfVH/m5B1/7Wkk/+aekb/2KNx////
+/8cAAAAAAAAAAAAAAAAAAAAA+unW//bKmv/zuH7/glI2/y4aE/8mGBH/Xkg6/31f
+T/8xGhL/KBIK/y8RCf9ONyn/jYVe/5ONcf+XkXP/wryu/720qP/Fu63/wLil/6ym
+hv/c1cv/0sy9/6ujhf+6q5n/w7So/96oc//VnGr/////qgAAAAAAAAAAAAAAAP//
+/zn76NH/9cqa//KveP9hPCb/JQ8I/yUNBv+Ibl3/m39t/zATC/8xEgv/LxIK/zAT
+Cv9nUEP/opmD/6CQef+Ph2j/oZyI/7expf/Hv7L/0cm//97Xz//TysD/3tfP/9LM
+xP/Hq5L/8rR4/8iRaf////+qAAAAAAAAAAAAAAAA////Vfzmz//yvor/77Bz/0wp
+Gv8tEQr/NyYf/zUqIf85MCn/MSMe/zISCv82FAz/NhQM/zQSCv9ILSX/iX5t/5iO
+ef+Rj3n/oZiB/5yQd/+/tqb/wryu/83Fuv/HvLP/urCl/+Wue//xs3n/uIto////
+/6oAAAAAAAAAAAAAAAD///9V++TM//G2fv/kpGz/RyUa/zYTC/8zFw//imdU/5Fw
+W/8wEAn/OBUM/zYUDP81Ewv/OhcO/1w3K/+ZeWr/iGxZ/5qGev+vqJ//t66k/6ef
+jf+knIb/qaCN/5CIcP+zjV3/8bR5/++yef+gd1P/////qgAAAAAAAAAAAAAAAP//
+/1X65c7/8bd+/9yUZP9EHxL/NxQM/0MdFf+tjHn/elhK/zYTCv85FQz/PBcM/0gi
+Ff+CU0H/lWhZ/5lrWv+VXkv/b0Iv/1g4KP9sUzv/Z1M8/3ZgVv9aTDb/NCAH/7uG
+Wf/ws3n/8bR5/66EYP////+qAAAAAAAAAAAAAAAA////Vfriyv/wtn3/0pJi/zgW
+Cv83Ewv/NBEK/zENBf84Egj/ORQK/z8YDP9EGwz/cUIv/35RPf+AUDv/iVg//5pk
+Rf+ZYD3/iVU0/5BcPf+ebUn/votf/8qVYv/RmWX/4qVu//Czef/vsXn/uZFx////
+/6oAAAAAAAAAAAAAAAD///9V+eDH//G0ef/HjWL/ekot/5BdOP+la0H/tYBV/7iA
+Vf+9hFf/zpVi/+GgZv/tsHb/7rF3/++yeP/wsnj/8rV6//W3fP/1uHz/9bd7//Cz
+ev/rr3j/6q53/+uud//prXf/6K14/+SpeP/Xwrn/////VQAAAAAAAAAAAAAAAP//
+/1X53sP/8LJ4//O1ev/1t3r/87V5//CyeP/wsXb/8LJ2//Cydv/usHb/6652/9+l
+d//hqHf/3aR3/96ld//nvJf/9Ne7//TXu//z1rr/5s69/+zVxf/o1Mn/6dfM/+jU
+yv/o1sz/6NPI/////44AAAAAAAAAAAAAAAAAAAAAAAAAAP///3L///+q////qv//
+/6r///+q////qv///6r///+q////qv///6r///+q////qv///6r///+q////qv//
+/47///9V////Vf///1X///9V////Vf///1X///9V////Vf///1X///9VAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAD4AAAf+AAAH/gAAD/4AAA//4AD//8AA///AAP/wAAAB8AAAAPAAAADgAAAA4AA
+AAOAAAADgAAAA4AAAAGAAAABgAAAAYAAAAGAAAABgAAAA4AAAAeAAAAHAAAABwAA
+AAcAAAAHAAAABwAAAAcAAAAHAAAAD4AAAB//////KAAAABAAAAAgAAAAAQAgAAAA
+AABABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANzLwb/WxLi/1cCzv8+6
+sL/OuK2/zbesv8q2q7/Htqy/x7qzv9PNyb/59/aE/fz8Jf///xwAAAAAAAAAAP//
+/0LRs53/yrGe/9mzlv/Qqo7/zamP/8qhg//Jn37/yJp4/66HbP/Ju6//////BAAA
+AAAAAAAAAAAAAAAAAAD///8c5eHchOXe2f/fx7P/283B/93OwP/Zy7//2sq8/+nX
+xf/n3teq9O/rAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADk3tnHj18//4RY
+Qf+EWUD/h1xD/3lbR//NtKb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7eTcHdK3
+olXPtKDH0rOa/8yddP/LmnL/z6B0/82bcP/QoHX/w6KM/9G2of/YvKr/0rqr//f0
+844AAAAAAAAAAAAAAAD3z6Sq9c6lqvXNo+PqxJv/6cKY/+vDl//sw5P/7caZ/+rC
+lv/pwZb/7cSX//XHl//77N7jAAAAAAAAAADz07COtI1p/xIPDf8UEA3/SEIY/zw2
+G/9KRB//UUoi/0Q+Hf9HPjT/i4eC/5aHd//zvon/++zd/wAAAAAAAAAA9NKuqpt0
+UP8AAAD/CQcC/0M/Dv8yLQz/Qz8S/1dSGf9hXCP/VU8o/4mCaP+Idlv/pIJa/76z
+ov8AAAAAAAAAAPXNo6p7XD7/FxMQ/2NPRP89OQz/OTUO/1dPL/9ybjn/jYVu/3p1
+Xv9+emL/bGRN/2ldRP+bknT/AAAAAAAAAAD0yp3Hbk0y/x8YE/9LOjH/PzcU/1FN
+H/9CPhT/cm0+/25nVP99dWP/bGdB/4iAYv+fmYf/sqyf/wAAAAAAAAAA9MKO/1o9
+KP8zIxr/Z0k4/0AuHP9eWST/PDYb/09IJ/93cEb/p56C/6Oafv+jmH//qYdc/wAA
+AAAAAAAAAAAAAPS+iv9NLh7/TDYr/15DNv8tEgr/XEc1/5uSeP+spJH/wLmq/87H
+uP/MxLT/xbWm/9uib/8AAAAAAAAAAAAAAADusnr/PR0S/0o0Kf9LNSv/NRML/zYU
+DP9xV0r/k4Rx/6mgjv+zq5r/s6qb/9Goff/Ommv/AAAAAAAAAAAAAAAA5KVw/zoX
+DP9VMif/SCQZ/z4YDP9uQjD/jl9L/45ZP/93TzX/jmtP/4pnQf/fpG7/0p9w/wAA
+AAAAAAAAAAAAAOeqc/+8hFb/zpRh/9WaZv/ipW3/5qt3/+areP/wv5L/9Meb/+vB
+nf/pwqH/6MGh/+jPvv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgAAAAwAMAAMAH
+AADwHwAAgAEAAMABAACAAQAAgAEAAIABAACAAQAAgAMAAIADAACAAwAAgAMAAIAD
+AAD//wAA
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=main.css
+Content-Type: text/css; charset=windows-1251; name=main.css
+Content-Location: http://www.delphimaster.ru/i/main.css
+Content-Transfer-Encoding: 8bit
+
+body, td, ol, ul, li, p {
+	font: 10pt Verdana, Arial, Helvetica, Tahoma, sans-serif;
+}
+.text, .medium {
+	font: 10pt Verdana, Arial, Helvetica, Tahoma, sans-serif;
+	color: #000000;
+}
+.smallmenu {
+	font: 9pt Verdana, Arial, Helvetica, Tahoma, sans-serif;
+}
+pre, code {
+	font: 9pt Courier;
+	color: navy;
+}
+h3 {
+	font: bold 12pt Arial;
+	text-align: center;
+	color: #8F0000;
+}
+h4 {
+	font: bold 11pt Arial;
+	color: #8F0000;
+	margin-bottom: 5px;
+}
+p.floating {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 0px;
+	text-align: justify;
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #003388;
+}
+a:active { 
+	color: #6F0000;
+}
+a:hover { 
+	color: #0066FF;
+}
+.pagenum a:link, .pagenum a:visited, .pagenum a:active {
+	background-color: #FEF2ED;
+}
+.pagenum a:hover {
+	background-color: #FFFFFF;
+}
+td.news {
+	font: 8pt Verdana, Arial, Helvetica;
+}
+td.hnews	{
+	font: 10pt Verdana, Arial, Helvetica;
+	color: white;
+	text-align: center;
+}
+input {
+	font: 14px MS Sans Serif;
+	color: #191970;
+}
+select {
+	font: 14px MS Sans Serif;
+	color: #191970;
+}
+select.nav {
+	border: 1px solid #000080;
+	background-color: #EAF5FF;
+	font-size: 12px;
+	color: #000080;
+}
+.ahint {
+	font: 8pt MS Sans Serif;
+	text-decoration: none;
+	color: #000080;
+}
+.hdiv { 
+	position: absolute;
+	visibility: hidden;
+	width: 140px;
+	background-color: #FFF6DD; 
+	border: 1px #936A00 solid; 
+	font: 11px MS Sans Serif;
+	color: #000080;
+	padding: 2px;
+}
+#hint, #xhint, #admhint, #penhint {
+	position: absolute;
+	visibility: hidden;
+	width: 140px;
+}
+#hint, #xhint {
+	background-color: #FFF6DD;
+}
+#admhint, #penhint {
+	background-color: #DDDDDD;
+}
+.date {
+	font: 8pt Courier;
+	color: #007000;
+}
+.number {
+	font-weight: bold;
+	font-size: 11pt;
+	color: #6F0000;
+}
+.dsc {
+	color: #606060;
+}
+.date2 {
+	font: 8pt Courier;
+	color: #007000;
+	background-color: #00FFAA;
+}
+.private {
+	font-weight: bold;
+	color: red;
+	background-color: #FAE0E0;
+}
+.add_topic_form {
+	border: solid 1px #B0B8C0;
+	background-color: #F8EEEA;
+}
+.right_align {
+	text-align: right;
+}
+.format_btn {
+	width: 26px;
+	height: 24px;
+	font: bold 14px Times New Roman, serif;
+}
+.italic {
+	font-style: italic;
+}
+.under {
+	text-decoration: underline;
+}
+.code {
+	font-weight: normal;
+	font-size: 13px;
+}
+.cite {
+	margin-bottom: 8px;
+}
+.add_btn {
+	font: 13px Verdana, sans-serif;
+	margin: 6 4 4 0;
+}
+.small {
+	font-size: 10px;
+}
+textarea {
+	font: 13px Verdana, sans-serif;
+}
+.os_ide {
+	color: #804040;
+	font-weight: bold;
+}
+.bcite {
+	font-size: 10px;
+	color: #191970;
+	border: solid 1pt #BEA6E6
+}
+.acite {
+	font-size: 10px;
+	font-weight: normal;
+	color: #888899;
+}
+.acite:hover {
+	color: #003388;
+}
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=overlib.js
+Content-Type: application/javascript; charset=windows-1251; name=overlib.js
+Content-Location: http://www.delphimaster.ru/i/overlib.js
+Content-Transfer-Encoding: Base64
+
+Ly8gQ29weXJpZ2h0IChjKSAyMDA0IGJ5IFlhbmlzIFByYXNvbCAoR2VybykNCg0K
+dmFyIGNlbnRlckhpbnQgPSBmYWxzZQ0KDQpmdW5jdGlvbiBnZXROYW1lKG9iail7
+DQogIHJldHVybiAob2JqLm5hbWUpP29iai5uYW1lOm9iai5pZA0KfQ0KDQpmdW5j
+dGlvbiBnZXRPYmplY3QobmFtZSl7CQ0KICB2YXIgb2JqDQogIGlmIChkb2N1bWVu
+dC5hbGwpDQogICAgb2JqPWRvY3VtZW50LmFsbFtuYW1lXQ0KICBlbHNlDQogIHsN
+CiAgICBvYmo9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQobmFtZSkNCiAgICBpZiAo
+IW9iaikNCiAgICAgIG9iaj1kb2N1bWVudC5nZXRFbGVtZW50c0J5TmFtZShuYW1l
+KVswXQ0KICAgIGlmIChkb2N1bWVudC5nZXRFbGVtZW50c0J5TmFtZShuYW1lKS5s
+ZW5ndGg+MSkNCiAgICAgIG9iaj1kb2N1bWVudC5nZXRFbGVtZW50c0J5TmFtZShu
+YW1lKQ0KICB9DQogIHJldHVybiBvYmoNCn0NCg0KZnVuY3Rpb24gc2hvd0hpbnQo
+bGluaywgc2hvdyl7DQoJdmFyIG51bSA9IGdldE5hbWUobGluaykNCgludW0gPSBu
+dW0uc3Vic3RyKDEsIG51bS5sZW5ndGggLSAxKQ0KCWdldE9iamVjdCgiaGludCIg
+KyBudW0pLnN0eWxlLnZpc2liaWxpdHkgPSBzaG93PyJ2aXNpYmxlIjoiaGlkZGVu
+Ig0KfQ0KDQpmdW5jdGlvbiBjb3JySGludChsaW5rLCB4LCB5KXsNCgl2YXIgbnVt
+ID0gZ2V0TmFtZShsaW5rKQ0KCW51bSA9IG51bS5zdWJzdHIoMSwgbnVtLmxlbmd0
+aCAtIDEpDQoJdmFyIGhudCA9IGdldE9iamVjdCgiaGludCIgKyBudW0pDQoJaG50
+LnN0eWxlLmxlZnQgPSB4ICsgZG9jdW1lbnQuYm9keS5zY3JvbGxMZWZ0IC0gKGNl
+bnRlckhpbnQ/NzA6MikNCglobnQuc3R5bGUudG9wID0geSArIGRvY3VtZW50LmJv
+ZHkuc2Nyb2xsVG9wICsgMTYNCn0NCg0KdmFyIGlzR2Vja28gPSBuYXZpZ2F0b3Iu
+YXBwTmFtZSA9PSAiTmV0c2NhcGUiDQp2YXIgaXNPcGVyYSA9IG5hdmlnYXRvci51
+c2VyQWdlbnQuaW5kZXhPZigiT3BlcmEiKSA+IC0xDQoNCmZ1bmN0aW9uIG1PdmVy
+KGUpew0KCWlmIChpc09wZXJhKSBjb3JySGludChldmVudC5zcmNFbGVtZW50LCBl
+dmVudC5jbGllbnRYLCBldmVudC5jbGllbnRZKQ0KCWlmIChpc0dlY2tvKSBzaG93
+SGludChlLnRhcmdldCwgdHJ1ZSkNCgllbHNlIHNob3dIaW50KGV2ZW50LnNyY0Vs
+ZW1lbnQsIHRydWUpDQp9DQpmdW5jdGlvbiBtT3V0KGUpew0KCWlmIChpc0dlY2tv
+KSBzaG93SGludChlLnRhcmdldCwgZmFsc2UpDQoJZWxzZSBzaG93SGludChldmVu
+dC5zcmNFbGVtZW50LCBmYWxzZSkNCn0NCmZ1bmN0aW9uIG1Nb3ZlKGUpew0KCWlm
+IChpc0dlY2tvKSBjb3JySGludChlLnRhcmdldCwgZS5wYWdlWCwgZS5wYWdlWSkN
+CgllbHNlIGNvcnJIaW50KGV2ZW50LnNyY0VsZW1lbnQsIGV2ZW50LmNsaWVudFgs
+IGV2ZW50LmNsaWVudFkpDQp9DQoNCmZ1bmN0aW9uIGluaXQoKXsNCglmb3IgKHZh
+ciBpPTE7IGkgPD0gMTQ7IGkrKyl7DQoJCW9iaiA9IGdldE9iamVjdCgibCIgKyBp
+KTsNCgkJaWYgKG9iail7DQoJCQlvYmoub25tb3VzZW92ZXI9bU92ZXINCgkJCW9i
+ai5vbm1vdXNlb3V0PW1PdXQNCgkJCW9iai5vbm1vdXNlbW92ZT1tTW92ZQ0KCQl9
+CQkNCgl9DQp9DQo=
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=bg1.gif
+Content-Type: image/gif; name=bg1.gif
+Content-Location: http://www.delphimaster.ru/i/bg1.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhAQBRAMQAAP//////AP8A//8AAAD//wD/AAAA/wAAAEJRhISWzmN5tYSa
+1nuOxhAoYwgUMUphnFJppVpxrWuGvSEsOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAACwAAAAAAQBRAAAFHOCSMIykKBEEPewzOUjTxLNM33Ze7ziv
+98BfIwQAOw==
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=logo.gif
+Content-Type: image/gif; name=logo.gif
+Content-Location: http://www.delphimaster.ru/i/logo.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhKAFRANUAANbi8GSh3pSfry9Pa6jT9hEoY3yOqaq0yVNhc0JRg01ilgIF
+ClVuqDRYkAgWXJKoyicvOg0UNmJ6swowNH6UyzA8UBIlUm1+kSEzcmiBwoG78DBB
+fQwdYEZapbS8ug9LT0Z3fEWGwr7G1m/X+SFkyFRSTR8kKQgVHgAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAoAVEAAAb/QMrjEQhoiAHB8CE4CJ5Q
+KGVKrVqv2Kx2y+16v+CweEwum89mjVpTbLuLQuFTHqUI0Pi8fs/v+/9oa2xvhIWE
+gIiJiouMjWcPgpGRhpSUjpeYmZqbVRkUkqCha5WkhxRtXhmqq6ytrq+wsbKztLW2
+t7i5uru8txKfosGSRsGlxoQSFxLLzM3Oz9DR0tPU1dbX2Nna29zd1xQEkhIVGA0J
+DAwhIUWj7MLvgsduDMre9vf4+fr7/PkM4OHiRRhIsOBACwgxlFOwjh0heKBKJUNH
+saLFixgzatzIsaPHjyBDihxJsqRHBeCGWTDIsiVBCwkGbJiZIIECBQwkuINYSQKC
+/wY3cZocSrSo0aNIkw4VQCDgqA0uo0ZYGWFDzAEIEszcugFDgQIIE1pFZ0BeiKxA
+hSpdy7at27dIFVxoOqmB1LsWMNTca7MDOq1dqbo0YQLhgIZvzg5IkDao48eQI0ue
+TLmy5cuYM2vezLmz58pznQ5S0DKBAAMXEki1YPVmTQU2FXTQimFlWIQQKuiGsHLC
+hAbE1BQ5W2Fx48/Ikytfzry588904zFoqYAAEwOCWSLckFNCd5uAC1RAcKE8agNK
+BIAYMMHCBBCTAhA3/ry+/fv489sHIJpNiNIUoPRABXdFUME56B1gAGwJkGcAelCg
+54EHUFxQAUzxzceYfhx26P/hh/hBYEJTohXB0gkVXKDAEAQWaCB5pykA44QCTDgh
+eg8+WJ4AFwyQIQKEEQbBkEQWaeSRSCap5JJMNunkk1BGKeWUVFaZ5ED8lRhASyaU
+gMCXEJzg4lS6DXDBg0/QWKMHD4JwwQEUwolacIOcZcICeOap55589unnn4AGKuig
+hA56gglWOqnboow22uiQi0K6m6SURuloBRAMdMICMYkQ3SgGmYBpkIiGOWYECDTR
+ZoWnGeBBeR4AAIAIIsx6WjtFIFDCgQq4auOvE9IqrAgKNkHrrMOqAckRghAgqwgP
+iBDJsNTSKogIwdLqAbYHaGDjAQ8cIC6wwMpq7rnoPlv/q6wE0AphFPDGG0WO9NZr
+77345qvvvvTCixqDCYB1wKfCZRfBkIgyaupdCThxZnlvinABAgaAYECtFE54QZoA
+eECEcEUoUAIGFMu7JrkC3HSAsCvTikQhbBxwrrTTpmtuOOGsa7Oz7JLIs81Am7uu
+z0Q7K4LJSCet9NJMN+30aQxs8NVXFjBFcAAtErSAgZGKeVeKR+tYMY9nYiXArLJu
+fNq2ayoBcgAik3fmE2qfDKwIEty07QFFuJzBGyAPsi7NkrS7swYBNYUu4opnSXTQ
+kN9cdOPhimv55ZiLuwQTT8e7+RKZhy766KQzcUFXX9V09tUDGLQ1xQZQgIDXUSHw
+/wCFG6PnpgBm2ihrsE+gJyucNBrRBgNf5vhEBuRWC20GtK6sAeEBLDsEKCRGkv3P
+5xYdObrHfi9+0C07H33mQ3Qexeaim+/++++Lu+BeYAFUImkFiZmqjncNUOMFIAhe
+xVwlAJ157AmyYkKs0OUBYhQBeV4KSt3S1DwRZEAC4iJWAP72hgtKgIM7eUe6cIY4
+xkmue5Pj3vhGyDOfJVB06RMgahgQFL5E5jWTQYd50PSEypHuh0B8wIKkNrWqOU4Q
+09nUAjYVgQRQ4BcGiAoEKPaAieFobB1b4O9Qc7ZZrWxW0foi3+qkqwGkRQIGyAAF
+ybUtaFHAA6dww9+IQBEQfv/ueqHQmayaxbjHSS6FK0QWC70HgMvFUEcXoCGDZqKQ
+RjrykZBsJFf2chN6zE0JQMxk6HiUAK+kLgEXOOIa/nOCUpoSAgxoEAIisKeBiMpi
+IAigeja2QCcAwACy4pGrABAuW53JVbY0nny+hICbLEMBdgtWG4FFhQcIIQBvnNAS
+jlAF0Elic9sSmgbaZzhkvS9d4QOnsAJpOc4hUpGu4Ys618nOdsamkuZpQgbhR09q
+gWt+9LOAAkQpnAgkjEgJ2w1hxCQYMwFQlmeKFbEkdAEPKCiWD7ilzC7wATeBoGOu
+elsJIugYef0qQudBzwN0KMMpXJAs6BGCuE4xBQOgMVz/bXTjg6xQuWhxa0KWi942
+yTVPodHIRuNElx9F8C/YMFIhU0uqUpfK1KYyVZKgTJAmNclJTyYVAfxkgwlOUKQK
+bJVIjhoIBGK5ngCSlUJkfUIs1TOAAWwrlhRta1vXVBaQXcBLKlJAAyYYBRvxqIDR
+cxcDADtPqDFAZjMj1hO9czF0OeFi5hseExA7M80p9FldnFnGbKbHnpEol0e1qlNH
+S9rSfkUhCJLnVEtngKiJ9jU9i8dWTVnKg0EqSJA6GFkHUFH2+AYEH/ANxYAbwAHE
+clZmahN5YKRBkBGztQqQAIXWCCwupgsK6apiKIHmxjcB7QDbDdpmv1ujyGGrgIEU
+/6oB3Mne9rrXvTgxQLjqSU/5qUidXxlAVjVgAT5FgIblgcASTTmBg/J2AsGdAG1L
+aVzjPqCsZztN3RQ6oUI6JAAS2Cha1MbDeE0ss+YiW7rWq7Nwysql4fXiuVJss9NA
+jk0gRtvMECg0yBFNOBIQrWl3zOOm6mVjqx1djIio1Lx4VhAV4JMJJBCCEYxgdrQ1
+biw/kGAl0tY3wa3oB4yLpqNN15cNhWsbDKBhBDCgXya7Ky7RJYBUjRir5kJABdC1
+IBAbYM4hthz43AViHs1sYzMrAQN3+awSxFio7WCDjnvMaEZvoFc+DLLlhrzovRx5
+DUnekwkUQIJOQzkCYoplW/8TrGA8ncA3viklgttK1gsQa1Y0EnVDz4OtYcrtXSbT
+WAnWfK4DlICy5kLNueTMZgQA+869RsAA8Bxi1CBAj35eMYhFIOhzvarEhobcNY/w
+3m57+71yMRZ9qyUuqAGML1S7tBoGoMQ8naAmGOiAAq7cYOCimsBU3nKPFuWm8hCr
+iwcQ9XouxkUe0WpiXoKdvtq863QdgNkrTjGxz2WAAQCbd72OCcQLyaNnnyvacZ52
+tc0F3hK7eWbeZMMg3NCARruc0T9WraSh1snRWmBoopm3ng5VqiHRm6ykPjWCK2qx
+jtGtBBMQlb+htZ4tfwABE7KYgnT2pZpADGI0PPMvdZX/YpmJoAK1AvbEzNOjGFcc
+2A/oFZoWtGwGngbqkTt5oQcNLxYjK1uE+JsEXs5302JgA0CW9GNTueip7QXngghB
+uxfQJREhqksVUDXRQYBqVE8+luDCfBUNECYUKZvU73lVBW7nWMb8sh6VjBCPGh5i
+WcGZ17dUwLLlTnGL97q1IFiGsze+ULhDjvbUdvvEaJ9YbRHuCNM897eXv/wzz3Pc
+5YYue6nWxauxcueP/2rnEQyCEFC+8hM4zJQtumUI37LUA071Bwygb7OTjDwMaID8
+G2DJh00sRSs+cdpqn4CIAs1CwKYgKvJBLpUAvPd2WvQ72NJGwDdyWwRoQXM+cPIy
+/xu0CgbQdxjoY4Anc5l0HQqAOqVlRPwUAHeiacRUAvhWUQAEfuHHW/mWb0NHZccl
+MSWIb0MHS6gBArrxJXqlFuWhV4mUGvgXZ8MjKw5YcSWmXytWAQE4Q2j0RAYIPgj4
+cSUAMegBfEpIchCYS7CXReHyBAfwN6rwQRdEAQGTgWh4WqDEgT/kgSA4WnuxQNmz
+BiWoJxAgREwgYCfwguvBgjH4gn74Hk3wAOzmJ4chH95XMcUEYKiRSOggFw+iK7AH
+cSIAZydmiQBwARBAZ7ZHco31LBWThZhlAL43PB4XcoFWbMBWAV3oUJG2ORmwBAGw
+XsxXi90WbuUDP5OWV+9FNf/bNYdqUId5YgIU8A8DsgB/6IK+gSlY9oLOCH5iEn6x
+pGClZGqEUQG7pjPrYQ56NX9AARQ0tCuhdCwmoDNttmKYiACbuIT+l0DGJjRCKHy/
+9nHviIpC44AAIADzODxD+CzlFgXL4EHNkAGFl4Ywdw5sKGT/8oamZQG/SDACticn
+kBpnNgDISGXNqGATwCij9oIdCYO+gVsQgGoVEEC/ImP5aEaM4Y3dKH8a52rCYgKA
+JTEJED5fMmzraC4W0mcNA49ReHt3dXH7aISw93V0NpQewHr+6AQCJJDOwAAFaZA7
+9ne9kpDoQ3NItWN78ZCfkmk7pzB7iJFYppHF0VYIUFb/ciVl65GWCjOSp4QpEGBc
+cxMrD8AY6CQXd3l/20UrEBBeNxlnmGghnAh7A6Iz4KVsjuVssKePJidyR0lZX1eU
+8uMETvAAY9gKEmCLmulOuJiLzqM5PEJDyzc1cOYza2CRwwiXXSWWLIiNX0JWsBmb
+sElMbYUptOVueyhlvFMArTF/LdkAVoEpMEkrFvBstIIVwyaKr7ZiyNlrKyZ7G6cg
+qSSKKHlLSvks6KIrIPZFQiNDOpI30fUYUvlyVLkxkRY615FKDNljMOFZTtEAO4cw
+QhKXrFl5XIUVspmfsURMorZsbrlg1Sh0HyBJXfF33uiSG9CXwwIBNUmcDUor6ghs
+/53FAMvWhcHmGhsXmnJmd6Z4nZ0lAgbIYnpEVPaiDJMxnjD3aCJVOhL2gVFJWntR
+msDIAIIydJZ3bxMAAVuWlruVljyalmIJoKa0ZcWBQ5TBdefSdrw0HuoiZwMwONQ5
+Mcvman8mFLLHZhTgbFXYWR13nSX3LMOnlC4mNDjSKg9yQWj6QZy0mWwKifLkPqD5
+L5s5NRjwR6O0eH1io2OZaibQjB7pgs64o24yBBP4YAAEqIcRAiUwJHQaWgrRFVax
+AZcyqXKlGw3SKIuxF8tWHFW3GFaqcUVaf1+iYVf3MBSTbHJDTLrimrqyUQmHdRWB
+E5BBQ3uHoqVVnlIlOsGjnv8vyp52Khx4yid6GnRC94eBGqhtRaXZyR+jMAgJwBsF
+4BVcAUlbsShcca26sQE+uq2U5BoykZbvlE6URBHLgDyqukNWNDNVp0rEdBU1oapy
+k0iVQa62OlqoFW7naUjmtp4vxxd/FBAkGCg2WlEIRo2Wd6xO94zoMaKZmCXxEABy
+ZqnhGhl36RkZUR6PWExC8Qy/xC/v0ogdVh7xenXIA09WeLL2hxHLwKbLdxNz83z2
+dE/yyrL0QzU4JxrCmKcY2VvBpWoFa6zHqmAV8ASdlYme4hTGo45TwQGPeq1e8XfX
+GrVSO7VTa6Q5VBHOoC8TcxWZ2q3LcaDy16sGea/mqZD/98WvaGgBiAWMGhCRf2Kj
+cnkBGlmwCAuI1Jgq5YUu3tUfGEYgYRFJngS1VDu4hDsTXYsZHAEZNfGtXisZNlQZ
+jwa2DSC2aIirmISeNIe2GMgXa0swXukndNtWAbdEB4uw0GgCeDuir7I6k+ATZdK4
+kSG5wGkV8he7jOFOaWEO6mQVfFG467QVjkS4gCG1u3utNMt8bppT5Cazonm8+EU1
+cgiMqPknp+Z0xuWzMdiRgJqjRoK3J3M0bYZLfHsWU4EQSpWVU8MB6ru+7Nu+0dpI
+7vu+j0S4QQG8gPuoewG4dNpIBcABDuAA/gvA7cu0TRuVWlGvjeqm+fqPZ0u5GGgB
+/xSgbhowvW/7gtibG9vqo8WhGxrWBOqYG4sik8waDz5RvqXlv4/muF3xvwDcvw6Q
+wpOxAf8LwzXUwihcQ7uLASwMwA4guFwBwFvBF/+rF+GaAC38FQOsvnSKwNE6FiuK
+ua1FG0xcAHwRvURzAbMlpKWEKKlWrNwLwpiimouyK7mRGxvltnoyMOO7K0XaXl0h
+AfUFlVCLAXD8PjlGx9UiAKjVFYelOUvQCR3wqPHmClC5ATT1AArRx4WFWs5rizhR
+tp55PqbTvI3MTknFlUQTLncUIRDzmmcJV7IJr5+8lss2ACVgyqfsqhUQCvJRAgdh
+AaTlvwqgSRfwv7L8Qwrwv/+zjDkGYMMOsCLO1AmsIAEdwMLc0R3LUMwYoApWoMuE
+ajm9zAFTTFp/l1oLzJRRrLkI7JD/mkLezCzTVAzVowaf8s3BQL4mPFq3rElGvM6j
+k8u/nDnR7ML9ZwWYuQwy/MLIrAoM0MOHrMvyfMTT/FQ28bJQTEPabKt8EV7e3NAO
+bZoQEdGJpwC6QcTs9cbQ10h17D53vNHCosd6wcd/bM+sEMiDvApTkGP9Bzriksh5
+zMiVDF/JG8mTNkPKF9OWTDUJ4J4P3dOTQ85rANESPQkKkCnmq87xjDkCsAEGEDos
+vMvvDNC87MtOZFL8HG/lig7F/MJkuAr9jAFT8DlSfTn/8zzQ+1vQuaqvcprQ02wB
+oujTcJ1CQe3TJdQfo8AARg3LSA3V0AzAoaPDSX05Sw28Y605EkDVFNAKxcwB3kGu
+M9wKxfjCQsDShS0/Aj3Qlpuv15FIUmzWS6VOkiMMiTPUEm09w/Cw8pEAbNy17YTR
+1ALSzmPSHk0rIP1IdUzWexxvwizHrqAQHUBTBNkwl0MrCjHbRwPTOK1OM+2ZNc2L
+yd1tSVWcsjvdkmtG9Bd/1H2g2J3d1Y1U2GgC5avXTeXOfe0AoZPPfG3Z0ozESb05
+hy3N/psAq8AMW40OzfDYnkAFh70Bz2w5la0gl12vj6rAV7mQ6OvZNvd+QGLd3F3d
+/w3ujRIgf8zQABEO4c8QfxjAwYv6yrEc2OV93v8dzUosy5/zRL68AWNYrvXNDKrw
+v1XdTPudryEe4OOJv2d2uWp9XweO4J/NFwa1qEwhCEIkX8siCm1QOInGR+DSBEIO
+LkWuBqTYqmDVxu7k2sMC29Ui2y8NSYq8BAQZ0ifNCrzNzFOgEMD8zGbIAM5T3Fv+
+3C6bq8PS3Ir03LUY3RaAjV7CLkfjZWC0Mk9gNHG9PSRyNGpzT55SmachActyVyUA
+3gVx1E5F3pZt3pmD3pmTMkFRAM4czFPQz/DN1Y2t1Q5QAF3d4g5Q1Z8zOjO+3jXe
+GnNznpttVA7M40VkAUNCHv/8YSvQXB4rIy5yTddO8VhmdgHEUEVfcmZlAUGs9OiQ
+Pt4ePukg/uyV7uL27OkuvAGhnhOB3AGQTe3sQzqr3upojeNx2sC0rpU+risw0ipD
+4FI/8VLtni8dSy/5naUXlCOQcAAUEwDx1yuz+BOthQGm7HiS0lbuZeUfrRCxzeaf
+KS6dhAEMMARVcMe0we2vgAWJjDnww/BXjtws+8hwLoGxftN0znxFZuuuGq8+4RMQ
+kwwTI38ZHPNyNao0T384oe5yNrkt16pnbBC3ccLS3suUjjmWjp5DkM9VXdInbt8s
+zgpUAM8rrUnhnoFk+8Tl1KKdfe58lxfjcTa4syZc2iP/DN4AMh/zqmxGo+qqu4LK
+2Cgi2hEWpiXpAD70l1P0hrQ5SJ/YSv/p3NH0KF0Fmv7L1+zUQU/jMJfZmBPrWa/1
+PMZOWJFtRuddCWh03lj2ll+WydrorgQBi+r2BQHCAv9tCE/bCp/lHE8sd//wv00F
+Vw3mFl/vzdTuBQrx4yYCp0/6Fl2LIK9aLBN98kryJT+nS2XrXW905FG0+Qi2K7mS
+Yw+2Yw+VZyySRhIp4d1jci/00Q7VS3DYO+zi853MJ17qF8QXgK2+hb8BhJ/eAM7q
+PTbgN47j5mTujD+2eN5FHbcxOwIvGAayOwIEl4uAOBwSBUIBRXDQSAolBMQUMUEg
+/5XSFoHYVioWS4FcNp8LHIfi0HYbHA73fBNnHx75hyQe56g3MiQGJRg6HDjSHAIz
+GjMoGPr8EtXu5uA25tzsNA/gEtFCyzAwNhQYDIge3B4EDAwYFDZIRWttb3FzzxJ4
+ebu6hgCEk0oGigewIBA8ADQ0DkSgAUSoq62voasJNBAiEkrAtKQqIAYGKgZ+EXrZ
+29tnJa5FBEjlRRJIGebyMkh7Zzs4csTAH0AKBw8+6FdqAzt48uh1sEcq3jV6GNxl
+7HXqQqo50dq0MnAhlkaTJ1GmVKlxFIZfUoQoIYYsGYQSwgg8oHbAgwhhP6fZqxb0
+2QUpCIR0QWLiClMTCBggCP+jS5GlN3E6HaizRg/CSKAUbRjEgKwhRGEbIaTAB2yZ
+Sp0wZeWk6VMuUg1RqQpJZKSCBLMwUBU8mHCtCgiIVHCa7KaHJL8kIMYpjRpQYT5/
+YrZMjQBIPAebXJZQrpwJDBS+Bdb1li7WTlsV5FH79c+fRWXJSjhU20ECtRT2nD3D
++tIiuWvgCq91NwGqVKvw8L3gF3Bh69d19ULMTEDNZAemWRY/nvx4AkExVw7684A5
+cxAwXKDQZeVfDBWtXZR3AB8GBnoeOEgCUggkJSCBMiCowNj0aIMCf965DyIMJJKH
+ogkxMkkBBToSALp9XCFpw/pILNFElMg4TICfSiCNpgv/1gOKmfLK8+ma8KbprA1t
+MDugRWSQwSAEqcTIhbirEtAkj618Q6gR3TqI8pDbGCBEENwwSkiPuoZDrrVMOpmr
+uLZawqtDPaSjjhbs2GzTFgwGuGBGAKbwDoFpwAPqgBU3W0+oPwnojIA9qXEmzwMa
+KMe9BqIKYwxcjnSjiX3yUKO3gxAkpJA4xLJSoIOyBNAT5dzysjgwNRHzKjKZY+DM
+PNK0TzU3aa21gAS6mBOAFu3c6TJh9kTPms6uCdSZY5E9Fg8NHrgAwAeYecC99xi9
+wIsBVHroTyUJVOA3BBsx0JHfgHugOU3mgdAhCS2icCJ281M3gQ3PVDLEWPw6Ud99
+//lNoACX5hSBV9KUiUanbKJpIllmnXnW4a4CoCDiAF4xAIGKXxFABAOmVbSBbyAo
+8pZIlexKAUR6E0hT3DiVAMHfGspjTDRIjitMU1f9t5TmXo21OluBBlrFy9rzziZP
+JHj2uQAixpiCV57GWOqpNY1MU6QOqBNI+DAqIQIxHq2F5JAAXEsNNRJwhBDcquT0
+U7WWjK01MqtKDtU5VG3DgER2dvW5VkJUc9agCW8TV8kAeMCAgZMZYI8GOpLgFSHG
+Yju3KteOpYHNOe+cc3PgNAcpjr0zLYIv0ElJW2s0WauDuwwCF0ED4W6wjeYwdGf1
+aiJ6Fz/eG6qXlXtH7Nf44/9N/Dcdxy4YzegBBhnA8wak79w9OAvMXvvtTSPQhC0a
+cIqpCMiPAoKvRbZFkvXZ94OM9uGPX35J6C5g/vvdL4XDVPjqS9bCAQg0C2iBCJsz
+WjkawL3tkSJ9YDMDfOBTgAhggRzk2MIFI7CAK0BgARnMwgXPh76w2cJS8vtDl+ZH
+iRSWsA8nFAULJwFD91mKb6bokCv8978A7tBNvkAMAhrAOCx0b4DhSIdUwuEFJXLh
+gk104hOh+IUniqMmYMAW8rCYRX3Ri39IGAm+tBhGMZqEDBgAQwEqYAXxWWGCXgCH
+E8XhxAMmQ3ziq0lTFjPHEJKPjw7k4R9p1beYjOhngDQEJHaCAAA7
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=top100.gif
+Content-Type: image/gif; name=top100.gif
+Content-Location: http://counter.rambler.ru/top100.cnt?202366
+Content-Transfer-Encoding: Base64
+
+R0lGODdhUQA/APIAAAAAYPj8+MjMyDAwmGBkmMjM+GBkyAAAACwAAAAAUQA/AAAD
+/gi63P4wyklZuDjrzbv/YBgoYmmeaEZ2wuASaVYAQ5EJBGGXriCuG4IjdhECdheB
+YlCaAUpAzQOJMlKdT5HhCM1qsC2FoSgs+MgDgWCmCxi3uYCSRj76CAYYYaDwrfEw
+HFEYcwA4CmYOPnwQBUZGADpLIww1jAsYWH2CXjILWJQNaRIDbwxGpUsLW5WZC3wd
+g0mfC5A2tQuFhVZuCpCMBXyWvhu1HrIBoK+YAYzOurhcTs60ZqFUSZCxnYSYqJeX
+qNB9y4hLjARhYYYaOLacHKComtQ040+XvnM1Du+eDNguICvUi0QwGtGO0DIYLhkm
+TWMYnXFlDB6RGBPjZbxI/omjx48fkIEceVEkyZMnTKJcCUIly5fFKsicSbOmzZs4
+c+rcybOnz59AIQhDOBTn0KIA8uzJ5ysYJJ3HcgY5QmXNpyuFcHpgSjNIwFkbKWrt
+4CyHCwelcgDM+DXTB641kWS1lgRLGxnobmQoJQNvhqc3J2L5qiTQhjmGk/1NTCUO
+BsA25SLyQFdOYzpuMfAl9JfJ451InCApk/kCn9CR+j5mvPgv6G5cLgSbmLHG6NSc
+CV25kRFyTcHEyKr+nPju4TQdNOGUvGnqcIeYi3huJyQdp5061tAzw52RjALgIekA
+v4679gZq1lgNKlMF+/cz3cOfL8E8/fv48+vfz/8968z/IbgEIEwCDshSgQaihOBL
+RIXF0YIHfnKSS47kcMYf1tWlnmXgZbKhQLXQVWE6Z3BnQwF5bENZPnr0U5AdFkB2
+SwM2cDWjKCrGw1QeEKjVBxapTKEIXIbAleMGQJ5Xy1O2FHKWL77ZsYsjn4CzRlQd
+iIfBKyCqggiQDKyHUC5yfFLdDpe0tSU3sEFJD42vgJOmciFmpQYbobATEpsYsLIK
+nX1kFWaYQDJ1yANPxoblisasI6EcTNWYiyYvsgMZDJc46J4IlWmIJHm6baheaB8m
+A15VnR6ZYIIQrvpRq64+yGesEdJqYH/9JQAAOw==
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=home.gif
+Content-Type: image/gif; name=home.gif
+Content-Location: http://www.delphimaster.ru/i/home.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhHgASAJEAAP///2aZzGaZmTNmmSH5BAAAAAAALAAAAAAeABIAAAJohI+p
+e+EPo5xmRiREk9UGDQyDMYYU4JHiegwCh8LrzJpX/ICM8kKdQwrRhqFfwCgQCUsI
+lqgHxDmUzupIdIskQ9sZ9wqNSq5Uq80nnX4VritsvBw63xHmjkSHJOXDsFiyx/d0
+clfIUAAAOw==
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=srch.gif
+Content-Type: image/gif; name=srch.gif
+Content-Location: http://www.delphimaster.ru/i/srch.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhHgASAJEAADNmmWaZzP///wAAACwAAAAAHgASAAACSJSPqXvhD6OcZtoL
+K95SXwMAXOB1ggOKWBmdz6l+boe+QUzNLY2bX3bbsDKuQ2ilywGMPeIIlbIMkYKj
+71lrQrGjKbfFCIsPBQA7
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=mail.gif
+Content-Type: image/gif; name=mail.gif
+Content-Location: http://www.delphimaster.ru/i/mail.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhHgASAJEAAP///2aZzGaZmTNmmSH5BAAAAAAALAAAAAAeABIAAAJfhI+p
+e+EPo5xm2gsrDmhzgBnDOGiWGYnkimZgCqwy2X6RwDACHJVlPPv5eBDfSHUEDl09
+ZRJ5HBAfPoHgCbQuH60qzmnQxqYOH5QVGzOLuYV0/bgG5zt4fD6ru9p8RgEAOw==
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=rekl1.gif
+Content-Type: image/gif; name=rekl1.gif
+Content-Location: http://www.delphimaster.ru/i/bnr/rekl1.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlh1AE8APcAAAgYQggYSgghSgghUgghWgghYxAhShAhUhAhWhApUhApWhAp
+YxgpUhgpWhgpYxgpaxgxWhgxYxgxaxgxcyExWiExYyExayE5YyE5ayE5cyk5Yyk5
+ayk5cyk5eylCaylCcylCezFCazFCczFCezFChDFKczFKezFKhDlKezlKhDlShDlS
+jEJShEJSjEJajEJalEpajEpalEpanEpjlEpjnFJjlFJjnFJjpVJrnFJrpVprnFpr
+pVprrVpzpVpzrWNzpWNzrWNztWN7rWN7tWt7rWt7tWuEtWuEvXOEvXOMvXOMxnuM
+xnuUxnuUzoSUzv//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+/////////////////ywAAAAA1AE8AAAI/gCdCBxIsKDBgwgTKlzIsKHDhxAjSpxI
+saLFixgzatzIsaNHhEychBwpsiTJkyZTolypsiXLly5jwpwpsybNmzZz4typsyfP
+nz6DAh0qtCjRo0aDIlyyBInTp1CjSp1KtarVq1izat3KtavXr2DDih1LtqzZs2jT
+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
+Sy6rDAgAOw==
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=bg6.gif
+Content-Type: image/gif; name=bg6.gif
+Content-Location: http://www.delphimaster.ru/i/bg6.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhAQAQALP/AP////Ly8u7u7u7t7ejn5+fn6OHh4dva29rb29TU1NDQ0AAA
+AAAAAAAAAAAAAAAAACwAAAAAAQAQAEAECjAJkyRNh4RyagQAOxipJQNAyREAOw==
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=1x1.gif
+Content-Type: image/gif; name=1x1.gif
+Content-Location: http://www.delphimaster.ru/i/1x1.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhAQABAJH/AP///wAAAMDAwAAAACH5BAEAAAIALAAAAAABAAEAAAICVAEA
+Ow==
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=punktir.gif
+Content-Type: image/gif; name=punktir.gif
+Content-Location: http://www.delphimaster.ru/i/punktir.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhWAIBAIAAALO/3tza2iwAAAAAWAIBAAACKURieMnrClt8stI7s9V4+w5y
+4jeG5Gmm5Yqyagu/skvH9Wzn+H73ulgAADs=
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=left.gif
+Content-Type: image/gif; name=left.gif
+Content-Location: http://www.delphimaster.ru/i/left.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhCwAKAID/AMDAwAAwgCH5BAEAAAAALAAAAAALAAoAQAIVhI8ZYdsLIZLy
+RTcZwPtiX1mdliQFADs=
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=top.gif
+Content-Type: image/gif; name=top.gif
+Content-Location: http://www.delphimaster.ru/i/top.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhCwAJAID/AMDAwAAwgCH5BAEAAAAALAAAAAALAAkAQAIPhI+pF+2h3Jo0
+PciurKAAADs=
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=bg3.gif
+Content-Type: image/gif; name=bg3.gif
+Content-Location: http://www.delphimaster.ru/i/bg3.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhAQBAAMQAAP//////AP8A//8AAAD//wD/AAAA/wAAAISWzggMGGN5tXuO
+xkphnFJppVpxrcHM6WuGvSEsOfz8/P///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAACH5BAEAABMALAAAAAABAEAAAAUV4CSOZGmeaCo+yLJAiuI0
+DWMzUXKEADs=
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=counter.gif
+Content-Type: text/html; name=counter.gif
+Content-Location: http://d1.cd.b0.a0.top.list.ru/counter?id=53505;t=243;l=1
+Content-Transfer-Encoding: Base64
+
+R0lGODdhWAAfAKUAAGaZzJip1Q4aMDUpTzp0zv///+aaGJyKZ2VobTNHmWJuhSNF
+eo+ZqnOCoTRlsqO96Exql5l3PNzj8v///+ft9sfP6hQnRSRIgStXmurr7c7S1yhQ
+jlB5t2JNKiYqPFM0agAAAAAAaQAAwQAAvwAY6ABqawDBwQC/vwCoiABoagDBwQC/
+vwCHxAAGPwC0jgAAAAAUnAAAaQAAwQAAvwAAFAAANgAACAAACAAAvAAAagAAwQAA
+vxAA6GYAa8EAwb8AvywAAAAAWAAfAAAG/sCEcEgsGo/IpHLJXBKe0Kh0Sq1ar9hs
+Vajter9gLDdMBgMKAELhUZaO2/CsQ7AWXOLvgn6vCQyeARkZFVF7BVQFARIUbAEU
+EmlQjhQVZ2wAFE91C1QHBgYEBg1SDaBPbwGpiakBAmp6Enp/aqwFs1B7FLl6Cg6v
+BbF6FAsBBRwWm1IcnwYRFgYHFhhQnhiubwQCdK0D3bEN2gIZtguJ2om3ahXaGgXg
+yBoCuq3a4/EMBRB0DwKcUZ/6tEHrR83AgmsJppjzZ46gmgXlWtFyhYufhQcFLAjY
+AGyfxmlq7uXb5/BJqQPafA30R8DTQQLYNLViqM0CFAkQzU0sxO8C/sYLroB5QFOy
+AAUB+PQlK6jAzpOVBV/GnMgQXKGce+jx7IfxpVBzvjRJsJCUJMuWBhAICPvJ6RNP
+QGEmlLJQUwEPUDD2W0XPZkWuBbxKoHMXZIWOZfWURKs2rKcOfpcZRKhwJq4CDBQV
+0BYxHKdimvgt6Br0KAI9DB7oQjyyGGYApRivhfIpQgRPoATYnFoXyjjFBBf6K/Zn
+E2k1gy1gylogA9KRDlwziGAAQwcDQMO+ZTaZ4lQC3c4++dDtVvgo3aC4jftE9xMH
+GrVdsGAz+5MNnOPip3KwJpTvcQQoIBUADmiggEIoAMCCDDbo4IMQRijhgoZUaOGF
+GF6IQIITwHbo4YdnZCjiiBZumICCIKaoYogktiiiiSiu+OAEEyxII40A3FijjQ66
+iCEIIOwBpJBB6gGjjDPyyGCNOy7ZJIU+VlhkkFMWUGUBRyKZ5JI24pjjlw1GaeGQ
+QupBZZFZaulgk09+qWOYYpZppSFVosmhmkruyKaSYDIYp5xUmkmnkXfimeOeTjbY
+5p9ENmpmkVgWaqiajIqZ5qRaVhrlpZjKqKmPMCog6qiklmrqqaimquqqrJpqYhOw
+xirrrEwEAQA7
+
+------------AhcVV1EHuW9gBI84EDsGAM
+Content-Disposition: inline; filename=rekl.gif
+Content-Type: image/gif; name=rekl.gif
+Content-Location: http://www.delphimaster.ru/i/rekl.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlh1AE8APcAAAAxjABCcwg5lAhKcxBClCFKnClSpTFapUJjrUprrVJztWN7
+vWuEvXOMxoScxoylzpSlzpStzqWt1qW11q293rW957XG3r3O587W59be797n9+fn
+/+/v9/f3////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+/////////////////yH5BAEAAB4ALAAAAADUATwAAAj+AAcIHEiwoMGDCBMqXMiQ
+YYCGECM2DECRosSLGDNW3Mixo8ePIEOKHEmypMmTKFOqXMlS5QAPMGPKnEmzps2b
+OHPq3Mmzp8+fQIMKHUq0qNGjSJMqXcrUg8CmUKNKnUq1qtWrWLNqVfp0q9evYMOK
+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
+Jwpr44X5ee1u52fQ3jaKBaMdEwxJO9zopoq10y2iAOGLPtdjt7wxA+55C2W0vTm1
+vfetl3rz+98AF8u6A07wghdl4AZPuMJ3gvCFO/zhn/E3xCdO8Zw0vOIY//fFM85x
+eW+84yD3tkD+NEDykpv85ChPucpXzvKWu/zlMI+5zGdO85rb/OY4z7nOd87znvv8
+50DXgEAoQPSiG/3oSE+60pfO9KY7/elQj7rUp071qlv96ljPuta3zvWue/3rYKfA
+0MNO9rKb/exoT7va1872tru962OvAAXkTve5273ueL+73vPO9737ve+A/7vgA0/4
+wRu+8Ig/vOITz/jFO77xkH+85CNP+clbvvKYv7zmK1CBsb/986APvehHT/rSm57t
+nR+ABFbP+ta7/vWwj73sZ0/72tv+9rjPve53z/ve+/73wA++8IdP/OIb//gTEMgE
+Vr98CTT/+cyPvvOlD/3pW7/62Ke+9q/+v/3sc//73g9/98cPfvKLv/zoP7/6zc/+
+9Ld//e6PP/zn//76y9/+9L+//vNffQkIhPkRsHoBOAEBKAEDWIAHKIDOh4ALqIAE
+6IAM+IAG2IATKIEJWIERmIEQuIEYyIEX+IEUCIIWGIIkOIImqIEdmIIiiIIr6IEl
+yIIv6IInKIMwOIMqGIM3aIMtmIM12IM0+IM8CIQ7OIQLKBAQ4AAQcIRJ+ABM2IQP
+AAFO+IRRCIVOSIVNaIVMiIVSWIVT2IVc+IVX6IVhCIZZKIZlSIZbOIZqeIZrmIZs
++IZuGIdaOIdmKId1SIdoiIdtqIdwyId2mId3GIiAOIh7KIiFSIh/fWiIiQiIArGG
+SfiIkBiJkjiJlFiJlniJmJiJmriJnNiJnviJoBiKojiKpFiKpniKqJiKpNiIqtiK
+rviKsBiLsjiLtFiLtniLtfgQuLiLvNiLvviLwBiMwjiMEPAQBtESyJiMFTEAxqgR
+yviM0BiN0jiN1FiN1niN2HiNAxAQAAA7
+
+------------AhcVV1EHuW9gBI84EDsGAM--

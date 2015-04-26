@@ -1,0 +1,3115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<meta name="generator" content="vBulletin 3.6.2" />
+
+<meta name="keywords" content="динамическое создание компонентов, форум, программист, delphi, делфи, программирование, ассемблер, assembler, winapi" />
+<meta name="description" content="динамическое создание компонентов Компоненты Delphi" />
+
+
+<!-- CSS Stylesheet -->
+<style type="text/css" id="vbulletin_css">
+<!--
+/* vBulletin 3 CSS For Style 'club' (styleid: 2) */
+body
+{
+	background: #FFFFFF;
+	color: #000000;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	margin: 5px 10px 10px 10px;
+	padding: 0px;
+}
+a:link, body_alink
+{
+	color: #1C3289;
+}
+a:visited, body_avisited
+{
+	color: #1C3289;
+}
+a:hover, a:active, body_ahover
+{
+	color: #000000;
+}
+.page
+{
+	background: #FFFFFF;
+	color: #000000;
+}
+td, th, p, li
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tborder
+{
+	background: #5C5E5C;
+	color: #000000;
+	border: 1px solid #5C5E5C;
+}
+.tcat
+{
+	background: #5C5E5C;
+	color: #E4DEE4;
+	font: bold 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tcat a:link, .tcat_alink
+{
+	color: #E4DEE4;
+	text-decoration: none;
+}
+.tcat a:visited, .tcat_avisited
+{
+	color: #E4DEE4;
+	text-decoration: none;
+}
+.tcat a:hover, .tcat a:active, .tcat_ahover
+{
+	color: #E4DEE4;
+	text-decoration: underline;
+}
+.thead
+{
+	background: #D4D2CC;
+	color: #000000;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.thead a:link, .thead_alink
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.thead a:visited, .thead_avisited
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.thead a:hover, .thead a:active, .thead_ahover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+.tfoot
+{
+	background: #5C5E5C;
+	color: #E4DEE4;
+}
+.tfoot a:link, .tfoot_alink
+{
+	color: #E4DEE4;
+}
+.tfoot a:visited, .tfoot_avisited
+{
+	color: #E4DEE4;
+}
+.tfoot a:hover, .tfoot a:active, .tfoot_ahover
+{
+	color: #E4DEE4;
+}
+.alt1, .alt1Active
+{
+	background: #FFFFFF;
+	color: #000000;
+}
+.alt1 a:link, .alt1_alink, .alt1Active a:link, .alt1Active_alink
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.alt1 a:visited, .alt1_avisited, .alt1Active a:visited, .alt1Active_avisited
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.alt1 a:hover, .alt1 a:active, .alt1_ahover, .alt1Active a:hover, .alt1Active a:active, .alt1Active_ahover
+{
+	color: #4B4A4A;
+	text-decoration: underline;
+}
+.alt2, .alt2Active
+{
+	background: #D4D0C8;
+	color: #000000;
+}
+.alt2 a:link, .alt2_alink, .alt2Active a:link, .alt2Active_alink
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.alt2 a:visited, .alt2_avisited, .alt2Active a:visited, .alt2Active_avisited
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.alt2 a:hover, .alt2 a:active, .alt2_ahover, .alt2Active a:hover, .alt2Active a:active, .alt2Active_ahover
+{
+	color: #4B4A4A;
+	text-decoration: underline;
+}
+td.inlinemod
+{
+	background: #D4D2CC;
+	color: #000000;
+}
+.wysiwyg
+{
+	background: #D3D3D2;
+	color: #000000;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+textarea, .bginput
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.button
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+select
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+option, optgroup
+{
+	font-size: 11px;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.smallfont
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.time
+{
+	color: #000000;
+}
+.navbar
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.highlight
+{
+	color: #FF0000;
+	font-weight: bold;
+}
+.fjsel
+{
+	background: #9E9E9C;
+	color: #000000;
+}
+.fjdpth0
+{
+	background: #F7F7F7;
+	color: #000000;
+}
+.panel
+{
+	background: #D4D2CC;
+	color: #000000;
+	padding: 10px;
+	border: 2px outset;
+}
+.panelsurround
+{
+	background: #9E9E9C;
+	color: #000000;
+}
+legend
+{
+	color: #000000;
+	font: 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.vbmenu_control
+{
+	background: #5C5E5C;
+	color: #FFFFFF;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding: 3px 6px 3px 6px;
+	white-space: nowrap;
+}
+.vbmenu_control a:link, .vbmenu_control_alink
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:visited, .vbmenu_control_avisited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:hover, .vbmenu_control a:active, .vbmenu_control_ahover
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.vbmenu_popup
+{
+	background: #5C5E5C;
+	color: #FFFFFF;
+	border: 1px solid #D4D2CC;
+}
+.vbmenu_option
+{
+	background: #D4D2CC;
+	color: #000000;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_option a:link, .vbmenu_option_alink
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.vbmenu_option a:visited, .vbmenu_option_avisited
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover
+{
+	color: #000000;
+	text-decoration: none;
+}
+.vbmenu_hilite
+{
+	background: #FFFFCC;
+	color: #000000;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_hilite a:link, .vbmenu_hilite_alink
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.vbmenu_hilite a:visited, .vbmenu_hilite_avisited
+{
+	color: #1C3289;
+	text-decoration: none;
+}
+.vbmenu_hilite a:hover, .vbmenu_hilite a:active, .vbmenu_hilite_ahover
+{
+	color: #000000;
+	text-decoration: none;
+}
+/* ***** styling for 'big' usernames on postbit etc. ***** */
+.bigusername { font-size: 14pt; }
+
+/* ***** small padding on 'thead' elements ***** */
+td.thead, div.thead { padding: 4px; }
+
+/* ***** basic styles for multi-page nav elements */
+.pagenav a { text-decoration: none; }
+.pagenav td { padding: 2px 4px 2px 4px; }
+
+/* ***** define margin and font-size for elements inside panels ***** */
+.fieldset { margin-bottom: 6px; }
+.fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 11px; }
+
+/* ***** don't change the following ***** */
+form { display: inline; }
+label { cursor: default; }
+.normal { font-weight: normal; }
+.inlineimg { vertical-align: middle; }
+-->
+</style>
+
+<!-- / CSS Stylesheet -->
+
+<script type="text/javascript">
+<!--
+var SESSIONURL = "";
+var IMGDIR_MISC = "images/1070/misc";
+var vb_disable_ajax = parseInt("0", 10);
+// -->
+</script>
+
+<script type="text/javascript" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/vbulleti.js"></script>
+<script type="text/javascript" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/vbulletj.js"></script>
+
+<link rel="alternate" type="application/rss+xml" title="Форум программистов RSS Feed" href="external.php?type=RSS2" />
+
+<link rel="alternate" type="application/rss+xml" title="Форум программистов - Компоненты Delphi - RSS Feed" href="external.php?type=RSS2&amp;forumids=39" />
+
+
+	<title>динамическое создание компонентов - Компоненты Delphi - Форум программистов</title>
+	<script type="text/javascript" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/vbulletk.js"></script>
+
+
+
+
+
+</head>
+<body onload="">
+<!-- 
+<link type="text/css" rel="stylesheet" href="clientscript/vbulletin_css SyntaxHighlighter.css"></link>
+-->
+
+<script type="text/javascript" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/highligh.js"></script>
+<script type="text/javascript">hljs.initHighlightingOnLoad('delphi', 'cpp', 'css', 'html', 'javascript', 'java', 'php');</script>
+
+<link rel="stylesheet" href="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/programm.css" />
+
+
+<TABLE width="100%" height="30" 
+                  border=0 align=center cellPadding=0 cellSpacing=0>
+  <TBODY>
+    <TR>
+      <TD colspan="3"><a href="http://programmersforum.ru/"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/vbulleti.gif" border="0" title=""></a></TD>
+      <TD width="52%">
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-3780994971058297";
+/* 468x60, создано 16.03.09 */
+google_ad_slot = "6086737343";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/show_ads.htm">
+</script>
+
+
+</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+
+<br>
+ 
+<TABLE cellSpacing=0 cellPadding=0 width="100%"border=0 >
+  <TBODY >
+  <TR bgcolor="#D4D0C8">
+    <TD bgcolor="#D4D0C8" width="50%"><style>
+A { text-decoration: none; }
+A:hover { text-decoration: underline;  }
+    </style><B>
+<a href="http://www.programmersforum.ru/rules.php">Правила форума</a>
+&nbsp;|&nbsp;<A href="http://www.programmersclub.ru/lab">Исходники
+      Delphi</A>&nbsp;|&nbsp;<A href="http://www.delphibasics.ru/">Основы
+      Delphi</A>&nbsp;| &nbsp;<A
+      href="http://www.pblog.ru/">Блог программистов</A>
+&nbsp;| &nbsp;<A href="http://programmersforum.ru/clubrecl.php">Реклама на портале</A>
+&nbsp;&nbsp;
+
+</b>
+
+<table><tr><td>
+</TD></TR></TABLE>
+</TD></TR></TBODY></TABLE>
+
+
+
+
+
+<script type="text/javascript">
+<!--
+function log_out()
+{
+	ht = document.getElementsByTagName("html");
+	ht[0].style.filter = "progid:DXImageTransform.Microsoft.BasicImage(grayscale=1)";
+	if (confirm('Вы действительно хотите выйти?'))
+	{
+		return true;
+	}
+	else
+	{
+		ht[0].style.filter = "";
+		return false;
+	}
+}
+//-->
+</script>
+
+<br />
+
+<!-- breadcrumb, login, pm info -->
+<table class="tborder" cellpadding="8" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+	<td class="alt1" width="100%">
+		
+			<table cellpadding="0" cellspacing="0" border="0">
+			<tr valign="bottom">
+				<td><a href="" onclick="history.back(1); return false;"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/navbits_.gif" alt="Вернуться" border="0" /></a></td>
+				<td>&nbsp;</td>
+				<td width="100%"><span class="navbar"><a href="http://www.programmersforum.ru/index.php" accesskey="1">Форум программистов</a></span> 
+	<span class="navbar">&gt; <a href="http://www.programmersforum.ru/forumdisplay.php?f=1">Delphi программирование</a></span>
+
+
+	<span class="navbar">&gt; <a href="http://www.programmersforum.ru/forumdisplay.php?f=39">Компоненты Delphi</a></span>
+
+</td>
+			</tr>
+			<tr>
+				<td class="navbar" style="font-size:10pt; padding-top:1px" colspan="3"><a href="http://www.programmersforum.ru/showthread.php?t=12089&amp;highlight=%E4%E8%ED%E0%EC%E8%F7%E5%F1%EA%EE%E5+%F1%EE%E7%E4%E0%ED%E8%E5+%EA%EE%EC%EF%EE%ED%E5%ED%F2%EE%E2"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/navbits0.gif" alt="Перезагрузить страницу" border="0" /></a> <strong>
+	динамическое создание компонентов
+
+</strong></td>
+			</tr>
+			</table>			
+		
+	</td>	
+	
+	
+	
+		<td class="alt2" valign="top" nowrap="nowrap">
+		<div class="smallfont">
+			<strong>Добро пожаловать, Zerone</strong><br />
+
+
+			
+
+
+			Ваш последний визит: 20.04.2009 в <span class="time">11:35</span>
+			<br /><a href="http://www.programmersforum.ru/private.php">Личные сообщения</a>: Новых 0, всего 3.
+			
+
+
+
+			
+
+
+
+		</div>
+		</td>
+		
+		
+	
+</tr>
+</table>
+<!-- / breadcrumb, login, pm info -->
+
+<!-- nav buttons bar -->
+<div align="center">
+	<table class="tborder" cellpadding="8" cellspacing="0" border="0" width="100%" align="center" style="border-top-width:0px">
+	<tr align="center">
+		
+			<td class="vbmenu_control"><a href="http://www.programmersforum.ru/usercp.php">Мой кабинет</a></td>
+		
+		
+		<td class="vbmenu_control"><a href="http://www.programmersforum.ru/faq.php" accesskey="5">Справка</a></td>
+		<td class="vbmenu_control"><a href="http://www.programmersforum.ru/memberlist.php">Пользователи</a></td>
+		<td class="vbmenu_control"><a href="http://www.programmersforum.ru/calendar.php">Календарь</a></td>
+				
+			
+				
+				<td class="vbmenu_control"><a href="http://www.programmersforum.ru/search.php?do=getnew" accesskey="2">Новые сообщения</a></td>
+				
+				<td id="navbar_search" class="vbmenu_control"><a href="http://www.programmersforum.ru/search.php" accesskey="4" rel="nofollow">Поиск</a> <script type="text/javascript"> vbmenu_register("navbar_search"); </script></td>
+			
+			
+				<td id="usercptools" class="vbmenu_control"><a href="http://www.programmersforum.ru/showthread.php?t=12089&amp;highlight=%E4%E8%ED%E0%EC%E8%F7%E5%F1%EA%EE%E5+%F1%EE%E7%E4%E0%ED%E8%E5+%EA%EE%EC%EF%EE%ED%E5%ED%F2%EE%E2&amp;nojs=1#usercptools">Навигация</a> <script type="text/javascript"> vbmenu_register("usercptools"); </script></td>		
+			
+		
+		
+			<td class="vbmenu_control"><a href="http://www.programmersforum.ru/login.php?do=logout&amp;logouthash=eb4bcc6f21b6571fb78ba4d690d79b09" onclick="return log_out()">Выход</a></td>
+		
+	</tr>
+	</table>
+</div>
+<!-- / nav buttons bar -->
+
+<br />
+
+
+
+<!-- NAVBAR POPUP MENUS -->
+	
+	
+	<!-- header quick search form -->
+	<div class="vbmenu_popup" id="navbar_search_menu" style="display:none">
+		<form action="http://www.programmersforum.ru/search.php?do=process" method="post">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tr>
+			<td class="thead">Поиск по форуму</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+				<input type="hidden" name="do" value="process" />
+				<input type="hidden" name="quicksearch" value="1" />
+				<input type="hidden" name="childforums" value="1" />
+				<input type="hidden" name="exactname" value="1" />
+				<input type="hidden" name="s" value="" />
+				<div><input type="text" class="bginput" name="query" size="25" tabindex="1001" /><input type="submit" class="button" value="Вперед" tabindex="1004" /></div>
+			</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+				<label for="rb_nb_sp0"><input type="radio" name="showposts" value="0" id="rb_nb_sp0" tabindex="1002" checked="checked" />Отображать темы</label>
+				&nbsp;
+				<label for="rb_nb_sp1"><input type="radio" name="showposts" value="1" id="rb_nb_sp1" tabindex="1003" />Отображать сообщения</label>
+			</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option"><a href="http://www.programmersforum.ru/search.php" accesskey="4" rel="nofollow">Расширенный поиск</a></td>
+		</tr>
+		</table>
+		</form>
+	</div>
+	<!-- / header quick search form -->
+	
+
+	
+	<!-- user cp tools menu -->
+	<div class="vbmenu_popup" id="usercptools_menu" style="display:none">
+		<table cellpadding="4" cellspacing="1" border="0">
+		
+		<tr><td class="thead">Навигация</td></tr>		
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/search.php?do=getdaily">Сообщения за день</a></td></tr>
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/forumdisplay.php?do=markread">Все разделы прочитаны</a></td></tr>
+		<tr><td class="vbmenu_option"><a href="" onclick="window.open('misc.php?do=buddylist&amp;focus=1','buddylist','statusbar=no,menubar=no,toolbar=no,scrollbars=yes,resizable=yes,width=250,height=300'); return false;">Список друзей</a></td></tr>
+				
+		<tr><td class="thead"><a href="http://www.programmersforum.ru/usercp.php">Мой кабинет</a></td></tr>
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/profile.php?do=editsignature">Редактировать подпись</a></td></tr>
+		<!--<tr><td class="vbmenu_option"><a href="profile.php?do=editavatar">Изменить аватар</a></td></tr>-->
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/profile.php?do=editprofile">Редактировать профиль</a></td></tr>
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/profile.php?do=editoptions">Опции</a></td></tr>
+		
+		<tr><td class="thead">Разное</td></tr>
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/private.php" rel="nofollow">Личные сообщения</a></td></tr>
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/subscription.php" rel="nofollow">Темы с подпиской</a></td></tr>
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/member.php?u=32814">Профиль</a></td></tr>
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/online.php">Кто на форуме</a></td></tr>
+		
+		</table>
+	</div>
+	<!-- / user cp tools menu -->
+	
+<!-- / NAVBAR POPUP MENUS -->
+
+<!-- PAGENAV POPUP -->
+
+	<div class="vbmenu_popup" id="pagenav_menu" style="display:none">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tr>
+			<td class="thead" nowrap="nowrap">К странице...</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+			<form action="http://www.programmersforum.ru/index.php" method="get" onsubmit="return this.gotopage()" id="pagenav_form">
+				<input type="text" class="bginput" id="pagenav_itxt" style="font-size:11px" size="4" />
+				<input type="button" class="button" id="pagenav_ibtn" value="Вперед" />
+			</form>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+<!-- / PAGENAV POPUP -->
+
+
+
+
+
+
+<a name="poststop" id="poststop"></a>
+
+<!-- controls above postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:3px">
+<tr valign="bottom">
+	
+		<td class="smallfont"><a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;noquote=1&amp;p=63015" rel="nofollow"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/reply000.gif" alt="Ответ" border="0" /></a></td>
+	
+	
+</tr>
+</table>
+<!-- / controls above postbits -->
+
+
+
+
+
+
+
+
+
+<!-- toolbar -->
+<table class="tborder" cellpadding="8" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
+<tr>
+	<td class="tcat" width="100%">
+		<div class="smallfont">
+		
+		&nbsp;
+		</div>
+	</td>
+	<td class="vbmenu_control" id="threadtools" nowrap="nowrap">
+		<a href="http://www.programmersforum.ru/showthread.php?t=12089&amp;highlight=%E4%E8%ED%E0%EC%E8%F7%E5%F1%EA%EE%E5+%F1%EE%E7%E4%E0%ED%E8%E5+%EA%EE%EC%EF%EE%ED%E5%ED%F2%EE%E2&amp;nojs=1#goto_threadtools">Опции темы</a>
+		<script type="text/javascript"> vbmenu_register("threadtools"); </script>
+	</td>
+	
+		<td class="vbmenu_control" id="threadsearch" nowrap="nowrap">
+			<a href="http://www.programmersforum.ru/showthread.php?t=12089&amp;highlight=%E4%E8%ED%E0%EC%E8%F7%E5%F1%EA%EE%E5+%F1%EE%E7%E4%E0%ED%E8%E5+%EA%EE%EC%EF%EE%ED%E5%ED%F2%EE%E2&amp;nojs=1#goto_threadsearch">Поиск в этой теме</a>
+			<script type="text/javascript"> vbmenu_register("threadsearch"); </script>
+		</td>
+	
+	
+		<td class="vbmenu_control" id="threadrating" nowrap="nowrap">
+			<a href="http://www.programmersforum.ru/showthread.php?t=12089&amp;highlight=%E4%E8%ED%E0%EC%E8%F7%E5%F1%EA%EE%E5+%F1%EE%E7%E4%E0%ED%E8%E5+%EA%EE%EC%EF%EE%ED%E5%ED%F2%EE%E2&amp;nojs=1#goto_threadrating"><span id="threadrating_current">Оценить тему</span></a>
+			<script type="text/javascript"> vbmenu_register("threadrating"); </script>
+		</td>
+	
+	
+	
+	
+	
+</tr>
+
+</table>
+<!-- / toolbar -->
+
+
+<p align=center>
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#D4D0C8" >
+<tr >
+<td width="15%" >&nbsp;</td>
+<td  width="70%" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+<td width="15%" >&nbsp;</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end content table -->
+
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- / end content table -->
+
+
+
+
+<script type="text/javascript" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/vbulletl.js"></script>
+
+
+<div id="posts"><!-- post #63015 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%.; text-align:left">
+		<div style="padding:0px 0px 0px 0px">
+
+	<div id="edit63015" style="padding:0px 0px 8px 0px">
+	<!-- this is not the last post shown on the page -->	
+
+
+<table id="post63015" class="tborder" cellpadding="8" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-right: 0px" >		
+			<!-- status icon and date -->
+			<a name="post63015"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/post_old.gif" alt="Старый" border="0" /></a>
+			03.01.2008, 22:06
+			
+			<!-- / status icon and date -->				
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="http://www.programmersforum.ru/showpost.php?p=63015&amp;postcount=1" target="new" rel="nofollow" id="postcount63015" name="1"><strong>1</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #5C5E5C; border-top: 0px; border-bottom: 0px">
+			
+			<div id="postmenu_63015">
+				
+				<a class="bigusername" href="http://www.programmersforum.ru/member.php?u=8580">DOLBY</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_63015", true); </script>
+				
+			</div>
+			
+			
+			<div class="smallfont">Форумчанин</div>
+		
+			
+				<div class="smallfont">
+					&nbsp;<br /><a href="http://www.programmersforum.ru/member.php?u=8580"><img src="image.php?u=8580&amp;dateline=1199387073" width="80" height="80" alt="Аватар для DOLBY" border="0" /></a>
+				</div>
+			
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Регистрация: 12.12.2007</div>
+				<div>Адрес: Воронеж</div>
+				
+				<div>
+					Сообщения: 118
+				</div>
+				
+				Репутация:<b><font color=green>50</b></font>
+				
+				<div><a href="" onclick="imwindow('icq', '8580', 500, 450); return false;"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/im_icq00.gif" alt="Отправить сообщение для  DOLBY с помощью ICQ" border="0" /></a>    </div>
+			</div>		
+	</td>
+	
+	<td class="alt1" id="td_post_63015" style="border-right: 1px solid #5C5E5C">
+	
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/icon1000.gif" alt="По умолчанию" border="0" />
+				<strong>динамическое создание компонентов</strong>
+			</div>
+			<hr size="1" style="color:#5C5E5C" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_63015">Начал я с TButton'ов....<br />
+<br />
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Код:</div>
+<pre name="code">
+<code>
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+const n=10;
+
+var
+  Form1: TForm1;
+  i:integer;
+  btn:array[1..n] of TButton;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+ i:=1;
+ btn[i]:=TButton.Create(form1);
+ btn[i].Parent:=form1;
+ btn[i].Caption:=inttostr(i);
+ btn[i].Left:=(i-1)*5;
+ btn[i].Top:=(i-1)*5;
+end;
+
+end.
+</code>
+</pre>
+</div>и вот сразу вопрос: как описать мне процедуру, например OnClick, для кнопок?</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #5C5E5C; border-top: 0px">
+		<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/user_off.gif" alt="DOLBY вне форума" border="0" />
+
+
+		
+			<span id="reputationmenu_63015"><a href="http://www.programmersforum.ru/reputation.php?p=63015" rel="nofollow" id="reputation_63015"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/reputati.gif" alt="Добавить отзыв для DOLBY" border="0" /></a></span>
+			<script type="text/javascript"> vbrep_register("63015")</script>
+						
+		
+		<a href="http://www.programmersforum.ru/report.php?p=63015" rel="nofollow"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/report00.gif" alt="Пожаловаться на это сообщение" border="0" /></a>
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #5C5E5C; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63015" rel="nofollow"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quote000.gif" alt="Ответить с цитированием" border="0" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63015" rel="nofollow" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/multiquo.gif" alt="Мульти-цитирование этого сообщения" border="0" id="mq_63015" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63015" rel="nofollow" id="qr_63015" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quickrep.gif" alt="Быстрый ответ на это сообщение" border="0" /></a>
+		
+		
+		
+		
+			
+			
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+<!-- post 63015 popup menu -->
+<div class="vbmenu_popup" id="postmenu_63015_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">DOLBY</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/member.php?u=8580">Посмотреть профиль</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/private.php?do=newpm&amp;u=8580" rel="nofollow">Отправить личное сообщение для DOLBY</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/search.php?do=finduser&amp;u=8580" rel="nofollow">Найти еще сообщения от DOLBY</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/profile.php?do=addlist&amp;userlist=buddy&amp;u=8580">Добавить DOLBY в список друзей</a></td></tr>
+	
+	</table>
+</div>
+<!-- / post 63015 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #63015 --><!-- post #63016 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%.; text-align:left">
+		<div style="padding:0px 0px 0px 0px">
+
+	<div id="edit63016" style="padding:0px 0px 8px 0px">
+	<!-- this is not the last post shown on the page -->	
+
+
+<table id="post63016" class="tborder" cellpadding="8" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-right: 0px" >		
+			<!-- status icon and date -->
+			<a name="post63016"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/post_old.gif" alt="Старый" border="0" /></a>
+			03.01.2008, 22:15
+			
+			<!-- / status icon and date -->				
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="http://www.programmersforum.ru/showpost.php?p=63016&amp;postcount=2" target="new" rel="nofollow" id="postcount63016" name="2"><strong>2</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #5C5E5C; border-top: 0px; border-bottom: 0px">
+			
+			<div id="postmenu_63016">
+				
+				<a class="bigusername" href="http://www.programmersforum.ru/member.php?u=337">mihali4</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_63016", true); </script>
+				
+			</div>
+			
+			<div class="smallfont">Старый брюзга</div>
+			<div class="smallfont">Заслуженный модератор</div>
+		
+			
+				<div class="smallfont">
+					&nbsp;<br /><a href="http://www.programmersforum.ru/member.php?u=337"><img src="image.php?u=337&amp;dateline=1191357857" width="80" height="80" alt="Аватар для mihali4" border="0" /></a>
+				</div>
+			
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Регистрация: 22.11.2006</div>
+				<div>Адрес: Москва, Коньково</div>
+				
+				<div>
+					Сообщения: 6,325
+				</div>
+				
+				Репутация:<b><font color=green>1780</b></font>
+				
+				<div>    </div>
+			</div>		
+	</td>
+	
+	<td class="alt1" id="td_post_63016" style="border-right: 1px solid #5C5E5C">
+	
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/icon1000.gif" alt="По умолчанию" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#5C5E5C" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_63016">Самый простой и незатейливый вариант (чтобы не переутруждаться):<br />
+1. Кидаем на форму TButton;<br />
+2. Двойным кликом по нему создаем контейнер для обработчика;<br />
+3. В контейнере прописываем нужный код, обращая внимание на (Sender as TButton)...<br />
+4. Прописываем для создаваемых динамически кнопок:<br />
+btn[i].OnClick:=здесь указываем наш обработчик для TButton;<br />
+5. Удаляем ненужный теперь уже TButton.<br />
+<br />
+Да, кстати, для создаваемых кнопок неплохо бы указывать еще и имя, например <br />
+btn[i].Name:='MyBtn'+IntToStr(i);</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #5C5E5C; border-top: 0px">
+		<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/user_off.gif" alt="mihali4 вне форума" border="0" />
+
+
+		
+			<span id="reputationmenu_63016"><a href="http://www.programmersforum.ru/reputation.php?p=63016" rel="nofollow" id="reputation_63016"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/reputati.gif" alt="Добавить отзыв для mihali4" border="0" /></a></span>
+			<script type="text/javascript"> vbrep_register("63016")</script>
+						
+		
+		<a href="http://www.programmersforum.ru/report.php?p=63016" rel="nofollow"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/report00.gif" alt="Пожаловаться на это сообщение" border="0" /></a>
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #5C5E5C; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63016" rel="nofollow"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quote000.gif" alt="Ответить с цитированием" border="0" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63016" rel="nofollow" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/multiquo.gif" alt="Мульти-цитирование этого сообщения" border="0" id="mq_63016" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63016" rel="nofollow" id="qr_63016" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quickrep.gif" alt="Быстрый ответ на это сообщение" border="0" /></a>
+		
+		
+		
+		
+			
+			
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+<!-- post 63016 popup menu -->
+<div class="vbmenu_popup" id="postmenu_63016_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">mihali4</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/member.php?u=337">Посмотреть профиль</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/private.php?do=newpm&amp;u=337" rel="nofollow">Отправить личное сообщение для mihali4</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/sendmessage.php?do=mailmember&amp;u=337" rel="nofollow">Отправить email для mihali4</a></td></tr>
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/search.php?do=finduser&amp;u=337" rel="nofollow">Найти еще сообщения от mihali4</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/profile.php?do=addlist&amp;userlist=buddy&amp;u=337">Добавить mihali4 в список друзей</a></td></tr>
+	
+	</table>
+</div>
+<!-- / post 63016 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #63016 --><!-- post #63031 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%.; text-align:left">
+		<div style="padding:0px 0px 0px 0px">
+
+	<div id="edit63031" style="padding:0px 0px 8px 0px">
+	<!-- this is not the last post shown on the page -->	
+
+
+<table id="post63031" class="tborder" cellpadding="8" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-right: 0px" >		
+			<!-- status icon and date -->
+			<a name="post63031"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/post_old.gif" alt="Старый" border="0" /></a>
+			03.01.2008, 23:23
+			
+			<!-- / status icon and date -->				
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="http://www.programmersforum.ru/showpost.php?p=63031&amp;postcount=3" target="new" rel="nofollow" id="postcount63031" name="3"><strong>3</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #5C5E5C; border-top: 0px; border-bottom: 0px">
+			
+			<div id="postmenu_63031">
+				
+				<a class="bigusername" href="http://www.programmersforum.ru/member.php?u=8580">DOLBY</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_63031", true); </script>
+				
+			</div>
+			
+			
+			<div class="smallfont">Форумчанин</div>
+		
+			
+				<div class="smallfont">
+					&nbsp;<br /><a href="http://www.programmersforum.ru/member.php?u=8580"><img src="image.php?u=8580&amp;dateline=1199387073" width="80" height="80" alt="Аватар для DOLBY" border="0" /></a>
+				</div>
+			
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Регистрация: 12.12.2007</div>
+				<div>Адрес: Воронеж</div>
+				
+				<div>
+					Сообщения: 118
+				</div>
+				
+				Репутация:<b><font color=green>50</b></font>
+				
+				<div><a href="" onclick="imwindow('icq', '8580', 500, 450); return false;"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/im_icq00.gif" alt="Отправить сообщение для  DOLBY с помощью ICQ" border="0" /></a>    </div>
+			</div>		
+	</td>
+	
+	<td class="alt1" id="td_post_63031" style="border-right: 1px solid #5C5E5C">
+	
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/icon1000.gif" alt="По умолчанию" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#5C5E5C" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_63031">Спасибо огромное)</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #5C5E5C; border-top: 0px">
+		<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/user_off.gif" alt="DOLBY вне форума" border="0" />
+
+
+		
+			<span id="reputationmenu_63031"><a href="http://www.programmersforum.ru/reputation.php?p=63031" rel="nofollow" id="reputation_63031"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/reputati.gif" alt="Добавить отзыв для DOLBY" border="0" /></a></span>
+			<script type="text/javascript"> vbrep_register("63031")</script>
+						
+		
+		<a href="http://www.programmersforum.ru/report.php?p=63031" rel="nofollow"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/report00.gif" alt="Пожаловаться на это сообщение" border="0" /></a>
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #5C5E5C; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63031" rel="nofollow"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quote000.gif" alt="Ответить с цитированием" border="0" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63031" rel="nofollow" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/multiquo.gif" alt="Мульти-цитирование этого сообщения" border="0" id="mq_63031" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63031" rel="nofollow" id="qr_63031" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quickrep.gif" alt="Быстрый ответ на это сообщение" border="0" /></a>
+		
+		
+		
+		
+			
+			
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+<!-- post 63031 popup menu -->
+<div class="vbmenu_popup" id="postmenu_63031_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">DOLBY</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/member.php?u=8580">Посмотреть профиль</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/private.php?do=newpm&amp;u=8580" rel="nofollow">Отправить личное сообщение для DOLBY</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/search.php?do=finduser&amp;u=8580" rel="nofollow">Найти еще сообщения от DOLBY</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/profile.php?do=addlist&amp;userlist=buddy&amp;u=8580">Добавить DOLBY в список друзей</a></td></tr>
+	
+	</table>
+</div>
+<!-- / post 63031 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #63031 --><!-- post #63036 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%.; text-align:left">
+		<div style="padding:0px 0px 0px 0px">
+
+	<div id="edit63036" style="padding:0px 0px 8px 0px">
+	<!-- this is not the last post shown on the page -->	
+
+
+<table id="post63036" class="tborder" cellpadding="8" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-right: 0px" >		
+			<!-- status icon and date -->
+			<a name="post63036"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/post_old.gif" alt="Старый" border="0" /></a>
+			03.01.2008, 23:49
+			
+			<!-- / status icon and date -->				
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="http://www.programmersforum.ru/showpost.php?p=63036&amp;postcount=4" target="new" rel="nofollow" id="postcount63036" name="4"><strong>4</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #5C5E5C; border-top: 0px; border-bottom: 0px">
+			
+			<div id="postmenu_63036">
+				
+				<a class="bigusername" href="http://www.programmersforum.ru/member.php?u=8580">DOLBY</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_63036", true); </script>
+				
+			</div>
+			
+			
+			<div class="smallfont">Форумчанин</div>
+		
+			
+				<div class="smallfont">
+					&nbsp;<br /><a href="http://www.programmersforum.ru/member.php?u=8580"><img src="image.php?u=8580&amp;dateline=1199387073" width="80" height="80" alt="Аватар для DOLBY" border="0" /></a>
+				</div>
+			
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Регистрация: 12.12.2007</div>
+				<div>Адрес: Воронеж</div>
+				
+				<div>
+					Сообщения: 118
+				</div>
+				
+				Репутация:<b><font color=green>50</b></font>
+				
+				<div><a href="" onclick="imwindow('icq', '8580', 500, 450); return false;"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/im_icq00.gif" alt="Отправить сообщение для  DOLBY с помощью ICQ" border="0" /></a>    </div>
+			</div>		
+	</td>
+	
+	<td class="alt1" id="td_post_63036" style="border-right: 1px solid #5C5E5C">
+	
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/icon1000.gif" alt="По умолчанию" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#5C5E5C" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_63036">вот переделанный код:<br />
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Код:</div>
+<pre name="code">
+<code>
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    procedure FormCreate(Sender: TObject);
+    procedure ButtonClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+const n=50;
+
+var
+  Form1: TForm1;
+  btn:array[1..n] of tbutton;
+  i:integer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.ButtonClick(Sender: TObject);
+begin
+ if i&lt;n then
+  begin
+   inc(i);
+   btn[i]:=TButton.Create(form1);
+   btn[i].Parent:=form1;
+   btn[i].Caption:=inttostr(i);
+   btn[i].Name:='mybtn'+inttostr(i);
+   btn[i].OnClick:=ButtonClick;
+   btn[i].Left:=random(form1.ClientWidth-btn[i].Width);
+   btn[i].Top:=random(form1.ClientHeight-btn[i].Height);
+  end;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+ randomize;
+ i:=1;
+ btn[i]:=TButton.Create(form1);
+ btn[i].Parent:=form1;
+ btn[i].Caption:=inttostr(i);
+ btn[i].Name:='mybtn'+inttostr(i);
+ btn[i].OnClick:=ButtonClick;
+ btn[i].Left:=(i-1)*5;
+ btn[i].Top:=(i-1)*5;
+end;
+
+end.
+</code>
+</pre>
+</div>как мне непосредственно из процедуры ButtonClick узнавать какая именно кнопка нажата(под каким номером/именем)?</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+		<!-- edit note -->
+			<div class="smallfont">			<hr size="1" style="color:#5C5E5C" />
+				<em>
+				Последний раз редактировалось DOLBY, 03.01.2008 в <span class="time">23:49</span>.
+				Причина: не всё написал:)
+				</em>
+			</div>
+		<!-- / edit note -->
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #5C5E5C; border-top: 0px">
+		<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/user_off.gif" alt="DOLBY вне форума" border="0" />
+
+
+		
+			<span id="reputationmenu_63036"><a href="http://www.programmersforum.ru/reputation.php?p=63036" rel="nofollow" id="reputation_63036"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/reputati.gif" alt="Добавить отзыв для DOLBY" border="0" /></a></span>
+			<script type="text/javascript"> vbrep_register("63036")</script>
+						
+		
+		<a href="http://www.programmersforum.ru/report.php?p=63036" rel="nofollow"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/report00.gif" alt="Пожаловаться на это сообщение" border="0" /></a>
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #5C5E5C; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63036" rel="nofollow"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quote000.gif" alt="Ответить с цитированием" border="0" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63036" rel="nofollow" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/multiquo.gif" alt="Мульти-цитирование этого сообщения" border="0" id="mq_63036" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63036" rel="nofollow" id="qr_63036" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quickrep.gif" alt="Быстрый ответ на это сообщение" border="0" /></a>
+		
+		
+		
+		
+			
+			
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+<!-- post 63036 popup menu -->
+<div class="vbmenu_popup" id="postmenu_63036_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">DOLBY</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/member.php?u=8580">Посмотреть профиль</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/private.php?do=newpm&amp;u=8580" rel="nofollow">Отправить личное сообщение для DOLBY</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/search.php?do=finduser&amp;u=8580" rel="nofollow">Найти еще сообщения от DOLBY</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/profile.php?do=addlist&amp;userlist=buddy&amp;u=8580">Добавить DOLBY в список друзей</a></td></tr>
+	
+	</table>
+</div>
+<!-- / post 63036 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #63036 --><!-- post #63038 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%.; text-align:left">
+		<div style="padding:0px 0px 0px 0px">
+
+	<div id="edit63038" style="padding:0px 0px 8px 0px">
+	<!-- this is not the last post shown on the page -->	
+
+
+<table id="post63038" class="tborder" cellpadding="8" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-right: 0px" >		
+			<!-- status icon and date -->
+			<a name="post63038"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/post_old.gif" alt="Старый" border="0" /></a>
+			03.01.2008, 23:55
+			
+			<!-- / status icon and date -->				
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="http://www.programmersforum.ru/showpost.php?p=63038&amp;postcount=5" target="new" rel="nofollow" id="postcount63038" name="5"><strong>5</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #5C5E5C; border-top: 0px; border-bottom: 0px">
+			
+			<div id="postmenu_63038">
+				
+				<a class="bigusername" href="http://www.programmersforum.ru/member.php?u=337">mihali4</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_63038", true); </script>
+				
+			</div>
+			
+			<div class="smallfont">Старый брюзга</div>
+			<div class="smallfont">Заслуженный модератор</div>
+		
+			
+				<div class="smallfont">
+					&nbsp;<br /><a href="http://www.programmersforum.ru/member.php?u=337"><img src="image.php?u=337&amp;dateline=1191357857" width="80" height="80" alt="Аватар для mihali4" border="0" /></a>
+				</div>
+			
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Регистрация: 22.11.2006</div>
+				<div>Адрес: Москва, Коньково</div>
+				
+				<div>
+					Сообщения: 6,325
+				</div>
+				
+				Репутация:<b><font color=green>1780</b></font>
+				
+				<div>    </div>
+			</div>		
+	</td>
+	
+	<td class="alt1" id="td_post_63038" style="border-right: 1px solid #5C5E5C">
+	
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/icon1000.gif" alt="По умолчанию" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#5C5E5C" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_63038"><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Цитата:</div>
+	<table cellpadding="8" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
+				как мне непосредственно из процедуры ButtonClick узнавать какая именно кнопка нажата(под каким номером/именем)?
+			
+		</td>
+	</tr>
+	</table>
+</div>SENDER - это тот компонент, который вызвал обработчик.<br />
+Я же обращал ваше внимание на этот момент:<br />
+<div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Цитата:</div>
+	<table cellpadding="8" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
+				3. В контейнере прописываем нужный код, обращая внимание на (Sender as TButton)...
+			
+		</td>
+	</tr>
+	</table>
+</div>Это и поможет вам определиться. Например:<br />
+if (Sender as TButton).Name='MyButton1' then<br />
+.... else<br />
+if (Sender as TButton).Name='MyButton2' then<br />
+....<br />
+Или используйте CASE (Sender as TButton).Name OF...</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #5C5E5C; border-top: 0px">
+		<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/user_off.gif" alt="mihali4 вне форума" border="0" />
+
+
+		
+			<span id="reputationmenu_63038"><a href="http://www.programmersforum.ru/reputation.php?p=63038" rel="nofollow" id="reputation_63038"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/reputati.gif" alt="Добавить отзыв для mihali4" border="0" /></a></span>
+			<script type="text/javascript"> vbrep_register("63038")</script>
+						
+		
+		<a href="http://www.programmersforum.ru/report.php?p=63038" rel="nofollow"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/report00.gif" alt="Пожаловаться на это сообщение" border="0" /></a>
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #5C5E5C; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63038" rel="nofollow"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quote000.gif" alt="Ответить с цитированием" border="0" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63038" rel="nofollow" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/multiquo.gif" alt="Мульти-цитирование этого сообщения" border="0" id="mq_63038" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63038" rel="nofollow" id="qr_63038" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quickrep.gif" alt="Быстрый ответ на это сообщение" border="0" /></a>
+		
+		
+		
+		
+			
+			
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+<!-- post 63038 popup menu -->
+<div class="vbmenu_popup" id="postmenu_63038_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">mihali4</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/member.php?u=337">Посмотреть профиль</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/private.php?do=newpm&amp;u=337" rel="nofollow">Отправить личное сообщение для mihali4</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/sendmessage.php?do=mailmember&amp;u=337" rel="nofollow">Отправить email для mihali4</a></td></tr>
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/search.php?do=finduser&amp;u=337" rel="nofollow">Найти еще сообщения от mihali4</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/profile.php?do=addlist&amp;userlist=buddy&amp;u=337">Добавить mihali4 в список друзей</a></td></tr>
+	
+	</table>
+</div>
+<!-- / post 63038 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #63038 --><!-- post #63082 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%.; text-align:left">
+		<div style="padding:0px 0px 0px 0px">
+
+	<div id="edit63082" style="padding:0px 0px 8px 0px">
+	<!-- this is not the last post shown on the page -->	
+
+
+<table id="post63082" class="tborder" cellpadding="8" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-right: 0px" >		
+			<!-- status icon and date -->
+			<a name="post63082"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/post_old.gif" alt="Старый" border="0" /></a>
+			04.01.2008, 04:09
+			
+			<!-- / status icon and date -->				
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="http://www.programmersforum.ru/showpost.php?p=63082&amp;postcount=6" target="new" rel="nofollow" id="postcount63082" name="6"><strong>6</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #5C5E5C; border-top: 0px; border-bottom: 0px">
+			
+			<div id="postmenu_63082">
+				
+				<a class="bigusername" href="http://www.programmersforum.ru/member.php?u=3631">Jeni</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_63082", true); </script>
+				
+			</div>
+			
+			
+			<div class="smallfont">Форумчанин</div>
+		
+			
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Регистрация: 31.05.2007</div>
+				
+				
+				<div>
+					Сообщения: 484
+				</div>
+				
+				Репутация:<b><font color=green>257</b></font>
+				
+				<div>    </div>
+			</div>		
+	</td>
+	
+	<td class="alt1" id="td_post_63082" style="border-right: 1px solid #5C5E5C">
+	
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/icon1000.gif" alt="По умолчанию" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#5C5E5C" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_63082">Для идентификации удобно использовать свойство Tag, например: <b>btn[i].Tag:=i;</b><br />
+А проверять <b>if TButton(Sender).Tag = 1 then ...</b><br />
+Или через <b>case TButton(Sender).Tag of</b> (для текстов case не подойдет).<br />
+Тогда и имя компоненту не понадобится.</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #5C5E5C; border-top: 0px">
+		<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/user_off.gif" alt="Jeni вне форума" border="0" />
+
+
+		
+			<span id="reputationmenu_63082"><a href="http://www.programmersforum.ru/reputation.php?p=63082" rel="nofollow" id="reputation_63082"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/reputati.gif" alt="Добавить отзыв для Jeni" border="0" /></a></span>
+			<script type="text/javascript"> vbrep_register("63082")</script>
+						
+		
+		<a href="http://www.programmersforum.ru/report.php?p=63082" rel="nofollow"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/report00.gif" alt="Пожаловаться на это сообщение" border="0" /></a>
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #5C5E5C; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63082" rel="nofollow"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quote000.gif" alt="Ответить с цитированием" border="0" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63082" rel="nofollow" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/multiquo.gif" alt="Мульти-цитирование этого сообщения" border="0" id="mq_63082" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63082" rel="nofollow" id="qr_63082" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quickrep.gif" alt="Быстрый ответ на это сообщение" border="0" /></a>
+		
+		
+		
+		
+			
+			
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+<!-- post 63082 popup menu -->
+<div class="vbmenu_popup" id="postmenu_63082_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Jeni</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/member.php?u=3631">Посмотреть профиль</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/private.php?do=newpm&amp;u=3631" rel="nofollow">Отправить личное сообщение для Jeni</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/sendmessage.php?do=mailmember&amp;u=3631" rel="nofollow">Отправить email для Jeni</a></td></tr>
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/search.php?do=finduser&amp;u=3631" rel="nofollow">Найти еще сообщения от Jeni</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/profile.php?do=addlist&amp;userlist=buddy&amp;u=3631">Добавить Jeni в список друзей</a></td></tr>
+	
+	</table>
+</div>
+<!-- / post 63082 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #63082 --><!-- post #63283 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%.; text-align:left">
+		<div style="padding:0px 0px 0px 0px">
+
+	<div id="edit63283" style="padding:0px 0px 8px 0px">
+	<!-- this is not the last post shown on the page -->	
+
+
+<table id="post63283" class="tborder" cellpadding="8" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-right: 0px" >		
+			<!-- status icon and date -->
+			<a name="post63283"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/post_old.gif" alt="Старый" border="0" /></a>
+			05.01.2008, 00:40
+			
+			<!-- / status icon and date -->				
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="http://www.programmersforum.ru/showpost.php?p=63283&amp;postcount=7" target="new" rel="nofollow" id="postcount63283" name="7"><strong>7</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #5C5E5C; border-top: 0px; border-bottom: 0px">
+			
+			<div id="postmenu_63283">
+				
+				<a class="bigusername" href="http://www.programmersforum.ru/member.php?u=369">GN_</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_63283", true); </script>
+				
+			</div>
+			
+			
+			<div class="smallfont">Форумчанин</div>
+		
+			
+				<div class="smallfont">
+					&nbsp;<br /><a href="http://www.programmersforum.ru/member.php?u=369"><img src="image.php?u=369&amp;dateline=1200247994" width="73" height="80" alt="Аватар для GN_" border="0" /></a>
+				</div>
+			
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Регистрация: 25.11.2006</div>
+				<div>Адрес: Казахстан</div>
+				
+				<div>
+					Сообщения: 102
+				</div>
+				
+				Репутация:<b><font color=green>71</b></font>
+				
+				<div>    </div>
+			</div>		
+	</td>
+	
+	<td class="alt1" id="td_post_63283" style="border-right: 1px solid #5C5E5C">
+	
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/icon1000.gif" alt="По умолчанию" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#5C5E5C" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_63283">А как в процессе работы программы удалить динамически созданный компонент (для примера хоть ту же кнопку)?</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #5C5E5C; border-top: 0px">
+		<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/user_off.gif" alt="GN_ вне форума" border="0" />
+
+
+		
+			<span id="reputationmenu_63283"><a href="http://www.programmersforum.ru/reputation.php?p=63283" rel="nofollow" id="reputation_63283"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/reputati.gif" alt="Добавить отзыв для GN_" border="0" /></a></span>
+			<script type="text/javascript"> vbrep_register("63283")</script>
+						
+		
+		<a href="http://www.programmersforum.ru/report.php?p=63283" rel="nofollow"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/report00.gif" alt="Пожаловаться на это сообщение" border="0" /></a>
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #5C5E5C; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63283" rel="nofollow"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quote000.gif" alt="Ответить с цитированием" border="0" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63283" rel="nofollow" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/multiquo.gif" alt="Мульти-цитирование этого сообщения" border="0" id="mq_63283" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63283" rel="nofollow" id="qr_63283" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quickrep.gif" alt="Быстрый ответ на это сообщение" border="0" /></a>
+		
+		
+		
+		
+			
+			
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+<!-- post 63283 popup menu -->
+<div class="vbmenu_popup" id="postmenu_63283_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">GN_</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/member.php?u=369">Посмотреть профиль</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/private.php?do=newpm&amp;u=369" rel="nofollow">Отправить личное сообщение для GN_</a></td></tr>
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://gn.ucoz.ua/">Посетить домашнюю страницу GN_</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/search.php?do=finduser&amp;u=369" rel="nofollow">Найти еще сообщения от GN_</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/profile.php?do=addlist&amp;userlist=buddy&amp;u=369">Добавить GN_ в список друзей</a></td></tr>
+	
+	</table>
+</div>
+<!-- / post 63283 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #63283 --><!-- post #63302 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%.; text-align:left">
+		<div style="padding:0px 0px 0px 0px">
+
+	<div id="edit63302" style="padding:0px 0px 8px 0px">
+	<!-- this is not the last post shown on the page -->	
+
+
+<table id="post63302" class="tborder" cellpadding="8" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-right: 0px" >		
+			<!-- status icon and date -->
+			<a name="post63302"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/post_old.gif" alt="Старый" border="0" /></a>
+			05.01.2008, 01:28
+			
+			<!-- / status icon and date -->				
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="http://www.programmersforum.ru/showpost.php?p=63302&amp;postcount=8" target="new" rel="nofollow" id="postcount63302" name="8"><strong>8</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #5C5E5C; border-top: 0px; border-bottom: 0px">
+			
+			<div id="postmenu_63302">
+				
+				<a class="bigusername" href="http://www.programmersforum.ru/member.php?u=3631">Jeni</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_63302", true); </script>
+				
+			</div>
+			
+			
+			<div class="smallfont">Форумчанин</div>
+		
+			
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Регистрация: 31.05.2007</div>
+				
+				
+				<div>
+					Сообщения: 484
+				</div>
+				
+				Репутация:<b><font color=green>257</b></font>
+				
+				<div>    </div>
+			</div>		
+	</td>
+	
+	<td class="alt1" id="td_post_63302" style="border-right: 1px solid #5C5E5C">
+	
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/icon1000.gif" alt="По умолчанию" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#5C5E5C" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_63302">btn[i].Free; Это если нужно удалить самому.<br />
+Но можно оставить и на &quot;автомате&quot;, ведь при создании - btn[i]:=TButton.Create(form1); - в качестве владельца указывалась форма Form1 и когда она будет уничтожаться, она уничтожит и все принадлежащие ей объекты.</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #5C5E5C; border-top: 0px">
+		<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/user_off.gif" alt="Jeni вне форума" border="0" />
+
+
+		
+			<span id="reputationmenu_63302"><a href="http://www.programmersforum.ru/reputation.php?p=63302" rel="nofollow" id="reputation_63302"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/reputati.gif" alt="Добавить отзыв для Jeni" border="0" /></a></span>
+			<script type="text/javascript"> vbrep_register("63302")</script>
+						
+		
+		<a href="http://www.programmersforum.ru/report.php?p=63302" rel="nofollow"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/report00.gif" alt="Пожаловаться на это сообщение" border="0" /></a>
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #5C5E5C; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63302" rel="nofollow"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quote000.gif" alt="Ответить с цитированием" border="0" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63302" rel="nofollow" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/multiquo.gif" alt="Мульти-цитирование этого сообщения" border="0" id="mq_63302" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63302" rel="nofollow" id="qr_63302" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quickrep.gif" alt="Быстрый ответ на это сообщение" border="0" /></a>
+		
+		
+		
+		
+			
+			
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+<!-- post 63302 popup menu -->
+<div class="vbmenu_popup" id="postmenu_63302_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Jeni</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/member.php?u=3631">Посмотреть профиль</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/private.php?do=newpm&amp;u=3631" rel="nofollow">Отправить личное сообщение для Jeni</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/sendmessage.php?do=mailmember&amp;u=3631" rel="nofollow">Отправить email для Jeni</a></td></tr>
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/search.php?do=finduser&amp;u=3631" rel="nofollow">Найти еще сообщения от Jeni</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/profile.php?do=addlist&amp;userlist=buddy&amp;u=3631">Добавить Jeni в список друзей</a></td></tr>
+	
+	</table>
+</div>
+<!-- / post 63302 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #63302 --><!-- post #63372 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%.; text-align:left">
+		<div style="padding:0px 0px 0px 0px">
+
+	<div id="edit63372" style="padding:0px 0px 8px 0px">
+		
+
+
+<table id="post63372" class="tborder" cellpadding="8" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-right: 0px" >		
+			<!-- status icon and date -->
+			<a name="post63372"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/post_old.gif" alt="Старый" border="0" /></a>
+			05.01.2008, 11:59
+			
+			<!-- / status icon and date -->				
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #5C5E5C; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="http://www.programmersforum.ru/showpost.php?p=63372&amp;postcount=9" target="new" rel="nofollow" id="postcount63372" name="9"><strong>9</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #5C5E5C; border-top: 0px; border-bottom: 0px">
+			
+			<div id="postmenu_63372">
+				
+				<a class="bigusername" href="http://www.programmersforum.ru/member.php?u=369">GN_</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_63372", true); </script>
+				
+			</div>
+			
+			
+			<div class="smallfont">Форумчанин</div>
+		
+			
+				<div class="smallfont">
+					&nbsp;<br /><a href="http://www.programmersforum.ru/member.php?u=369"><img src="image.php?u=369&amp;dateline=1200247994" width="73" height="80" alt="Аватар для GN_" border="0" /></a>
+				</div>
+			
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Регистрация: 25.11.2006</div>
+				<div>Адрес: Казахстан</div>
+				
+				<div>
+					Сообщения: 102
+				</div>
+				
+				Репутация:<b><font color=green>71</b></font>
+				
+				<div>    </div>
+			</div>		
+	</td>
+	
+	<td class="alt1" id="td_post_63372" style="border-right: 1px solid #5C5E5C">
+	
+	
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/icon1000.gif" alt="По умолчанию" border="0" />
+				
+			</div>
+			<hr size="1" style="color:#5C5E5C" />
+			<!-- / icon and title -->
+		
+		
+		<!-- message -->
+		<div id="post_message_63372"><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Цитата:</div>
+	<table cellpadding="8" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
+				<div>
+					Сообщение от <strong>Jeni</strong>
+					<a href="http://www.programmersforum.ru/showthread.php?p=63302#post63302" rel="nofollow"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/viewpost.gif" border="0" alt="Посмотреть сообщение" /></a>
+				</div>
+				<div style="font-style:italic">btn[i].Free; Это если нужно удалить самому.<br />
+Но можно оставить и на &quot;автомате&quot;, ведь при создании - btn[i]:=TButton.Create(form1); - в качестве владельца указывалась форма Form1 и когда она будет уничтожаться, она уничтожит и все принадлежащие ей объекты.</div>
+			
+		</td>
+	</tr>
+	</table>
+</div> Большое спасибо.</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #5C5E5C; border-top: 0px">
+		<img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/user_off.gif" alt="GN_ вне форума" border="0" />
+
+
+		
+			<span id="reputationmenu_63372"><a href="http://www.programmersforum.ru/reputation.php?p=63372" rel="nofollow" id="reputation_63372"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/reputati.gif" alt="Добавить отзыв для GN_" border="0" /></a></span>
+			<script type="text/javascript"> vbrep_register("63372")</script>
+						
+		
+		<a href="http://www.programmersforum.ru/report.php?p=63372" rel="nofollow"><img class="inlineimg" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/report00.gif" alt="Пожаловаться на это сообщение" border="0" /></a>
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #5C5E5C; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63372" rel="nofollow"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quote000.gif" alt="Ответить с цитированием" border="0" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63372" rel="nofollow" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/multiquo.gif" alt="Мульти-цитирование этого сообщения" border="0" id="mq_63372" /></a>
+		
+		
+			<a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;p=63372" rel="nofollow" id="qr_63372" onclick="return false"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quickrep.gif" alt="Быстрый ответ на это сообщение" border="0" /></a>
+		
+		
+		
+		
+			
+			
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+<!-- post 63372 popup menu -->
+<div class="vbmenu_popup" id="postmenu_63372_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">GN_</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/member.php?u=369">Посмотреть профиль</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/private.php?do=newpm&amp;u=369" rel="nofollow">Отправить личное сообщение для GN_</a></td></tr>
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://gn.ucoz.ua/">Посетить домашнюю страницу GN_</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/search.php?do=finduser&amp;u=369" rel="nofollow">Найти еще сообщения от GN_</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="http://www.programmersforum.ru/profile.php?do=addlist&amp;userlist=buddy&amp;u=369">Добавить GN_ в список друзей</a></td></tr>
+	
+	</table>
+</div>
+<!-- / post 63372 popup menu -->
+
+
+	</div>
+	
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #63372 --><div id="lastpost"></div></div>
+
+<!-- start content table -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%.; text-align:left">
+		<div style="padding:0px 0px 0px 0px">
+
+<!-- / start content table -->
+
+<!-- controls below postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr valign="top">
+	
+		<td class="smallfont"><a href="http://www.programmersforum.ru/newreply.php?do=newreply&amp;noquote=1&amp;p=63372" rel="nofollow"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/reply000.gif" alt="Ответ" border="0" /></a></td>
+		
+	
+</tr>
+</table>
+<!-- / controls below postbits -->
+
+
+
+
+<br />
+
+<div class="smallfont" align="center">
+	<strong>&laquo;</strong>
+		<a href="http://www.programmersforum.ru/showthread.php?t=12089&amp;goto=nextoldest" rel="nofollow">Предыдущая тема</a>
+		|
+		<a href="http://www.programmersforum.ru/showthread.php?t=12089&amp;goto=nextnewest" rel="nofollow">Следующая тема</a>
+	<strong>&raquo;</strong>
+</div>
+
+
+<br />
+
+
+<script type="text/javascript" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/vbulletm.js"></script>
+<script type="text/javascript">
+var mqlimit = 0;
+</script>
+
+
+
+<!-- ajax errors table -->
+<table class="tborder" cellpadding="8" cellspacing="1" border="0" style="display:none; position:absolute" id="ajax_post_errors">
+<tr>
+	<td class="thead">
+		<span style="float:right"><input type="button" class="button" value=" X " onclick="vB_QuickEditor.hide_errors()" unselectable="true" /></span>
+		Сообщение форума
+	</td>
+</tr>
+<tr>
+	<td class="alt2" colspan="2" id="ajax_post_errors_message">&nbsp;</td>
+</tr>
+<tr>
+	<td class="tfoot" colspan="2" align="center"><a href="" onclick="vB_QuickEditor.abort(); return false;">Отменить изменения</a></td>
+</tr>
+</table>
+<!-- / ajax errors table -->
+
+<!-- scripts for quick reply and quick edit -->
+<!-- EDITOR SCRIPTS -->
+<script type="text/javascript" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/vbulletn.js"></script>
+<script type="text/javascript">
+<!--
+var fontoptions = new Array("Arial", "Arial Black", "Arial Narrow", "Book Antiqua", "Century Gothic", "Comic Sans MS", "Courier New", "Fixedsys", "Franklin Gothic Medium", "Garamond", "Georgia", "Impact", "Lucida Console", "Lucida Sans Unicode", "Microsoft Sans Serif", "Palatino Linotype", "System", "Tahoma", "Times New Roman", "Trebuchet MS", "Verdana");
+var sizeoptions = new Array(1, 2, 3, 4, 5, 6, 7);
+var smilieoptions = new Array(); smilieoptions = {  };
+
+var istyles = new Array(); istyles = { "pi_menu_normal" : [ "#FFFFFF", "#000000", "0px", "1px solid #FFFFFF" ], "pi_button_down" : [ "#9E9E9C", "#000000", "0px", "1px solid #316AC5" ], "pi_button_hover" : [ "#D4D2CC", "#000000", "0px", "1px solid #316AC5" ], "pi_button_normal" : [ "#D4D2CC", "#000000", "1px", "none" ], "pi_button_selected" : [ "#D4D2CC", "#000000", "0px", "1px solid #316AC5" ], "pi_menu_down" : [ "#9E9E9C", "#000000", "0px", "1px solid #316AC5" ], "pi_menu_hover" : [ "#D4D2CC", "#9E9E9C", "0px", "1px solid #316AC5" ], "pi_popup_down" : [ "#9E9E9C", "#000000", "0px", "1px solid #316AC5" ] };
+
+var smiliewindow_x = 240;
+var smiliewindow_y = 280;
+
+var ignorequotechars = 1;
+
+// vB Phrases
+vbphrase["wysiwyg_please_wait"]          = "Пожалуйста, подождите, пока загрузится визуальный редактор...";
+vbphrase["wysiwyg_initialized"]          = "Визуальный редактор запущен для %1$s за %2$s сек.";
+vbphrase["wysiwyg_command_invalid"]      = "Неверная или нереализуемая команда.";
+vbphrase["moz_must_select_text"]         = "В Mozilla вам необходимо выделить часть текста, что бы данная функция заработала";
+vbphrase["moz_edit_config_file"]         = "Вам необходимо изменить файл настроек Mozilla, чтобы выполнить это действие.";
+vbphrase["enter_tag_option"]             = "Пожалуйста, введите опцию для тега %1$s:";
+vbphrase["must_select_text_to_use"]      = "Вам необходимо выделить часть текста, что бы данная функция заработала.";
+vbphrase["browser_is_safari_no_wysiwyg"] = "Браузер Safari не поддерживает визуальный редактор.";
+vbphrase["enter_option_x_tag"]           = "Введите опцию для тега [%1$s]:";
+vbphrase["enter_text_to_be_formatted"]   = "Введите форматируемый текст";
+vbphrase["enter_link_text"]              = "Введите текст отображаемый как ссылка (не обязательно):";
+vbphrase["enter_list_type"]              = "Какой вид списка вы хотите создать? Введите '1', для создания нумерованного списка, введите 'a', для алфавитного списка, или оставьте пустым, для маркированного списка:";
+vbphrase["enter_list_item"]              = "Введите элемент.\r\nОставьте список пустым или нажмите 'Отмена', чтобы завершить ввод:";
+vbphrase["must_enter_subject"]           = "Вы должны ввести  заголовок/название темы!";
+vbphrase["message_too_short"]            = "Ваше сообщение слишком короткое. Оно должно быть не менее %1$s символов.";
+vbphrase["enter_link_url"]               = "Введите URL для данной ссылки:";
+vbphrase["enter_image_url"]              = "Укажите URL вашего изображения:";
+vbphrase["enter_email_link"]             = "Введите email для данной ссылки:";
+vbphrase["complete_image_verification"]  = "Вы не прошли проверку ввода текста с изображения";
+vbphrase["iespell_not_installed"]        = "ieSpell - инструмент проверки орфографии для Internet Explorer.\r\n\r\nЕсли Вы хотели бы загрузить ieSpell, нажмите OK; в противном случае нажмите Отмена.\r\n\r\nieSpell  может быть загружен с http://www.iespell.com]";
+vbphrase["click_quick_reply_icon"]       = "Нажмите в сообщении на иконку 'Быстрый ответ' для активации этой опции.";
+vbphrase["insert_all"]                   = "Вставить все";
+
+//-->
+</script>
+<!-- END EDITOR SCRIPTS -->
+
+<!-- EDITOR STYLES -->
+<link rel="stylesheet" type="text/css" href="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/vbulleti.css" />
+<style type="text/css">
+<!--
+.vBulletin_editor {
+	background: #D4D2CC;
+	padding: 8px;
+}
+.imagebutton {
+	background: #D4D2CC;
+	color: #000000;
+	padding: 1px;
+	border: none;
+}
+.ocolor, .ofont, .osize, .osmilie, .osyscoloar, .smilietitle {
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #FFFFFF;
+}
+.popup_pickbutton {
+	border: 1px solid #FFFFFF;
+}
+.popup_feedback {
+	background: #FFFFFF;
+	color: #000000;
+	border-right: 1px solid #FFFFFF;
+}
+.popupwindow {
+	background: #FFFFFF;
+}
+#fontOut, #sizeOut, .popup_feedback div {
+	background: #FFFFFF;
+	color: #000000;
+}
+.alt_pickbutton {
+	border-left: 1px solid #D4D2CC;
+}
+.popup_feedback input, .popup_feedback div
+{
+	border: 0px solid;
+	padding: 0px 2px 0px 2px;
+	cursor: default;
+	font: 11px tahoma;
+	overflow: hidden;
+}
+-->
+</style>
+<!-- END EDITOR STYLES -->
+
+<script type="text/javascript" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/vbulleto.js"></script>
+<script type="text/javascript">
+<!--
+vB_AJAX_QuickEdit_Init('posts');
+//-->
+</script>
+
+<!-- / scripts for quick reply and quick edit -->
+
+
+
+
+<!-- quick reply -->
+<script type="text/javascript" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/vbulletp.js"></script>
+<form action="http://www.programmersforum.ru/newreply.php?do=postreply&amp;t=12089" method="post" name="vbform" onsubmit="return qr_prepare_submit(this, 10);" id="qrform">
+<table class="tborder" cellpadding="8" cellspacing="1" border="0" width="100%" align="center">
+<thead>
+	<tr>
+		<td class="tcat" colspan="2">
+			<a style="float:right" href="" onclick="return toggle_collapse('quickreply');"><img id="collapseimg_quickreply" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/collapse.gif" alt="" border="0" /></a>
+			Быстрый ответ
+		</td>
+	</tr>
+</thead>
+<tbody id="qr_error_tbody" style="display:none">
+<tr>
+	<td class="thead">При размещении сообщения были допущены следующие ошибки:</td>
+</tr>
+<tr>
+	<td class="alt1" id="qr_error_td"></td>
+</tr>
+<tr>
+	<td class="tfoot" align="center"><span class="smallfont"><a href="" onclick="return qr_hide_errors()">Ok</a></span></td>
+</tr>
+</tbody>
+<tbody id="collapseobj_quickreply" style="">
+<tr>
+	<td class="panelsurround" align="center">
+		<div class="panel">	
+			<table cellpadding="0" cellspacing="0" border="0" align="center">
+			<tr>
+				<td class="smallfont" align="left">Сообщение:</td>
+			</tr>
+			<tr>
+				<td id="vB_Editor_QR" class="vBulletin_editor" align="left">
+		<script type="text/javascript">
+		<!--
+			var threaded_mode = 0;
+			var require_click = 0;
+			var is_last_page = 1; // leave for people with cached JS files
+			var allow_ajax_qr = 1;
+			var ajax_last_post = 1199516353;
+		// -->
+		</script>
+		
+<div id="vB_Editor_QR_controls" class="controlbar">
+	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td><div class="imagebutton" id="vB_Editor_QR_cmd_removeformat"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/removefo.gif" width="21" height="20" alt="Убрать форматирование текста" /></div></td>
+		<td><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/separato.gif" width="6" height="20" alt="" /></td>
+	
+		<td><div class="imagebutton" id="vB_Editor_QR_cmd_bold"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/bold0000.gif" width="21" height="20" alt="Полужирный" /></div></td>
+		<td><div class="imagebutton" id="vB_Editor_QR_cmd_italic"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/italic00.gif" width="21" height="20" alt="Курсив" /></div></td>
+		<td><div class="imagebutton" id="vB_Editor_QR_cmd_underline"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/underlin.gif" width="21" height="20" alt="Подчеркнутый" /></div></td>
+		<td><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/separato.gif" width="6" height="20" alt="" /></td>
+	
+	
+		<td><div class="imagebutton" id="vB_Editor_QR_popup_forecolor" title="Цвета">
+			<table cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td id="vB_Editor_QR_color_out"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/color000.gif" width="21" height="16" alt="" /><br /><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/clear000.gif" id="vB_Editor_QR_color_bar" alt="" style="background-color:black" width="21" height="4" /></td>
+				<td class="alt_pickbutton"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/menupop0.gif" alt="" width="11" height="16" /></td>
+			</tr>
+			</table>
+		</div></td>
+	
+		<td><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/separato.gif" width="6" height="20" alt="" /></td>
+	
+		<td><div class="imagebutton" id="vB_Editor_QR_cmd_createlink"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/createli.gif" width="21" height="20" alt="Вставить ссылку" /></div></td>
+	
+	
+		<td><div class="imagebutton" id="vB_Editor_QR_cmd_insertimage"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/insertim.gif" width="21" height="20" alt="Вставить рисунок" /></div></td>
+	
+		<td><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/separato.gif" width="6" height="20" alt="" /></td>
+		<td><div class="imagebutton" id="vB_Editor_QR_cmd_wrap0_quote"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/quote001.gif" width="21" height="20" alt="Вставить тег цитаты [QUOTE] вокруг выделенного текста" /></div></td>
+
+
+
+
+
+
+<td><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/separato.gif" width="6" height="20" alt="" /></td>
+			
+			
+				<td><div class="imagebutton" id="vB_Editor_QR_cmd_wrap0_code"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/code0000.gif" width="21" height="20" alt="Вставить тег [CODE] вокруг выделенного текста" /></div>
+</td>
+
+
+
+
+
+
+
+	<td width="100%">&nbsp;</td>
+	
+		<td>
+			<div class="imagebutton" id="vB_Editor_QR_cmd_resize_0_99"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/resize_0.gif" width="21" height="9" alt="Уменьшить размер" /></div>
+			<div class="imagebutton" id="vB_Editor_QR_cmd_resize_1_99"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/resize_1.gif" width="21" height="9" alt="Увеличить размер" /></div>
+		</td>
+	
+	</tr>
+	</table>
+</div>
+
+<div class="controlbar">
+	
+	<textarea name="message" id="vB_Editor_QR_textarea" rows="10" cols="60" style="width:540px; height:100px" tabindex="1" dir="ltr"></textarea>
+	
+</div>
+
+<input type="hidden" name="wysiwyg" id="vB_Editor_QR_mode" value="0" />
+<input type="hidden" name="styleid" value="0" />
+
+<script type="text/javascript">
+<!--
+vB_Editor['vB_Editor_QR'] = new vB_Text_Editor('vB_Editor_QR', 0, '39', '1');
+var QR_EditorID = 'vB_Editor_QR';
+//-->
+</script>
+	</td>
+			</tr>
+			<tr>
+				<td align="left">
+				
+					<fieldset class="fieldset" style="margin:3px 0px 0px 0px">
+						<legend>Опции</legend>
+						<div>
+							
+								<div style="float:right"><label for="cb_signature"><input type="checkbox" name="signature" value="1" id="cb_signature" tabindex="5" checked="checked" />Показывать подпись</label></div>
+							
+							<label for="qr_quickreply"><input type="checkbox" name="quickreply" value="1" id="qr_quickreply" accesskey="w" tabindex="4" />Вставить цитату в ответ?</label>
+						</div>
+					</fieldset>
+				
+				</td>
+			</tr>
+			</table>
+		</div>	
+
+		<div style="margin-top:8px">
+			<input type="hidden" name="fromquickreply" value="1" />
+			<input type="hidden" name="s" value="" />
+			<input type="hidden" name="do" value="postreply" />
+			<input type="hidden" name="t" value="12089" id="qr_threadid" />
+			<input type="hidden" name="p" value="who cares" id="qr_postid" />
+			<input type="hidden" name="parseurl" value="1" />
+			<input type="hidden" name="loggedinuser" value="32814" />
+			<input type="submit" class="button" value="Отправить быстрый ответ" accesskey="s" title="(Alt + S)" name="sbutton" tabindex="2" id="qr_submit" onclick="clickedelm = this.value" />
+			<input type="submit" class="button" value="Расширенный режим" accesskey="x" title="(Alt + X)" name="preview" tabindex="3" id="qr_preview" onclick="clickedelm = this.value" />
+		</div>
+
+		<div align="center" id="qr_posting_msg" style="display:none; margin-top:6px">
+			<img style="vertical-align: middle;" src="images/1070/misc/progress.gif" alt="Отправка быстрого ответа - Пожалуйста, подождите" />&nbsp;<strong>Отправка быстрого ответа - Пожалуйста, подождите</strong>
+		</div>	
+	</td>
+</tr>
+</tbody>
+</table>
+</form>
+
+
+	<!-- Mozilla work around for focusing on QR in WYSIWYG mode -->
+	<div id="qr_scroll"></div>
+
+
+<br />
+
+<script type="text/javascript">
+<!--
+	// initialize quick reply
+	qr_init();
+//-->
+</script>
+
+<!-- end quick reply -->
+
+
+<!-- currently active users -->
+
+<!-- end currently active users -->
+
+
+<!-- popup menu contents -->
+<br />
+
+<!-- thread tools menu -->
+<div class="vbmenu_popup" id="threadtools_menu" style="display:none">
+<form action="http://www.programmersforum.ru/postings.php?t=12089&amp;pollid=" method="post" name="threadadminform">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Опции темы<a name="goto_threadtools"></a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="images/1070/buttons/printer.gif" alt="Версия для печати" /> <a href="http://www.programmersforum.ru/printthread.php?t=12089" accesskey="3" rel="nofollow">Версия для печати</a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="images/1070/buttons/sendtofriend.gif" alt="Отправить на email" /> <a href="http://www.programmersforum.ru/sendmessage.php?do=sendtofriend&amp;t=12089" rel="nofollow">Отправить на email</a></td>
+	</tr>
+	
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="images/1070/buttons/subscribe.gif" alt="Подписки" />
+		
+			<a href="http://www.programmersforum.ru/subscription.php?do=addsubscription&amp;t=12089" rel="nofollow">Подписаться на эту тему</a>
+		
+		</td>
+	</tr>
+	
+	
+	
+	</table>
+</form>
+</div>
+<!-- / thread tools menu -->
+
+<!-- **************************************************** -->
+
+
+<!-- thread search menu -->
+<div class="vbmenu_popup" id="threadsearch_menu" style="display:none">
+<form action="http://www.programmersforum.ru/search.php?do=process&amp;searchthreadid=12089" method="post">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Поиск в этой теме<a name="goto_threadsearch"></a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option" title="nohilite">
+			<input type="hidden" name="s" value="" />
+			<input type="hidden" name="do" value="process" />
+			<input type="hidden" name="searchthreadid" value="12089" />
+			<input type="text" class="bginput" name="query" size="25" /><input type="submit" class="button" value="Вперед"  /><br />
+		</td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><a href="http://www.programmersforum.ru/search.php?searchthreadid=12089">Расширенный поиск</a></td>
+	</tr>
+	</table>
+</form>
+</div>
+<!-- / thread search menu -->
+
+
+<!-- **************************************************** -->
+
+
+	<!-- thread rating menu -->
+	<div class="vbmenu_popup" id="threadrating_menu" style="display:none">
+	<form action="http://www.programmersforum.ru/threadrate.php?t=12089" method="post" id="showthread_threadrate_form">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tr>
+			<td class="thead">Оценка этой теме<a name="goto_threadrating"></a></td>
+		</tr>
+		
+		<tr>
+			<td class="vbmenu_option" title="nohilite" id="threadrating_options">
+			<div><img class="inlineimg" src="images/1070/rating/rating_5.gif" alt="Отлично" /><label for="vote5"><input type="radio" name="vote" id="vote5" value="5"  />Отлично</label></div>
+			<div><img class="inlineimg" src="images/1070/rating/rating_4.gif" alt="Хорошо" /><label for="vote4"><input type="radio" name="vote" id="vote4" value="4"  />Хорошо</label></div>
+			<div><img class="inlineimg" src="images/1070/rating/rating_3.gif" alt="Средне" /><label for="vote3"><input type="radio" name="vote" id="vote3" value="3"  />Средне</label></div>
+			<div><img class="inlineimg" src="images/1070/rating/rating_2.gif" alt="Плохо" /><label for="vote2"><input type="radio" name="vote" id="vote2" value="2"  />Плохо</label></div>
+			<div><img class="inlineimg" src="images/1070/rating/rating_1.gif" alt="Ужасно" /><label for="vote1"><input type="radio" name="vote" id="vote1" value="1"  />Ужасно</label></div>
+			</td>
+		</tr>
+		<tr id="threadrating_submit">
+			<td class="vbmenu_option" title="nohilite" align="center">
+				<input type="hidden" name="s" value="1c0d0a30c04d2419d96cc7965dc7d2ed" />
+				<input type="hidden" name="t" value="12089" />
+				<input type="hidden" name="pp" value="10" />
+				<input type="hidden" name="page" value="1" />
+				<input type="submit" class="button" value="Проголосовать" />
+			</td>
+		</tr>
+		
+		</table>
+	</form>
+	</div>
+	<!-- / thread rating menu -->
+
+	<script type="text/javascript" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/vbulletq.js"></script>
+	<script type="text/javascript">
+	<!--
+	vB_AJAX_ThreadRate_Init('showthread_threadrate_form');
+	var threadid = 12089;
+	//-->
+	</script>
+
+
+<!-- / popup menu contents -->
+
+
+<!-- forum rules and admin links -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="bottom">
+	<td class="smallfont" align="left">
+		<table class="tborder" cellpadding="8" cellspacing="1" border="0" width="180">
+<thead>
+<tr>
+	<td class="thead">
+		<a style="float:right" href="" onclick="return toggle_collapse('forumrules')"><img id="collapseimg_forumrules" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/collapsf.gif" alt="" border="0" /></a>
+		Ваши права в разделе
+	</td>
+</tr>
+</thead>
+<tbody id="collapseobj_forumrules" style="">
+<tr>
+	<td class="alt1" nowrap="nowrap"><div class="smallfont">
+		
+		<div>Вы <strong> можете</strong> создавать темы</div>
+		<div>Вы <strong> можете</strong> отвечать на сообщения</div>
+		<div>Вы <strong> можете</strong> прикреплять файлы</div>
+		<div>Вы <strong> можете</strong> редактировать сообщения</div>
+		<hr />
+		
+		<div><a href="http://www.programmersforum.ru/misc.php?do=bbcode" target="_blank">BB коды</a> <strong>Вкл.</strong></div>
+		<div><a href="http://www.programmersforum.ru/misc.php?do=showsmilies" target="_blank">Смайлы</a> <strong>Вкл.</strong></div>
+		<div><a href="http://www.programmersforum.ru/misc.php?do=bbcode#imgcode" target="_blank">[IMG]</a> код <strong>Вкл.</strong></div>
+		<div>HTML код <strong>Выкл.</strong></div>
+	</div></td>
+</tr>
+</tbody>
+</table>
+	</td>
+	<td class="smallfont" align="right">
+		<table cellpadding="0" cellspacing="0" border="0">
+		
+		<tr>
+			<td>
+			<div class="smallfont" style="text-align:left; white-space:nowrap">
+	<form action="http://www.programmersforum.ru/forumdisplay.php" method="get">
+	<input type="hidden" name="s" value="" />
+	<input type="hidden" name="daysprune" value="" />
+	<strong>Быстрый переход</strong><br />
+	<select name="f" onchange="this.form.submit();">
+		<optgroup label="Навигация по форуму">
+			<option value="cp" >Мой кабинет</option>
+			<option value="pm" >Личные сообщения</option>
+			<option value="subs" >Подписки</option>
+			<option value="wol" >Кто на форуме</option>
+			<option value="search" >Поиск по форуму</option>
+			<option value="home" >Главная страница форума</option>
+		</optgroup>
+		<optgroup label="Разделы">
+		<option value="45" class="fjdpth0" > Новички в программировании</option>
+<option value="31" class="fjdpth1" >&nbsp; &nbsp;  Помощь студентам</option>
+<option value="1" class="fjdpth0" > Delphi программирование</option>
+<option value="2" class="fjdpth1" >&nbsp; &nbsp;  Общие вопросы Delphi</option>
+<option value="47" class="fjdpth1" >&nbsp; &nbsp;  Мультимедиа в Delphi</option>
+<option value="39" class="fjsel" selected="selected">&nbsp; &nbsp;  Компоненты Delphi</option>
+<option value="3" class="fjdpth1" >&nbsp; &nbsp;  Работа с сетью в Delphi</option>
+<option value="5" class="fjdpth1" >&nbsp; &nbsp;  БД в Delphi</option>
+<option value="7" class="fjdpth1" >&nbsp; &nbsp;  Паскаль</option>
+<option value="8" class="fjdpth0" > Низкоуровневое программирование</option>
+<option value="4" class="fjdpth1" >&nbsp; &nbsp;  Win Api</option>
+<option value="9" class="fjdpth1" >&nbsp; &nbsp;  Assembler</option>
+<option value="13" class="fjdpth0" > C++ программирование</option>
+<option value="14" class="fjdpth1" >&nbsp; &nbsp;  Общие вопросы C/C++</option>
+<option value="40" class="fjdpth1" >&nbsp; &nbsp;  Кросплатформенное программирование</option>
+<option value="41" class="fjdpth1" >&nbsp; &nbsp;  Программирование для .NET</option>
+<option value="10" class="fjdpth0" > Java программирование</option>
+<option value="11" class="fjdpth1" >&nbsp; &nbsp;  Java, десктопные приложения</option>
+<option value="15" class="fjdpth0" > Web программирование</option>
+<option value="16" class="fjdpth1" >&nbsp; &nbsp;  HTML и CSS</option>
+<option value="12" class="fjdpth1" >&nbsp; &nbsp;  Javascript и другие клиентские скрипты</option>
+<option value="17" class="fjdpth1" >&nbsp; &nbsp;  PHP и другие серверные скрипты</option>
+<option value="48" class="fjdpth1" >&nbsp; &nbsp;  WordPress и другие CMS</option>
+<option value="32" class="fjdpth0" > Технологии</option>
+<option value="6" class="fjdpth1" >&nbsp; &nbsp;  Безопасность</option>
+<option value="33" class="fjdpth1" >&nbsp; &nbsp;  Создание и обсуждение игр</option>
+<option value="44" class="fjdpth1" >&nbsp; &nbsp;  Язык SQL</option>
+<option value="34" class="fjdpth1" >&nbsp; &nbsp;  Операционные системы</option>
+<option value="18" class="fjdpth0" > Microsoft Office и VBA</option>
+<option value="20" class="fjdpth1" >&nbsp; &nbsp;  Microsoft Office Excel</option>
+<option value="21" class="fjdpth1" >&nbsp; &nbsp;  Microsoft Office Access</option>
+<option value="19" class="fjdpth1" >&nbsp; &nbsp;  Microsoft Office Word</option>
+<option value="28" class="fjdpth0" > Работа для программиста</option>
+<option value="30" class="fjdpth1" >&nbsp; &nbsp;  Работа на постоянной основе</option>
+<option value="29" class="fjdpth1" >&nbsp; &nbsp;  Фриланс</option>
+<option value="23" class="fjdpth0" > Клуб программистов</option>
+<option value="37" class="fjdpth1" >&nbsp; &nbsp;  О форуме и сайтах клуба</option>
+<option value="24" class="fjdpth1" >&nbsp; &nbsp;  Обсуждение статей</option>
+<option value="25" class="fjdpth1" >&nbsp; &nbsp;  Обсуждение программ</option>
+<option value="46" class="fjdpth1" >&nbsp; &nbsp;  Железо</option>
+<option value="26" class="fjdpth1" >&nbsp; &nbsp;  Свободное общение</option>
+
+		</optgroup>
+	</select><input type="submit" class="button" value="Вперед"  />
+	</form>
+</div>
+			</td>
+		</tr>		
+		</table>
+	</td>
+</tr>
+</table>
+<!-- /forum rules and admin links -->
+
+<br />
+
+<table class="tborder" cellpadding="8" cellspacing="1" border="0" width="100%" align="center">
+<thead>
+	<tr>
+		<td class="tcat" width="100%" colspan="5">
+			<a style="float:right" href="" onclick="return toggle_collapse('similarthreads')"><img id="collapseimg_similarthreads" src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/collapse.gif" alt="" border="0" /></a>
+			Похожие темы<a name="similarthreads"></a>
+		</td>
+	</tr>
+</thead>
+<tbody id="collapseobj_similarthreads" style="">
+<tr class="thead" align="center">
+	<td class="thead" width="40%">Тема</td>
+	<td class="thead" width="15%" nowrap="nowrap">Автор</td>
+	<td class="thead" width="20%">Раздел</td>
+	<td class="thead" width="5%">Ответов</td>
+	<td class="thead" width="20%">Последнее сообщение</td>
+</tr>
+<tr>
+	<td class="alt1" align="left"><span class="smallfont"><a href="http://www.programmersforum.ru/showthread.php?t=5102" title="Скажите мне для начала как в процессе выполнения программы создать на форме кнопку на пример. :o">Динамическое создание объектов</a></span></td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">LepihinMS</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Общие вопросы Delphi</span></td>
+	<td class="alt2" align="center"><span class="smallfont">23</span></td>
+	<td class="alt1" align="right"><span class="smallfont">20.04.2009 <span class="time">01:12</span></span></td>
+</tr>
+<tr>
+	<td class="alt1" align="left"><span class="smallfont"><a href="http://www.programmersforum.ru/showthread.php?t=16974" title="Можно ли в Delphi, в процессе выполнения приложения создать новый экземпляр компонента, например, Label, и использовать его на форме? Если да, то...">Динамическое создание объекта</a></span></td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">ANGa</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Помощь студентам</span></td>
+	<td class="alt2" align="center"><span class="smallfont">3</span></td>
+	<td class="alt1" align="right"><span class="smallfont">10.04.2008 <span class="time">20:14</span></span></td>
+</tr>
+<tr>
+	<td class="alt1" align="left"><span class="smallfont"><a href="http://www.programmersforum.ru/showthread.php?t=10753" title="короче говоря, мне надо динамически создать компонент TEdit и процедуры обрабоки его событий.
+как динамически создать этот элемент я...">динамическое содзание компонентов и процедур обработки</a></span></td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">Prisian</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Компоненты Delphi</span></td>
+	<td class="alt2" align="center"><span class="smallfont">5</span></td>
+	<td class="alt1" align="right"><span class="smallfont">11.12.2007 <span class="time">23:17</span></span></td>
+</tr>
+<tr>
+	<td class="alt1" align="left"><span class="smallfont"><a href="http://www.programmersforum.ru/showthread.php?t=6375" title="Подскажите пожалуйста, как программно создать фрейм, создать на нем к примеру кнопку и лэйбел, а потом показать этот фрейм.">Динамическое создание фрейма</a></span></td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">s-force</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Общие вопросы Delphi</span></td>
+	<td class="alt2" align="center"><span class="smallfont">9</span></td>
+	<td class="alt1" align="right"><span class="smallfont">05.09.2007 <span class="time">18:56</span></span></td>
+</tr>
+<tr>
+	<td class="alt1" align="left"><span class="smallfont"><a href="http://www.programmersforum.ru/showthread.php?t=4608" title="Как динамически добавить Мемо на форму??
+ 
+begin
+inc(x);
+with TMemo.Create(Self)...">Как динамически добавить Мемо на форму? Динамическое создание компонентов!</a></span></td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">werser</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Помощь студентам</span></td>
+	<td class="alt2" align="center"><span class="smallfont">1</span></td>
+	<td class="alt1" align="right"><span class="smallfont">14.06.2007 <span class="time">02:39</span></span></td>
+</tr>
+
+</tbody>
+</table>
+
+<br />
+
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "pub-3780994971058297";
+/* 728x90, создано 16.03.09 */
+google_ad_slot = "4047786027";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/show_ads.htm">
+</script>
+</center>
+
+
+<br />
+<div class="smallfont" align="center"><span class="time">11:43</span></div>
+<br />
+
+
+		</div>	
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- /content area table -->
+
+<form action="http://www.programmersforum.ru/index.php" method="get">
+	
+<table cellpadding="8" cellspacing="0" border="0" width="100%." class="page" align="center">
+<tr>
+	
+		<td class="tfoot">
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="Выбор стиля">
+					<option value="2" class="" selected="selected">-- club</option>
+<option value="1" class="" >-- Обычный стиль</option>
+
+				</optgroup>
+			</select>
+		</td>
+	
+	
+	<td class="tfoot" align="right" width="100%">
+		<div class="smallfont">
+			<strong>
+				<a href="http://programmersforum.ru/sendmessage.php" rel="nofollow">Обратная связь</a> -
+				<a href="http://www.programmersclub.ru/">Клуб программистов Delphi</a> -
+				
+				
+				<a href="http://www.programmersforum.ru/archive/index.php">Архив</a> -
+				
+				<a href="" onclick="self.scrollTo(0, 0); return false;">Вверх</a>
+			</strong>
+		</div>
+	</td>
+</tr>
+</table>
+
+<br />
+
+<div align="center">
+	<div class="smallfont" align="center">
+	<!-- Do not remove this copyright notice -->
+	vBulletin v3.6.2, Copyright &copy;2000-2009, Jelsoft Enterprises Ltd.<br />Русский перевод: zCarot, Vovan & Co
+	<!-- Do not remove this copyright notice -->
+	</div>
+	
+	<div class="smallfont" align="center">
+	<!-- Do not remove  or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove  or your scheduled tasks will cease to function -->
+	
+	
+	</div>
+</div>
+
+</form>
+
+
+<script type="text/javascript">
+<!--
+	// Main vBulletin Javascript Initialization
+	vBulletin_init();
+//-->
+</script>
+<br><center>
+
+<b><A href="http://web-satellite.ru/">Создание и продвижение
+сайтов</A> - "Веб сателлит"</b>&nbsp;&nbsp;&nbsp;&nbsp;<A href="http://www.programmersforum.ru/clublink.php">Ссылки</A>
+<br><br>
+
+
+
+<a href="http://www.softmagazin.ru/"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/softmaga.gif" alt="softmagazin"></a>
+
+<a href="http://www.ufastanki.ru/"><img src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/bsc00000.jpg" alt="bsc"></a>
+  
+<a href="http://www.bg-dom.ru/"><img 
+src="динамическое создание компонентов - Компоненты Delphi - Форум программистов_files/bg-dom00.jpg"></a>
+
+<!--Rating@Mail.ru COUNTEr--><script language="JavaScript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3" type="text/javascript"><!--
+js=13//--></script><script language="JavaScript" type="text/javascript"><!--
+d.write('<a href="http://top.mail.ru/jump?from=1223103"'+
+' target=_top><img src="http://d9.ca.b2.a1.top.list.ru/counter'+
+'?id=1223103;t=47;js='+js+a+';rand='+Math.random()+
+'" alt="Рейтинг@Mail.ru"'+' border=0 height=31 width=88/><\/a>')
+if(11<js)d.write('<'+'!-- ')//--></script><noscript><a
+target=_top href="http://top.mail.ru/jump?from=1223103"><FONT size="1">[AD]</FONT><AD- p.list.ru/counter?js=na;id=1223103;t=47"
+border=0 height=31 width=88
+alt="Рейтинг@Mail.ru"/></a></noscript><script language="JavaScript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>')//--></script><!--/COUNTER-->
+
+<!-- temp -->
+<div style="display:none">
+	<!-- thread rate -->
+	
+		<!-- thread ratings form here -->
+	
+	<!-- / thread rate -->
+</div>
+
+</body>
+</html>
+
+
+
+<!-- This document saved from http://www.programmersforum.ru/showthread.php?t=12089&highlight=%E4%E8%ED%E0%EC%E8%F7%E5%F1%EA%EE%E5+%F1%EE%E7%E4%E0%ED%E8%E5+%EA%EE%EC%EF%EE%ED%E5%ED%F2%EE%E2 -->

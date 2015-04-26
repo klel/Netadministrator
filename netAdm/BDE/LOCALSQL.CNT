@@ -1,0 +1,9 @@
+:Base localsql.hlp>main
+:Title Local SQL Help
+:Index Local SQL Help=LOCALSQL.HLP
+:Link bde32.hlp
+:Link bdeadmin.hlp
+:Link datapump.hlp
+:Link localsql.hlp
+:Link sqllnk32.hlp
+:INCLUDE LOCALSQL.TOC

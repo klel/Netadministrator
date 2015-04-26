@@ -1,0 +1,95 @@
+Start at Tuesday, June 02, 2009    00:04:11
+=========================================
+
+Registration Info : 
+
+Windows Version:
+Microsoft Windows XP Professional Service Pack 2 (Build 2600)
+
+Module Info:
+Company: fCoder Group, Inc.
+Product Name: ImageConverter Plus
+Product Version: 7.1.20.80708
+
+CPU Info:
+Vendor: GenuineIntel
+Vendor ID: Intel Corporation
+Extended Processor Name: Unknown P6 family
+Procesor Clock Frequecy: 2405
+Logical processors per physical: 4
+Stepping code: 11
+MMX support: yes
+MMX+ support: no
+SSE support: yes
+SSE2 support: yes
+3DNow suppor: no
+3DNow+ suppor: no
+AI64 support: no
+Hyperthreading support: no
+L1 cache size: -1
+L2 cache size: -1
+L3 cache size: -1
+
+Monitor info:
+Color depth: 32 Bits per pixel.
+Pixel Width: 1280
+Pixel Height: 1024
+Refresh frequency: 75 Hz
+
+Internet Explorer Version: 6.0
+Build Number: 2900
+
+Printers list: 
+\\mv-server\sharepr
+\\slot-director\Canon LBP2900
+\\192.168.0.1\sharepr
+
+Default printer: 
+\\mv-server\sharepr
+
+
+Script settings:
+
+Operations:
+
+Format properties:
+    Extension: bmp
+    bits per pixel : 24
+    rows direction : bottom_top
+    quantization levels : 8
+    dithering : no
+
+Save properties:
+    Destination path: C:\Documents and Settings\klimov.en\Рабочий стол\diplom_30.09_wrk\pic
+    convert with subfolders : yes
+    restore subfolder structure in target folder : yes
+    open target folder after conversion : yes
+    create log file in target folder : yes
+
+Target file name properties:
+    Name template: {Title}.{Type}
+    what to do, if file exists : auto_rename
+    delete source images : no
+
+Processing files...
+
+=====================================================================
+
+File 1 of 1
+
+RAM free    :    1097.6 of    2047.0 Mb
+Virtual free:    1984.7 of    2047.9 Mb
+Target free disk space :   25315.1 of   49999.1 Mb
+Temp free disk space   :   25315.1 of   49999.1 Mb
+
+Src info : C:\Documents and Settings\klimov.en\Рабочий стол\diplom_30.09_wrk\pic\TestMap.jpg
+jpg, 1013x558px, 24bpp, 1 page(s), 72.000000x72.000000 dpi, 114036 bytes
+Load all pages :  ok
+
+Save :  ok
+
+Dest info : C:\Documents and Settings\klimov.en\Рабочий стол\diplom_30.09_wrk\pic\TestMap.bmp
+bmp, 1013x558px, 24bpp, 1 page(s), 72.009003x72.009003 dpi, 1696374 bytes
+
+Complete at Tuesday, June 02, 2009    00:04:11
+=========================================

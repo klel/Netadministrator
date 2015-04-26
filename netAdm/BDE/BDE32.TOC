@@ -1,0 +1,190 @@
+:Base BDE32.HLP>main
+:Title Borland Database Engine Online Reference
+:Index BDE Reference=BDE32.HLP
+:Link bdeadmin.hlp
+:Link datapump.hlp
+:Link localsql.hlp
+:Link sqllnk32.hlp
+;
+1 Borland Database Engine Online Reference
+2 Introduction to Borland Database Engine
+3 Introduction to Borland Database Engine=introduction
+3 Features=features
+3 BDE components=bdecomponents
+3 Core BDE files=corebdefiles
+3 Tools and examples=toolsandexamples
+3 Initialization=initialization
+3 Configuration management=configurationmanagement
+2 What's New for BDE 5?
+3 Overview of new features and enhancements=Whatsnewoverview
+2 Basic concepts
+3 Architectural overview=architecturaloverview
+3 Shared services=sharedservices
+3 BDE API functions=bdeapifunctions
+3 BDE Objects
+4 BDE objects=bdeobjects
+4 System=system
+4 Clients=clients
+4 Sessions=sessions
+4 Database drivers=databasedrivers
+4 Databases=databases
+4 Cursors=cursors
+4 Query statements=querystatements
+4 Object properties=objectproperties
+3 Database entities
+4 Database entities=databaseentities
+4 Tables=tables
+4 Indexes=indexes
+4 Fields=fields
+4 Queries=queries
+4 Transactions=transactions
+4 Callbacks=callbacks
+4 Cross-database operations=crossdatabaseoperations
+2 Application development
+3 Introduction to BDE programming
+
+4 BDE Programming in Borland C/C++
+5 BDE Programming in Borland C/C++=BDEProgrammingInBorlandC
+5 Project setup=projectsetup
+5 Basic procedure=basicprocedure
+5 Improving BDE performance=improvingbdeperformance
+5 The CHK function=chk>example
+5 Template program=templateprogram>example
+
+4 BDE programming in Delphi
+5 BDE programming in Delphi=BDEProgrammingInDelphi
+5 Project setup=Dprojectsetup
+5 Basic procedure=Dbasicprocedure
+5 Improving BDE performance=improvingbdeperformance
+;5 The CHK function=chk>example
+5 Template program=Dtemplateprogram>example
+
+4 BDE programming in C++Builder
+5 BDE programming in C++Builder=BDEProgrammingInBCB
+5 Project setup=Bprojectsetup
+5 Basic procedure=basicprocedure
+5 Improving BDE performance=improvingbdeperformance
+5 The CHK function=Bchk>example
+5 Template program=Btemplateprogram>example
+
+3 Accessing and updating tables
+4 Accessing and updating tables=accessingandupdatingtables
+4 Preparing to access a table=preparingtoaccessatable
+4 Positioning the cursor and fetching records=positioningthecursorandfetchingrecords
+4 Field-level access=fieldlevelaccess
+4 Working with Blobs=workingwithblobs
+4 Adding, updating, and deleting records=addingupdatinganddeletingrecords
+4 Linking tables=linkingtables
+4 Sorting tables=sortingtables
+4 Cached updates=cachedupdates
+3 Locking
+4 Locking=locking
+4 Session layer=sessionlayer
+4 Database handle layer=databasehandlelayer
+4 Table cursor layer=tablecursorlayer
+4 Acquired locks=acquiredlocks
+4 Table lock coexistence=tablelockcoexistence
+4 Locking strategy=lockingstrategy
+4 SQL-specific locking behavior=sqlspecificlockingbehavior
+3 Transactions
+4 SQL Transactions=sqltransactions
+4 Transactions on Paradox, dBASE, FoxPro, and Access=transactionsonparadoxanddbase
+4 Transactions and cached updates=transactionsandcachedupdates
+4 Degree of transaction isolation=degreeoftransactionisolation
+4 Using transactions=usingtransactions
+3 Querying databases
+4 Querying databases=queryingdatabases
+4 Querying Paradox and dBASE tables=queryingparadoxanddbasetables
+4 Querying different databases=queryingdifferentdatabases
+4 Executing queries directly=executingqueriesdirectly
+4 Executing queries in stages=Executingqueriesinstages
+3 Getting and setting properties
+4 Getting and setting properties=gettingandsettingproperties
+4 Object properties=objectproperties
+3 Retrieving schema and system information
+4 Retrieving schema and system information=retrievingschemaandsysteminformation
+4 DbiOpenList functions=dbiopenlistfunctions
+4 DbiGetDescs functions=dbigetdescsfunctions
+3 Creating tables
+4 Creating tables=creatingtables
+4 Integrity constraints=integrityconstraints
+4 Modifying table structure=modifyingtablestructure
+3 Using callbacks
+4 Using callbacks=usingcallbacks
+4 Data source independence=datasourceindependence
+3 Filtering records
+4 Filtering records=filteringrecords
+4 Using an expression tree=usinganexpressiontree
+4 Expression tree header=expressiontreeheader
+4 Literal pool area=literalpoolarea
+3 Database driver characteristics
+4 Database driver characteristics=databasedrivercharacteristics
+4 SQL drivers
+5 Informix driver=informixdriver
+5 DB2 driver=DB2driver
+5 Sybase CT-Lib driver=sybasectlibdriver
+5 Passthrough SQL=passthroughsql
+5 SQL transaction control=sqltransactioncontrol
+5 SQL connection=sqlconnection
+5 SQL record caching=sqlrecordcaching
+5 SQL record modification requirements=sqlrecordmodificationrequirements
+5 SQL record modification behavior=sqlrecordmodificationbehavior
+5 SQL record-locking behavior=sqlrecordlockingbehavior
+5 SQL table-locking behavior=sqltablelockingbehavior
+5 SQL asynchronous queries=sqlasynchronousqueries
+5 SQL performance tips=sqlperformancetips
+4 Standard drivers
+5 Paradox driver=paradoxdriver
+5 FoxPro driver=foxprodriver
+4 Access driver
+5 Access driver=accessdriver
+4 Text driver
+5 Text driver=textdriver
+5 Field maps=fieldmaps
+5 Binding external schema to text tables=bindingexternalschematotexttables
+3 Error handling
+4 Using DbiGetErrorEntry to access the error stack=usingdbigeterrorentrytoaccesstheerrorstack
+4 Using DbiGetErrorString to get a detailed error message=usingdbigeterrorstringtogetadetailederrormessage
+4 Using DbiGetErrorContext to get more specific information=usingdbigeterrorcontexttogetmorespecificinformation
+4 Using DbiGetErrorInfo to get immediate information=usingdbigeterrorinfotogetimmediateinformation
+3 Debugging
+4 SQL Trace=sqltrace
+2 Using the Function Reference
+3 Using the function reference=usingthefunctionreference
+3 Syntax conventions=syntaxconventions
+3 Variable names=variablenames
+3 Constants=constants
+3 #Defines=defines
+3 Typedefs=typedefs
+3 Object definitions=objectdefinitions
+3 Buffer typedefs=buffertypedefs
+2 BDE Function Reference
+3 Alphabetical list of all BDE functions=functionreferencealphabetical
+3 Environment functions=environmentfunctions
+3 Session functions=sessionfunctions
+3 Error handling functions=errorhandlingfunctions
+3 Locking functions=lockingfunctions
+3 Cursor functions=cursorfunctions
+3 Index functions=indexfunctions
+3 Query functions=queryfunctions
+3 Database functions=databasefunctions
+3 Table functions=tablefunctions
+3 Data access functions=dataaccessfunctions
+3 Capability or schema functions=capabilityorschemafunctions
+3 Date/Time/Number functions=datetimenumberfunctions
+3 Transaction functions=transactionfunctions
+2 Data Structures
+3 Data structures: overview=datastructures
+3 Callback definitions=callbackdefinitions
+3 Paradox and dBASE physical types=paradoxanddbasephysicaltypes
+3 Data type translations=datatypetranslations
+3 Logical types and driver-specific physical types=logicaltypesanddriverspecificphysicaltypes
+2 International compatibility
+3 Character sets=charactersets
+3 Sorting and uppercasing rules=sortinganduppercasingrules
+3 Language drivers=languagedrivers
+3 Date, time, and number formats=datetimeandnumberformats
+2 Other Borland online guides
+3 Borland SQL Links Guide=borlandsqllinks@sqllnk32.hlp
+3 Borland Local SQL Guide=overview@localsql.hlp
+3 BDE Configuration Utility Help=idh_idapi_configutil@bdecfg32.hlp

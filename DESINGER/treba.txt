@@ -1,0 +1,3 @@
+в FormMousMove напиши d.Activate := False;
+
+а в MousMove нужных тебе компонентов d.Activate := True;

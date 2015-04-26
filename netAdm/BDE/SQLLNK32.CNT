@@ -1,0 +1,9 @@
+:Base sqllnk32.hlp>main
+:Title Borland SQL Links Help
+:Index Borland SQL Links Help=SQLLNK32.HLP
+:Link bde32.hlp
+:Link bdeadmin.hlp
+:Link datapump.hlp
+:Link localsql.hlp
+:Link sqllnk32.hlp
+:INCLUDE SQLLNK32.TOC

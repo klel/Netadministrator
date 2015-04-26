@@ -1,0 +1,62 @@
+===========================================================
+                   BDE Installation Notes
+===========================================================
+
+To use the BDE in an ActiveX control, deploy the BDEINST.CAB file:
+
+1. With your ActiveX project open in the IDE, choose
+Project | Web Deployment Options. Select the Project
+tab and check Deploy Additional Files.
+
+2. Select the Additional Files tab. Click Add, then select
+BDEINST.CAB (in the ...\BDE directory). Click OK.
+
+3. Later, when you choose Project | Web Deploy, Delphi/C++Builder
+generates an .INF file for your project. To use BDEINST.CAB, you'll
+need to edit this file manually. Open the file in an editor and replace
+
+  Bdeinst.cab=Bdeinst.cab
+
+with
+
+  Bdeinst.dll=Bdeinst.dll
+
+Then replace
+
+  [Bdeinst.cab]
+  file=<filename>
+
+with
+
+  [Bdeinst.dll]
+  file=http://<your server path here>/Bdeinst.cab
+  clsid={FB99D710-18B9-11D0-A4CF-00A024C91936}
+  RegisterServer=yes
+  FileVersion=5,1,1,1
+
+
+The example below shows an edited .INF file. Lines that have been
+added or changed are marked with an asterisk (*). Do not include
+the asterisks in your .INF file.
+
+  ;Delphi 4-generated INF file for MyProj.ocx
+  [Add.Code]
+  MyProj.ocx=MyProj.ocx
+  Bdeinst.dll=Bdeinst.dll                            *
+  
+  [MyProj.ocx]
+  file=http://www.MyServerPath.com/MyProj.ocx
+  clsid={D2E04E83-041F-11D1-AA40-444553540000}
+  RegisterServer=yes
+  FileVersion=1.0.0.0
+  
+  [Bdeinst.dll]                                      *
+  file=http://www.MyServerPath.com/Bdeinst.cab       *
+  clsid={FB99D710-18B9-11D0-A4CF-00A024C91936}       *
+  RegisterServer=yes                                 *
+  FileVersion=5,1,1,1                                *
+
+===============================================
+Copyright (c) 2002 Borland Software Corporation. 
+All rights reserved.
+                                                  

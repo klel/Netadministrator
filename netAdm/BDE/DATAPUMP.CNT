@@ -1,0 +1,9 @@
+:Base datapump.hlp>main
+:Title Data Pump Help
+:Index Data Pump Help=DATAPUMP.HLP
+:Link bde32.hlp
+:Link bdeadmin.hlp
+:Link datapump.hlp
+:Link localsql.hlp
+:Link sqllnk32.hlp
+:INCLUDE DATAPUMP.TOC

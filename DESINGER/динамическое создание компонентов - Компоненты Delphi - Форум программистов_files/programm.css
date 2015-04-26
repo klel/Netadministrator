@@ -1,0 +1,75 @@
+/*
+
+programmersforum styling (c) Alar - http://web-satellite.ru/
+
+*/
+
+pre code {
+    font: 12px "Verdana", monospace;
+    display: block;
+    color: #111;
+    background: #EBE7DE;
+}
+
+.subst, .title {
+    font-weight: normal;
+    color: #000;
+}
+
+.comment, .template_comment, .javadoc, .diff .header {
+    color: #808080;
+    font-style: italic;
+}
+
+.annotation, .decorator, .preprocessor, .doctype, .pi, .chunk, .shebang {
+    color: #0051D6;
+}
+
+.tag, .pi {
+    background: #EBE7DE;
+}
+
+.tag .title, .id, .attr_selector, .literal, .keyword, .hexcolor, .css .function, .ini .title, .css .class, .list .title {
+    font-weight: bold;
+    color: #010101;
+}
+
+.attribute, .rules .keyword, .number, .regexp {
+    font-weight: bold;
+    color: #3000FF;
+}
+
+.number, .regexp {
+    font-weight: normal;
+}
+
+.string, .value, .filter .argument, .css .function .params {
+    color: #008000;
+    font-weight: bold;
+}
+
+.symbol, .char {
+    color: #000;
+    background: #d0eded;
+    font-style: italic;
+}
+
+.phpdoc, .javadoctag {
+    text-decoration: underline;
+}
+
+.variable, .envvar {
+    color: #660e7a;
+}
+
+.addition {
+    background: #baeeba;
+}
+
+.deletion {
+    background: #ffc8bd;
+}
+
+.diff .change {
+    background: #bccff9;
+}
